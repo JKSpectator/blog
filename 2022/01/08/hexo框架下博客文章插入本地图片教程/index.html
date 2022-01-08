@@ -12,7 +12,7 @@
     
     
     
-    <title>categories: 自我介绍 | 布纸刀</title>
+    <title>hexo框架下博客文章插入本地图片教程 | 布纸刀</title>
     <link href="https://jia_k3.gitee.io/blog" rel="prefetch" />
 
     
@@ -129,15 +129,11 @@
                         
                         
                         <li>
-                            <a href="/blog/categories/Git/">Git</a>
+                            <a href="/blog/categories/%E6%95%99%E7%A8%8B/">教程</a>
                         </li>
                         
                         <li>
-                            <a href="/blog/categories/%E8%87%AA%E6%88%91%E4%BB%8B%E7%BB%8D/">自我介绍</a>
-                        </li>
-                        
-                        <li>
-                            <a href="/blog/categories/Unity/">Unity</a>
+                            <a href="/blog/categories/%E5%BF%83%E6%83%85%E7%AE%80%E8%AE%B0/">心情简记</a>
                         </li>
                         
                         
@@ -159,13 +155,21 @@
                         
                         
                         <li>
-                            <a href="/blog/tags/%E6%95%99%E7%A8%8B/">教程</a>
+                            <a href="/blog/tags/Git/">Git</a>
                         </li>
                         
                         <li>
-                            <a href="/blog/tags/%E5%8D%9A%E5%AE%A2%E5%BB%BA%E7%AB%8B/">博客建立</a>
+                            <a href="/blog/tags/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/">个人博客</a>
                         </li>
                         
+                        <li>
+                            <a href="/blog/tags/Unity/">Unity</a>
+                        </li>
+                        
+                        
+                        <li>
+                            <a href="/blog/tags">...</a>
+                        </li>
                         
                         
                     </ul>
@@ -189,19 +193,34 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-8 gal-right" id="mainstay">
-                    <article class="article well article-body" id="article-category">
+                    
+<article class="article well article-body" id="article">
     <div class="breadcrumb">
         <i class="fa fa-home"></i>
         <a href="https://jia_k3.gitee.io/blog">布纸刀</a>
         >
-        <span>目录</span>
+        <span>hexo框架下博客文章插入本地图片教程</span>
     </div>
     <!-- 大型设备详细文章 -->
     <div class="hidden-xs">
         <div class="title-article">
             <h1>
-                <a href="/blog/categories/%E8%87%AA%E6%88%91%E4%BB%8B%E7%BB%8D/index.html">自我介绍</a>
+                <a href="/blog/2022/01/08/hexo%E6%A1%86%E6%9E%B6%E4%B8%8B%E5%8D%9A%E5%AE%A2%E6%96%87%E7%AB%A0%E6%8F%92%E5%85%A5%E6%9C%AC%E5%9C%B0%E5%9B%BE%E7%89%87%E6%95%99%E7%A8%8B/">hexo框架下博客文章插入本地图片教程</a>
             </h1>
+        </div>
+        <div class="tag-article">
+            
+            <span class="label label-gal">
+                <i class="fa fa-tags"></i>
+                
+                <a href="/blog/tags/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/">个人博客</a>
+                
+            </span>
+            
+            <span class="label label-gal">
+                <i class="fa fa-calendar"></i> 2022-01-08
+            </span>
+            
         </div>
     </div>
     <!-- 小型设备详细文章 -->
@@ -209,21 +228,30 @@
         <center>
             <div class="title-article">
                 <h4>
-                    <a href="/blog/categories/%E8%87%AA%E6%88%91%E4%BB%8B%E7%BB%8D/index.html">自我介绍</a>
+                    <a href="/blog/2022/01/08/hexo%E6%A1%86%E6%9E%B6%E4%B8%8B%E5%8D%9A%E5%AE%A2%E6%96%87%E7%AB%A0%E6%8F%92%E5%85%A5%E6%9C%AC%E5%9C%B0%E5%9B%BE%E7%89%87%E6%95%99%E7%A8%8B/">hexo框架下博客文章插入本地图片教程</a>
                 </h4>
             </div>
+            <p>
+                <i class="fa fa-calendar"></i> 2022-01-08
+            </p>
+            <p>
+                
+                <i class="fa fa-tags"></i>
+                
+                <a href="/blog/tags/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/">个人博客</a>
+                
+                
+                
+            </p>
         </center>
     </div>
-    <div class="content-article" style="margin-top: 30px;">
-        <div class="alert alert-info" style="font-size: 14px; line-height: 2; font-weight: bold;">
-            
-            <a href="/blog/2022/01/06/%E5%8D%9A%E5%AE%A2%E5%88%9D%E5%BB%BA/">博客初建</a>
-            <br>
-            
-            
-        </div>
+    <div class="content-article">
+        <p>在建立个人博客时，出现博客文章中引用本地图片的需求。下面是步骤：<br>首先，下载hexo-asset-image这个package，（这里结合网络上其他教程内容，得知直接下载官方现在版本有bug，笔者直接采取代替途径做修改）输入命令cnpm install <a target="_blank" rel="noopener" href="https://github.com/CodeFalling/hexo-asset-image">https://github.com/CodeFalling/hexo-asset-image</a> –save安装代替版本（开头命令cnpm与npm差别不大）。<br>然后，在_config.yml中更改post_asset_folder选项为true。<br>最后，应用方式为<img src="/blog/2022/01/08/hexo%E6%A1%86%E6%9E%B6%E4%B8%8B%E5%8D%9A%E5%AE%A2%E6%96%87%E7%AB%A0%E6%8F%92%E5%85%A5%E6%9C%AC%E5%9C%B0%E5%9B%BE%E7%89%87%E6%95%99%E7%A8%8B/%E5%9B%BE%E7%89%87%E6%96%87%E4%BB%B6%E5%90%8D+%E5%90%8E%E7%BC%80" alt="标题">。<br>笔者采用Gitee搭载个人博客的方式。<br>理论上图片加载成功，但是实际上笔者这里由于src的错误转换导致图片加载异常，需要更改hexo-asset-image的配置：<br>进入文件夹node_modules，找到hexo-asset-image的配置文件夹，打开index.js，将文件中$(this).attr(‘src’, config.root + link + src)更改为$(this).attr(‘src’, ‘/‘ + link + src)，图片在Gitee中html文件里建立正确关联，图片加载成功。<br>错误代码反映（Gitee中html文件）：<img src="/blog/2022/01/08/hexo%E6%A1%86%E6%9E%B6%E4%B8%8B%E5%8D%9A%E5%AE%A2%E6%96%87%E7%AB%A0%E6%8F%92%E5%85%A5%E6%9C%AC%E5%9C%B0%E5%9B%BE%E7%89%87%E6%95%99%E7%A8%8B/blog/2000/0/0/try/图片.jpg" alt="图片">即config.root重复。</p>
+
     </div>
 </article>
+
+
                 </div>
                 <aside class="col-md-4 gal-left" id="sidebar">
     <!-- 此为sidebar的搜索框, 非搜索结果页面 -->
@@ -269,7 +297,7 @@
             
             <li class="list-group-item">
                 <span class="post-title">
-                    <a href="/blog/2022/01/08/try/">try</a>
+                    <a href="/blog/2022/01/08/hexo%E6%A1%86%E6%9E%B6%E4%B8%8B%E5%8D%9A%E5%AE%A2%E6%96%87%E7%AB%A0%E6%8F%92%E5%85%A5%E6%9C%AC%E5%9C%B0%E5%9B%BE%E7%89%87%E6%95%99%E7%A8%8B/">hexo框架下博客文章插入本地图片教程</a>
                 </span>
             </li>
             
@@ -315,19 +343,19 @@
             
             <li class="list-group-item">
                 <span class="post-title">
-                    <a href="/blog/2022/01/08/try/">try</a>
-                </span>
-            </li>
-            
-            <li class="list-group-item">
-                <span class="post-title">
-                    <a href="/blog/2022/01/06/%E5%8D%9A%E5%AE%A2%E5%88%9D%E5%BB%BA/">博客初建</a>
+                    <a href="/blog/2022/01/08/hexo%E6%A1%86%E6%9E%B6%E4%B8%8B%E5%8D%9A%E5%AE%A2%E6%96%87%E7%AB%A0%E6%8F%92%E5%85%A5%E6%9C%AC%E5%9C%B0%E5%9B%BE%E7%89%87%E6%95%99%E7%A8%8B/">hexo框架下博客文章插入本地图片教程</a>
                 </span>
             </li>
             
             <li class="list-group-item">
                 <span class="post-title">
                     <a href="/blog/2022/01/07/%E6%96%B0%E6%89%8B%E4%B8%8B%E8%BD%BDUnity3D%E4%BB%A5%E5%8F%8A%E8%BF%9E%E6%8E%A5%E8%84%9A%E6%9C%AC%E7%BC%96%E7%A8%8B%E8%BD%AF%E4%BB%B6-VS-%E6%95%99%E7%A8%8B/">新手下载Unity3D以及连接脚本编程软件(VS)教程</a>
+                </span>
+            </li>
+            
+            <li class="list-group-item">
+                <span class="post-title">
+                    <a href="/blog/2022/01/06/%E5%8D%9A%E5%AE%A2%E5%88%9D%E5%BB%BA/">博客初建</a>
                 </span>
             </li>
             
@@ -342,7 +370,7 @@
 
                 
                 <li>
-                    <a href="/blog/categories/%E8%87%AA%E6%88%91%E4%BB%8B%E7%BB%8D/index.html#sidebar-tags" data-toggle="tab" id="tags-tab">热门标签</a>
+                    <a href="/blog/2022/01/08/hexo%E6%A1%86%E6%9E%B6%E4%B8%8B%E5%8D%9A%E5%AE%A2%E6%96%87%E7%AB%A0%E6%8F%92%E5%85%A5%E6%9C%AC%E5%9C%B0%E5%9B%BE%E7%89%87%E6%95%99%E7%A8%8B/index.html#sidebar-tags" data-toggle="tab" id="tags-tab">热门标签</a>
                 </li>
                 
                 
@@ -352,9 +380,13 @@
                 
                 <div class="cloud-tags tab-pane nav bs-sidenav fade" id="sidebar-tags">
     
-    <a href="/blog/tags/%E6%95%99%E7%A8%8B/" style="font-size: 12.470086897030807px;" class="tag-cloud-link">教程</a>
+    <a href="/blog/tags/Git/" style="font-size: 12.467213833342175px;" class="tag-cloud-link">Git</a>
     
-    <a href="/blog/tags/%E5%8D%9A%E5%AE%A2%E5%BB%BA%E7%AB%8B/" style="font-size: 19.862717177275787px;" class="tag-cloud-link">博客建立</a>
+    <a href="/blog/tags/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/" style="font-size: 14.913117071740192px;" class="tag-cloud-link">个人博客</a>
+    
+    <a href="/blog/tags/Unity/" style="font-size: 12.032086280352413px;" class="tag-cloud-link">Unity</a>
+    
+    <a href="/blog/tags/%E5%8D%9A%E5%AE%A2%E5%BB%BA%E7%AB%8B/" style="font-size: 10.814382516525455px;" class="tag-cloud-link">博客建立</a>
     
 </div>
                 
