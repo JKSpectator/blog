@@ -246,7 +246,11 @@
         </center>
     </div>
     <div class="content-article">
-        <p>在建立个人博客时，出现博客文章中引用本地图片的需求。下面是步骤：<br>首先，下载hexo-asset-image这个package，（这里结合网络上其他教程内容，得知直接下载官方现在版本有bug，笔者直接采取代替途径做修改）输入命令cnpm install <a target="_blank" rel="noopener" href="https://github.com/CodeFalling/hexo-asset-image">https://github.com/CodeFalling/hexo-asset-image</a> –save安装代替版本（开头命令cnpm与npm差别不大）。<br>然后，在_config.yml中更改post_asset_folder选项为true。<br>最后，应用方式为<img src="/blog/2022/01/08/hexo%E6%A1%86%E6%9E%B6%E4%B8%8B%E5%8D%9A%E5%AE%A2%E6%96%87%E7%AB%A0%E6%8F%92%E5%85%A5%E6%9C%AC%E5%9C%B0%E5%9B%BE%E7%89%87%E6%95%99%E7%A8%8B/%E5%9B%BE%E7%89%87%E6%96%87%E4%BB%B6%E5%90%8D+%E5%90%8E%E7%BC%80" alt="标题">。<br>笔者采用Gitee搭载个人博客的方式。<br>理论上图片加载成功，但是实际上笔者这里由于src的错误转换导致图片加载异常，需要更改hexo-asset-image的配置：<br>进入文件夹node_modules，找到hexo-asset-image的配置文件夹，打开index.js，将文件中$(this).attr(‘src’, config.root + link + src)更改为$(this).attr(‘src’, ‘/‘ + link + src)，图片在Gitee中html文件里建立正确关联，图片加载成功。<br>错误代码反映（Gitee中html文件）：<img src="/blog/2022/01/08/hexo%E6%A1%86%E6%9E%B6%E4%B8%8B%E5%8D%9A%E5%AE%A2%E6%96%87%E7%AB%A0%E6%8F%92%E5%85%A5%E6%9C%AC%E5%9C%B0%E5%9B%BE%E7%89%87%E6%95%99%E7%A8%8B/blog/2000/0/0/try/图片.jpg" alt="图片">即config.root重复。</p>
+        <p>在建立个人博客时，出现博客文章中引用本地图片的需求。下面是步骤：<br>首先，下载hexo-asset-image这个package，（这里结合网络上其他教程内容，得知直接下载官方现在版本有bug，笔者直接采取代替途径做修改）输入命令cnpm install <a target="_blank" rel="noopener" href="https://github.com/CodeFalling/hexo-asset-image">https://github.com/CodeFalling/hexo-asset-image</a> –save安装代替版本（开头命令cnpm与npm差别不大）。<br>然后，在_config.yml中更改post_asset_folder选项为true。<br>最后，应用方式为</p>
+<hr>
+<h2 id><a href="#" class="headerlink" title="."></a><img src="/blog/2022/01/08/hexo%E6%A1%86%E6%9E%B6%E4%B8%8B%E5%8D%9A%E5%AE%A2%E6%96%87%E7%AB%A0%E6%8F%92%E5%85%A5%E6%9C%AC%E5%9C%B0%E5%9B%BE%E7%89%87%E6%95%99%E7%A8%8B/%E5%9B%BE%E7%89%87%E6%96%87%E4%BB%B6%E5%90%8D+%E5%90%8E%E7%BC%80" alt="标题">.</h2><p>笔者采用Gitee搭载个人博客的方式。<br>理论上图片加载成功，但是实际上笔者这里由于src的错误转换导致图片加载异常，需要更改hexo-asset-image的配置：<br>进入文件夹node_modules，找到hexo-asset-image的配置文件夹，打开index.js，将文件中$(this).attr(‘src’, config.root + link + src)更改为$(this).attr(‘src’, ‘/‘ + link + src)，图片在Gitee中html文件里建立正确关联，图片加载成功。<br>错误代码反映（Gitee中html文件）：</p>
+<hr>
+<h2 id="-1"><a href="#-1" class="headerlink" title="."></a><img src="/blog/2022/01/08/hexo%E6%A1%86%E6%9E%B6%E4%B8%8B%E5%8D%9A%E5%AE%A2%E6%96%87%E7%AB%A0%E6%8F%92%E5%85%A5%E6%9C%AC%E5%9C%B0%E5%9B%BE%E7%89%87%E6%95%99%E7%A8%8B/blog/2000/0/0/try/图片.jpg" alt="图片">.</h2><p>即config.root重复。</p>
 
     </div>
 </article>
@@ -380,13 +384,13 @@
                 
                 <div class="cloud-tags tab-pane nav bs-sidenav fade" id="sidebar-tags">
     
-    <a href="/blog/tags/Git/" style="font-size: 12.467213833342175px;" class="tag-cloud-link">Git</a>
+    <a href="/blog/tags/Git/" style="font-size: 16.810668014062045px;" class="tag-cloud-link">Git</a>
     
-    <a href="/blog/tags/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/" style="font-size: 14.913117071740192px;" class="tag-cloud-link">个人博客</a>
+    <a href="/blog/tags/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/" style="font-size: 18.177395776805312px;" class="tag-cloud-link">个人博客</a>
     
-    <a href="/blog/tags/Unity/" style="font-size: 12.032086280352413px;" class="tag-cloud-link">Unity</a>
+    <a href="/blog/tags/Unity/" style="font-size: 9.3065926648924px;" class="tag-cloud-link">Unity</a>
     
-    <a href="/blog/tags/%E5%8D%9A%E5%AE%A2%E5%BB%BA%E7%AB%8B/" style="font-size: 10.814382516525455px;" class="tag-cloud-link">博客建立</a>
+    <a href="/blog/tags/%E5%8D%9A%E5%AE%A2%E5%BB%BA%E7%AB%8B/" style="font-size: 17.99846423911445px;" class="tag-cloud-link">博客建立</a>
     
 </div>
                 
