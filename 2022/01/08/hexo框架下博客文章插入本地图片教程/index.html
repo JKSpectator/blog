@@ -140,7 +140,7 @@
 
   <article class="post-content">
     <h1>hexo框架下博客文章插入本地图片教程</h1>
-    <p>在建立个人博客时，出现博客文章中引用本地图片的需求。下面是步骤：<br>首先，下载hexo-asset-image这个package，（这里结合网络上其他教程内容，得知直接下载官方现在版本有bug，笔者直接采取代替途径做修改）输入命令cnpm install <a href="https://github.com/CodeFalling/hexo-asset-image">https://github.com/CodeFalling/hexo-asset-image</a> –save安装代替版本（开头命令cnpm与npm差别不大）。<br>然后，在_config.yml中更改post_asset_folder选项为true。<br>最后，应用方式为<code>![标题](图片文件名+后缀)</code><br>笔者采用Gitee搭载个人博客的方式。<br>理论上图片加载成功，但是实际上笔者这里由于src的错误转换导致图片加载异常，需要更改hexo-asset-image的配置：<br>进入文件夹node_modules，找到hexo-asset-image的配置文件夹，打开index.js，将文件中$(this).attr(‘src’, config.root + link + src)更改为$(this).attr(‘src’, ‘/‘ + link + src)，图片在Gitee中html文件里建立正确关联，图片加载成功。<br>错误代码反映（Gitee中html文件）：<code>img src=&quot;/blog/blog/2000/0/0/try/图片.jpg&quot; alt=&quot;图片&quot;</code><br>即config.root重复。</p>
+    <p>在建立个人博客时，出现博客文章中引用本地图片的需求。下面是步骤：<br>首先，下载hexo-asset-image这个package，（这里结合网络上其他教程内容，得知直接下载官方现在版本有bug，笔者直接采取代替途径做修改）输入命令cnpm install <a target="_blank" rel="noopener" href="https://github.com/CodeFalling/hexo-asset-image">https://github.com/CodeFalling/hexo-asset-image</a> –save安装代替版本（开头命令cnpm与npm差别不大）。<br>然后，在_config.yml中更改post_asset_folder选项为true。<br>最后，应用方式为<code>![标题](图片文件名+后缀)</code><br>笔者采用Gitee搭载个人博客的方式。<br>理论上图片加载成功，但是实际上笔者这里由于src的错误转换导致图片加载异常，需要更改hexo-asset-image的配置：<br>进入文件夹node_modules，找到hexo-asset-image的配置文件夹，打开index.js，将文件中$(this).attr(‘src’, config.root + link + src)更改为$(this).attr(‘src’, ‘/‘ + link + src)，图片在Gitee中html文件里建立正确关联，图片加载成功。<br>错误代码反映（Gitee中html文件）：<code>img src=&quot;/blog/blog/2000/0/0/try/图片.jpg&quot; alt=&quot;图片&quot;</code><br>即config.root重复。</p>
 
   </article>
 </div>
@@ -163,14 +163,14 @@
       <li>© 2019 HiiTea</li>
       <li><a href="https://jia_k3.gitee.io/blog">Home</a></li>
       
-      <li><a href="https://github.com/sabrinaluo">Github</a></li>
+      <li><a target="_blank" rel="noopener" href="https://github.com/sabrinaluo">Github</a></li>
       
-      <li><a href="http://weibo.com/206663121">Weibo</a></li>
+      <li><a target="_blank" rel="noopener" href="http://weibo.com/206663121">Weibo</a></li>
       
     </ul>
     <div class="footer-theme-info">
-      Theme <a href="//github.com/sabrinaluo/hexo-theme-replica">Replica</a>
-      by <a href="//github.com/sabrinaluo">Hiitea</a> ❤ Powered by Hexo
+      Theme <a target="_blank" rel="noopener" href="//github.com/sabrinaluo/hexo-theme-replica">Replica</a>
+      by <a target="_blank" rel="noopener" href="//github.com/sabrinaluo">Hiitea</a> ❤ Powered by Hexo
     </div>
     </div>
     
