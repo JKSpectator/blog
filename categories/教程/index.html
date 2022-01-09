@@ -1,273 +1,461 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
-
-
+<html>
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <meta name="viewport"
-        content="width=device-width, initial-scale=1.0, user-scalable=no">
-  <title>
-    My Blog
-  </title>
-  <meta name="description" content="My Blog Description">
-  
-  <meta name="author" content="HiiTea">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="author" content="Jia_KHC">
+    
+    <meta name="description" content="欢迎大家与我一起交流学习">
+    
+    
+    
+    
+    
+    
+    <title>categories: 教程 | 布纸刀</title>
+    <link href="https://jia_k3.gitee.io/blog" rel="prefetch" />
 
-  <meta http-equiv="Cache-Control" content="no-transform"/>
-  <meta http-equiv="Cache-Control" content="no-siteapp">
-  <meta name="theme-color" content="#1e2327">
-  <link rel="apple-touch-icon" href="https://github.githubassets.com/apple-touch-icon.png">
-  <link rel="apple-touch-icon" sizes="180x180" href="https://github.githubassets.com/apple-touch-icon-180x180.png">
+    
+<link rel="stylesheet" href="/blog/css/bootstrap.min.css">
+<link rel="stylesheet" href="/blog/css/aos.css">
+<link rel="stylesheet" href="/blog/css/style.css">
 
-  <link rel="icon" type="image/x-icon" href="https://assets-cdn.github.com/favicon.ico">
-  <link rel="stylesheet" href="/blog/css/main.css">
-  <link rel="stylesheet"
-        href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-  
+    
+<script src="/blog/js/jquery.min.js"></script>
 
-  
+    
+<script src="/blog/js/bootstrap.min.js"></script>
 
-  <script src="//cdnjs.cloudflare.com/ajax/libs/vue/1.0.25-csp/vue.min.js"></script>
-  <script src="//cdnjs.cloudflare.com/ajax/libs/moment.js/2.11.2/moment.min.js"></script>
+    
+<script src="/blog/js/aos.js"></script>
+
+    
+<script src="/blog/js/highslide/highslide-full.min.js"></script>
+
+    
+<link rel="stylesheet" href="/blog/js/highslide/highslide.css">
+
+    <style type="text/css">
+        @media (max-width: 768px) {
+            body {
+                background-color: #f0f0f0;
+                background: url('/imgs/xsbg.gif');
+                background-attachment: fixed;
+            }
+        }
+    </style>
+    
+    <!--<script type="text/javascript">
+      if (document.images) {
+        var avatar = new Image();
+        avatar.src = '/blog/imgs/avatar.png'
+        var previews = 'preview1.jpg,preview2.jpg,preview3.jpg,preview4.jpg'.split(',')
+        var previewsPreLoad = []
+        for(var i = 0; i < length; i++) {
+          previewsPreLoad.push(new Image())
+          previewsPreLoad[previewsPreLoad.length - 1].src = '/blog/imgs/preview' + previews[i]
+        }
+      }
+    </script>-->
 <meta name="generator" content="Hexo 6.0.0"></head>
-
-<body id="replica-app">
-
-<nav class="navbar-wrapper">
-  <div class="navbar">
-    <div class="container clearfix">
-      <a href="/blog/" class="navbar-logo"><i class="fa fa-github"></i></a>
-
-      <div class="navbar-search float-left desktop-only">
-        <div class="navbar-search-form">
-          <label for="gsc-i-id1">This website</label>
-          <div id="google-search">
-            <gcse:search></gcse:search>
-          </div>
+<body>
+    <!-- 背景轮播图功能 -->
+    <section class="hidden-xs">
+    <ul class="cb-slideshow">
+        <li><span>天若</span></li>
+        <li><span>有情</span></li>
+        <li><span>天亦老</span></li>
+        <li><span>我为</span></li>
+        <li><span>长者</span></li>
+        <li><span>续一秒</span></li>
+    </ul>
+</section>
+    <!-- 欧尼酱功能, 谁用谁知道 -->
+    
+    <script src="https://use.fontawesome.com/50a3ac939f.js"></script>
+<header class="navbar navbar-inverse" id="gal-header">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed"
+                    data-toggle="collapse" data-target=".bs-navbar-collapse"
+                    aria-expanded="false">
+                <span class="fa fa-lg fa-reorder"></span>
+            </button>
+            <a href="https://jia_k3.gitee.io/blog">
+                
+                <style>
+                    #gal-header .navbar-brand {
+                        height: 54px;
+                        line-height: 24px;
+                        font-size: 28px;
+                        opacity: 1;
+                        background-color: rgba(0,0,0,0);
+                        text-shadow: 0 0 5px #fff,0 0 10px #fff,0 0 15px #fff,0 0 20px #228DFF,0 0 35px #228DFF,0 0 40px #228DFF,0 0 50px #228DFF,0 0 75px #228DFF;
+                    }
+                </style>
+                <!-- 这里使用文字(navbar_text or config.title) -->
+                <div class="navbar-brand">布纸刀</div>
+                
+            </a>
         </div>
-      </div>
-
-      <ul class="navbar-nav float-left">
-        
-        <li><a href="/blog/">Archives</a></li>
-        
-        
-        <li><a href="/blog/">Categories</a></li>
-        
-        
-        <li><a href="/blog/">Tags</a></li>
-        
-        
-        <li class="desktop-only"><a href="/blog/atom.xml" target="_blank">RSS</a></li>
-        
-      </ul>
-
-      <ul class="navbar-nav user-nav float-right desktop-only">
-        <li class="user-nav-notification">
-          <a><span class="user-nav-unread"></span><i class="fa fa-bell"></i></a>
-        </li>
-        <li>
-          <a><i class="fa fa-plus"></i> <i class="fa fa-caret-down"></i></a>
-        </li>
-        <li class="user-nav-logo">
-          <a><img src="https://avatars2.githubusercontent.com/u/5300359?v=4&amp;s=460"> <i class="fa fa-caret-down"></i></i></a>
-        </li>
-      </ul>
+        <div class="collapse navbar-collapse bs-navbar-collapse">
+            <ul class="nav navbar-nav" id="menu-gal">
+                
+                
+                <li class="">
+                    <a href="/blog/">
+                        <i class="fa fa-home"></i>首页
+                    </a>
+                </li>
+                
+                
+                
+                <li class="">
+                    <a href="/blog/archive">
+                        <i class="fa fa-archive"></i>归档
+                    </a>
+                </li>
+                
+                
+                
+                
+                <li class="dropdown">
+                    <!-- TODO 添加hover dropdown效果 -->
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"
+                       aria-haspopup="true" aria-expanded="false" data-hover="dropdown">
+                        <i class="fa fa-list"></i>分类
+                    </a>
+                    <ul class="dropdown-menu">
+                        
+                        
+                        <li>
+                            <a href="/blog/categories/%E6%95%99%E7%A8%8B/">教程</a>
+                        </li>
+                        
+                        <li>
+                            <a href="/blog/categories/%E5%BF%83%E6%83%85%E7%AE%80%E8%AE%B0/">心情简记</a>
+                        </li>
+                        
+                        
+                        
+                    </ul>
+                </li>
+                
+                
+                
+                
+                
+                <li class="dropdown">
+                    <!-- TODO 添加hover dropdown效果 -->
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"
+                       aria-haspopup="true" aria-expanded="false" data-hover="dropdown">
+                        <i class="fa fa-tags"></i>标签
+                    </a>
+                    <ul class="dropdown-menu">
+                        
+                        
+                        <li>
+                            <a href="/blog/tags/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/">个人博客</a>
+                        </li>
+                        
+                        <li>
+                            <a href="/blog/tags/Git/">Git</a>
+                        </li>
+                        
+                        <li>
+                            <a href="/blog/tags/%E5%8D%9A%E5%AE%A2%E5%BB%BA%E7%AB%8B/">博客建立</a>
+                        </li>
+                        
+                        
+                        <li>
+                            <a href="/blog/tags">...</a>
+                        </li>
+                        
+                        
+                    </ul>
+                </li>
+                
+                
+                
+                
+                <li class="">
+                    <a href="/blog/about">
+                        <i class="fa fa-user"></i>关于我
+                    </a>
+                </li>
+                
+                
+            </ul>
+        </div>
     </div>
-  </div>
-</nav>
-
-<div class="main-container">
-  
-
-<div class="container-lg">
-  
-
-<div class="blog-intro">
-  <div class="blog-intro-user">
-    <img class="avatar" src="https://avatars2.githubusercontent.com/u/5300359?v=4&amp;s=460">
-    <div class="user-name">
-      <div class="blog-title"></div>
-      <div class="blog-author"></div>
-        <ul class="user-detail mobile-only">
-    
-    <li>
-      <i class="fa fa-map-marker"></i>
-      hebei
-    </li>
-    
-    <li>
-      <i class="fa fa-envelope-o"></i>
-      <a href="mailto:1073475535@qq.com">1073475535@qq.com</a>
-    </li>
-    
-    <li>
-      <i class="fa fa-link"></i>
-      <a href="https://jia_k3.gitee.io/blog">https://jia_k3.gitee.io/blog</a>
-    </li>
-  </ul>
+</header>
+    <div id="gal-body">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 gal-right" id="mainstay">
+                    <article class="article well article-body" id="article-category">
+    <div class="breadcrumb">
+        <i class="fa fa-home"></i>
+        <a href="https://jia_k3.gitee.io/blog">布纸刀</a>
+        >
+        <span>目录</span>
     </div>
-    <div class="blog-description">
-      
+    <!-- 大型设备详细文章 -->
+    <div class="hidden-xs">
+        <div class="title-article">
+            <h1>
+                <a href="/blog/categories/%E6%95%99%E7%A8%8B/index.html">教程</a>
+            </h1>
+        </div>
     </div>
-  </div>
+    <!-- 小型设备详细文章 -->
+    <div class="visible-xs">
+        <center>
+            <div class="title-article">
+                <h4>
+                    <a href="/blog/categories/%E6%95%99%E7%A8%8B/index.html">教程</a>
+                </h4>
+            </div>
+        </center>
+    </div>
+    <div class="content-article" style="margin-top: 30px;">
+        <div class="alert alert-info" style="font-size: 14px; line-height: 2; font-weight: bold;">
+            
+            <a href="/blog/2022/01/08/hexo%E6%A1%86%E6%9E%B6%E4%B8%8B%E5%8D%9A%E5%AE%A2%E6%96%87%E7%AB%A0%E6%8F%92%E5%85%A5%E6%9C%AC%E5%9C%B0%E5%9B%BE%E7%89%87%E6%95%99%E7%A8%8B/">hexo框架下博客文章插入本地图片教程</a>
+            <br>
+            
+            <a href="/blog/2022/01/07/%E6%96%B0%E6%89%8B%E4%B8%8B%E8%BD%BDUnity3D%E4%BB%A5%E5%8F%8A%E8%BF%9E%E6%8E%A5%E8%84%9A%E6%9C%AC%E7%BC%96%E7%A8%8B%E8%BD%AF%E4%BB%B6-VS-%E6%95%99%E7%A8%8B/">新手下载Unity3D以及连接脚本编程软件(VS)教程</a>
+            <br>
+            
+            
+        </div>
+    </div>
+</article>
+                </div>
+                <aside class="col-md-4 gal-left" id="sidebar">
+    <!-- 此为sidebar的搜索框, 非搜索结果页面 -->
+<aside id="sidebar-search">
+    <div class="search hidden-xs" data-aos="fade-up" data-aos-duration="2000">
+        <form class="form-inline clearfix" id="search-form" method="get"
+              action="/blog/search/index.html">
+            <input type="text" name="s" class="form-control" id="searchInput" placeholder="搜索文章~" autocomplete="off">
+            <button class="btn btn-danger btn-gal" type="submit">
+                <i class="fa fa-search"></i>
+            </button>
+        </form>
+    </div>
+</aside>
+    <aside id="sidebar-author">
+    <div class="panel panel-gal" data-aos="flip-right" data-aos-duration="3000">
+        <div class="panel-heading" style="text-align: center">
+            <i class="fa fa-quote-left"></i>
+            Jia_KHC
+            <i class="fa fa-quote-right"></i>
+        </div>
+        <div class="author-panel text-center">
+            <img src="/blog/imgs/avatar.png" width="140" height="140"
+                 alt="个人头像" class="author-image">
+            <p class="author-description"><p>欢迎大家与我一起交流学习</p>
+</p>
+        </div>
+    </div>
+</aside>
+    
+    <!-- 要配置好leancloud才能开启此小工具 -->
+    
+    
+    <aside id="sidebar-recent_posts">
+    <div class="panel panel-gal recent hidden-xs" data-aos="fade-up" data-aos-duration="2000">
+        <div class="panel-heading">
+            <i class="fa fa-refresh"></i>
+            近期文章
+            <i class="fa fa-times-circle panel-remove"></i>
+            <i class="fa fa-chevron-circle-up panel-toggle"></i>
+        </div>
+        <ul class="list-group list-group-flush">
+            
+            <li class="list-group-item">
+                <span class="post-title">
+                    <a href="/blog/2022/01/09/20220109-aa/">aa</a>
+                </span>
+            </li>
+            
+            <li class="list-group-item">
+                <span class="post-title">
+                    <a href="/blog/2022/01/08/hexo%E6%A1%86%E6%9E%B6%E4%B8%8B%E5%8D%9A%E5%AE%A2%E6%96%87%E7%AB%A0%E6%8F%92%E5%85%A5%E6%9C%AC%E5%9C%B0%E5%9B%BE%E7%89%87%E6%95%99%E7%A8%8B/">hexo框架下博客文章插入本地图片教程</a>
+                </span>
+            </li>
+            
+            <li class="list-group-item">
+                <span class="post-title">
+                    <a href="/blog/2022/01/07/%E6%96%B0%E6%89%8B%E4%B8%8B%E8%BD%BDUnity3D%E4%BB%A5%E5%8F%8A%E8%BF%9E%E6%8E%A5%E8%84%9A%E6%9C%AC%E7%BC%96%E7%A8%8B%E8%BD%AF%E4%BB%B6-VS-%E6%95%99%E7%A8%8B/">新手下载Unity3D以及连接脚本编程软件(VS)教程</a>
+                </span>
+            </li>
+            
+            <li class="list-group-item">
+                <span class="post-title">
+                    <a href="/blog/2022/01/07/Git-Gitee%E5%85%B3%E8%81%94%E6%95%99%E7%A8%8B/">Git+Gitee关联教程</a>
+                </span>
+            </li>
+            
+            <li class="list-group-item">
+                <span class="post-title">
+                    <a href="/blog/2022/01/06/%E5%8D%9A%E5%AE%A2%E5%88%9D%E5%BB%BA/">博客初建</a>
+                </span>
+            </li>
+            
+        </ul>
+    </div>
+</aside>
+    
+    
+    <aside id="sidebar-rand_posts">
+    <div class="panel panel-gal recent hidden-xs" data-aos="fade-up" data-aos-duration="2000">
+        <div class="panel-heading">
+            <i class="fa fa-refresh"></i>
+            随机文章
+            <i class="fa fa-times-circle panel-remove"></i>
+            <i class="fa fa-chevron-circle-up panel-toggle"></i>
+        </div>
+        <ul class="list-group list-group-flush">
+            
+            
+            <li class="list-group-item">
+                <span class="post-title">
+                    <a href="/blog/2022/01/09/20220109-aa/">aa</a>
+                </span>
+            </li>
+            
+            <li class="list-group-item">
+                <span class="post-title">
+                    <a href="/blog/2022/01/08/hexo%E6%A1%86%E6%9E%B6%E4%B8%8B%E5%8D%9A%E5%AE%A2%E6%96%87%E7%AB%A0%E6%8F%92%E5%85%A5%E6%9C%AC%E5%9C%B0%E5%9B%BE%E7%89%87%E6%95%99%E7%A8%8B/">hexo框架下博客文章插入本地图片教程</a>
+                </span>
+            </li>
+            
+            <li class="list-group-item">
+                <span class="post-title">
+                    <a href="/blog/2022/01/07/Git-Gitee%E5%85%B3%E8%81%94%E6%95%99%E7%A8%8B/">Git+Gitee关联教程</a>
+                </span>
+            </li>
+            
+            <li class="list-group-item">
+                <span class="post-title">
+                    <a href="/blog/2022/01/06/%E5%8D%9A%E5%AE%A2%E5%88%9D%E5%BB%BA/">博客初建</a>
+                </span>
+            </li>
+            
+            <li class="list-group-item">
+                <span class="post-title">
+                    <a href="/blog/2022/01/07/%E6%96%B0%E6%89%8B%E4%B8%8B%E8%BD%BDUnity3D%E4%BB%A5%E5%8F%8A%E8%BF%9E%E6%8E%A5%E8%84%9A%E6%9C%AC%E7%BC%96%E7%A8%8B%E8%BD%AF%E4%BB%B6-VS-%E6%95%99%E7%A8%8B/">新手下载Unity3D以及连接脚本编程软件(VS)教程</a>
+                </span>
+            </li>
+            
+        </ul>
+    </div>
+</aside>
+    
+    
+    <aside id="gal-sets">
+        <div class="panel panel-gal hidden-xs" data-aos="fade-up" data-aos-duration="2000">
+            <ul class="nav nav-pills pills-gal">
 
-  <ul class="user-detail desktop-only">
+                
+                <li>
+                    <a href="/blog/categories/%E6%95%99%E7%A8%8B/index.html#sidebar-tags" data-toggle="tab" id="tags-tab">热门标签</a>
+                </li>
+                
+                
+                
+            </ul>
+            <div class="tab-content">
+                
+                <div class="cloud-tags tab-pane nav bs-sidenav fade" id="sidebar-tags">
     
-    <li>
-      <i class="fa fa-map-marker"></i>
-      hebei
-    </li>
+    <a href="/blog/tags/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/" style="font-size: 17.692468177913145px;" class="tag-cloud-link">个人博客</a>
     
-    <li>
-      <i class="fa fa-envelope-o"></i>
-      <a href="mailto:1073475535@qq.com">1073475535@qq.com</a>
-    </li>
+    <a href="/blog/tags/Git/" style="font-size: 8.399344698073126px;" class="tag-cloud-link">Git</a>
     
-    <li>
-      <i class="fa fa-link"></i>
-      <a href="https://jia_k3.gitee.io/blog">https://jia_k3.gitee.io/blog</a>
-    </li>
-  </ul>
-
-  <div class="social-media desktop-only">
-    <h4>Social Media</h4>
-    <ul>
-      
-      <li class="social-media-item"><a href="https://github.com/sabrinaluo" target="_blank"><i class="fa fa-github"></i></a></li>
-      
-      <li class="social-media-item"><a href="http://weibo.com/206663121" target="_blank"><i class="fa fa-weibo"></i></a></li>
-      
-    </ul>
-  </div>
+    <a href="/blog/tags/%E5%8D%9A%E5%AE%A2%E5%BB%BA%E7%AB%8B/" style="font-size: 17.655461853724695px;" class="tag-cloud-link">博客建立</a>
+    
+    <a href="/blog/tags/Unity/" style="font-size: 17.423072407815553px;" class="tag-cloud-link">Unity</a>
+    
 </div>
-
-
-  <div class="blog-detail">
+                
+                
+                
+            </div>
+        </div>
+    </aside>
     
-<nav class="blog-detail-nav desktop-only">
-  <ul class="clearfix">
-    <li class="">
-      <a href="/blog/">Overview</a></li>
-    <li class="">
-      <a href="/blog/">Posts <span class="counter">5</span></a>
-    </li>
-    <li class="selected">
-      <a href="/blog/">Categories <span
-                class="counter">2</span></a></li>
-    <li class="">
-      <a href="/blog/">Tags <span class="counter">4</span></a></li>
-  </ul>
-</nav>
-
-    <div class="body-secondary">
-      <ul class="archive-list">
-        
-        <li class="archive-list-item">
-          <h2><a href="/blog/2022/01/08/hexo%E6%A1%86%E6%9E%B6%E4%B8%8B%E5%8D%9A%E5%AE%A2%E6%96%87%E7%AB%A0%E6%8F%92%E5%85%A5%E6%9C%AC%E5%9C%B0%E5%9B%BE%E7%89%87%E6%95%99%E7%A8%8B/">hexo框架下博客文章插入本地图片教程</a></h2>
-          <p>
-             在建立个人博客时，出现博客文章中引用本地图片的需求。下面是步骤： 首先，下载hexo-asset-image这个package，（这里结合网络上其他教程内容，得知直接下载官方现在版本有bug，笔者直接采取代替途径做修改）输入命令cnpm install  https://github.com/Co...
-          </p>
-          <ul class="tag-list clearfix">
-            
-            <li class="tag-list-item"><a href="/blog/tags/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/">个人博客</a></li>
-            
-          </ul>
-          <div class="post-info">
-            <span>
-              
-              <a class="category-link" href="/blog/categories/%E6%95%99%E7%A8%8B/"><i class="fa fa-folder-open"></i> 教程</a>
-              
-            </span>
-            <span><i class="fa fa-tag"></i> 1 </span>
-            <span>Published {{moment(1641649220000).fromNow()}}</span>
-          </div>
-        </li>
-        
-        <li class="archive-list-item">
-          <h2><a href="/blog/2022/01/07/%E6%96%B0%E6%89%8B%E4%B8%8B%E8%BD%BDUnity3D%E4%BB%A5%E5%8F%8A%E8%BF%9E%E6%8E%A5%E8%84%9A%E6%9C%AC%E7%BC%96%E7%A8%8B%E8%BD%AF%E4%BB%B6-VS-%E6%95%99%E7%A8%8B/">新手下载Unity3D以及连接脚本编程软件(VS)教程</a></h2>
-          <p>
-             本文可以解决除Unity下载的另外一个问题：新建C#脚本文件打开为杂项文件不可编译 
- 首先下载Unity Hub安装包 https://store.unity.com/cn/download?ref=personal  
- 这是类似社区的软件，里面可以获取一些优秀资源，这里我们应用这个下载Uni...
-          </p>
-          <ul class="tag-list clearfix">
-            
-            <li class="tag-list-item"><a href="/blog/tags/Unity/">Unity</a></li>
-            
-          </ul>
-          <div class="post-info">
-            <span>
-              
-              <a class="category-link" href="/blog/categories/%E6%95%99%E7%A8%8B/"><i class="fa fa-folder-open"></i> 教程</a>
-              
-            </span>
-            <span><i class="fa fa-tag"></i> 1 </span>
-            <span>Published {{moment(1641567183000).fromNow()}}</span>
-          </div>
-        </li>
-        
-        <li class="archive-list-item">
-          <h2><a href="/blog/2022/01/07/Git-Gitee%E5%85%B3%E8%81%94%E6%95%99%E7%A8%8B/">Git+Gitee关联教程</a></h2>
-          <p>
-             1.下载Git：Git - Downloads (git-scm.com) 
- 2.配置Gitee的SSH公钥 
- 2.1右键打开Git Bash或者win+r（cmd）打开命令行 
- 2.2输入指令： 
-  ssh-keygen (指定公钥类型(可有可无，无则默认rsa)：-t rsa) (区别...
-          </p>
-          <ul class="tag-list clearfix">
-            
-            <li class="tag-list-item"><a href="/blog/tags/Git/">Git</a></li>
-            
-          </ul>
-          <div class="post-info">
-            <span>
-              
-              <a class="category-link" href="/blog/categories/%E6%95%99%E7%A8%8B/"><i class="fa fa-folder-open"></i> 教程</a>
-              
-            </span>
-            <span><i class="fa fa-tag"></i> 1 </span>
-            <span>Published {{moment(1641560582000).fromNow()}}</span>
-          </div>
-        </li>
-        
-      </ul>
+</aside>
+            </div>
+        </div>
     </div>
-  </div>
-</div>
-
-</div>
-
-<div class="footer-wrapper container">
-  <footer class="footer clearfix">
-    <div class="clearfix">
-    <a href="https://jia_k3.gitee.io/blog" class="footer-logo">
-      <i class="fa fa-github"></i>
-    </a>
-    <ul class="footer-social-link">
-      <li>© 2019 HiiTea</li>
-      <li><a href="https://jia_k3.gitee.io/blog">Home</a></li>
-      
-      <li><a target="_blank" rel="noopener" href="https://github.com/sabrinaluo">Github</a></li>
-      
-      <li><a target="_blank" rel="noopener" href="http://weibo.com/206663121">Weibo</a></li>
-      
-    </ul>
-    <div class="footer-theme-info">
-      Theme <a target="_blank" rel="noopener" href="//github.com/sabrinaluo/hexo-theme-replica">Replica</a>
-      by <a target="_blank" rel="noopener" href="//github.com/sabrinaluo">Hiitea</a> ❤ Powered by Hexo
+    <footer id="gal-footer">
+    <div class="container">
+        Copyright © 2018 Jia_KHC Powered by <a href="https://hexo.io/" target="_blank">Hexo</a>.&nbsp;Theme by <a href="https://github.com/ZEROKISEKI" target="_blank">AONOSORA</a>
     </div>
-    </div>
-    
-  </footer>
+</footer>
+
+<!-- 回到顶端 -->
+<div id="gal-gotop">
+    <i class="fa fa-angle-up"></i>
 </div>
-
-
-
-
-<script src="/blog/js/main.js"></script>
-
 </body>
+
+<script src="/blog/js/activate-power-mode.js"></script>
+
+<script>
+
+    // 配置highslide
+	hs.graphicsDir = '/js/highslide/graphics/'
+    hs.outlineType = "rounded-white";
+    hs.dimmingOpacity = 0.8;
+    hs.outlineWhileAnimating = true;
+    hs.showCredits = false;
+    hs.captionEval = "this.thumb.alt";
+    hs.numberPosition = "caption";
+    hs.align = "center";
+    hs.transitions = ["expand", "crossfade"];
+    hs.lang.number = '共%2张图, 当前是第%1张';
+    hs.addSlideshow({
+      interval: 5000,
+      repeat: true,
+      useControls: true,
+      fixedControls: "fit",
+      overlayOptions: {
+        opacity: 0.75,
+        position: "bottom center",
+        hideOnMouseOut: true
+      }
+    })
+
+    // 初始化aos
+    AOS.init({
+      duration: 1000,
+      delay: 0,
+      easing: 'ease-out-back'
+    });
+
+</script>
+<script>
+	POWERMODE.colorful = 'true';    // make power mode colorful
+	POWERMODE.shake = 'true';       // turn off shake
+	// TODO 这里根据具体情况修改
+	document.body.addEventListener('input', POWERMODE);
+</script>
+<script>
+    window.slideConfig = {
+      prefix: '/blog/imgs/slide/background',
+      ext: 'jpg',
+      maxCount: '6'
+    }
+</script>
+
+<script src="/blog/js/hs.js"></script>
+<script src="/blog/js/blog.js"></script>
+
+
+
+
 </html>
