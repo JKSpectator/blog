@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>布纸刀</title>
+  
+  <subtitle>布纸刀</subtitle>
+  <link href="https://jia_k3.gitee.io/blog/atom.xml" rel="self"/>
+  
+  <link href="https://jia_k3.gitee.io/blog/"/>
+  <updated>2022-01-08T14:26:56.664Z</updated>
+  <id>https://jia_k3.gitee.io/blog/</id>
+  
+  <author>
+    <name>Jia_KHC</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>hexo框架下博客文章插入本地图片教程</title>
+    <link href="https://jia_k3.gitee.io/blog/2022/01/08/hexo%E6%A1%86%E6%9E%B6%E4%B8%8B%E5%8D%9A%E5%AE%A2%E6%96%87%E7%AB%A0%E6%8F%92%E5%85%A5%E6%9C%AC%E5%9C%B0%E5%9B%BE%E7%89%87%E6%95%99%E7%A8%8B/"/>
+    <id>https://jia_k3.gitee.io/blog/2022/01/08/hexo%E6%A1%86%E6%9E%B6%E4%B8%8B%E5%8D%9A%E5%AE%A2%E6%96%87%E7%AB%A0%E6%8F%92%E5%85%A5%E6%9C%AC%E5%9C%B0%E5%9B%BE%E7%89%87%E6%95%99%E7%A8%8B/</id>
+    <published>2022-01-08T13:40:20.000Z</published>
+    <updated>2022-01-08T14:26:56.664Z</updated>
+    
+    <content type="html"><![CDATA[<p>在建立个人博客时，出现博客文章中引用本地图片的需求。下面是步骤：<br>首先，下载hexo-asset-image这个package，（这里结合网络上其他教程内容，得知直接下载官方现在版本有bug，笔者直接采取代替途径做修改）输入命令cnpm install <a href="https://github.com/CodeFalling/hexo-asset-image">https://github.com/CodeFalling/hexo-asset-image</a> –save安装代替版本（开头命令cnpm与npm差别不大）。<br>然后，在_config.yml中更改post_asset_folder选项为true。<br>最后，应用方式为<code>![标题](图片文件名+后缀)</code><br>笔者采用Gitee搭载个人博客的方式。<br>理论上图片加载成功，但是实际上笔者这里由于src的错误转换导致图片加载异常，需要更改hexo-asset-image的配置：<br>进入文件夹node_modules，找到hexo-asset-image的配置文件夹，打开index.js，将文件中$(this).attr(‘src’, config.root + link + src)更改为$(this).attr(‘src’, ‘/‘ + link + src)，图片在Gitee中html文件里建立正确关联，图片加载成功。<br>错误代码反映（Gitee中html文件）：<code>img src=&quot;/blog/blog/2000/0/0/try/图片.jpg&quot; alt=&quot;图片&quot;</code><br>即config.root重复。</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;在建立个人博客时，出现博客文章中引用本地图片的需求。下面是步骤：&lt;br&gt;首先，下载hexo-asset-image这个package，（这里结合网络上其他教程内容，得知直接下载官方现在版本有bug，笔者直接采取代替途径做修改）输入命令cnpm install &lt;a href</summary>
+      
+    
+    
+    
+    <category term="教程" scheme="https://jia_k3.gitee.io/blog/categories/%E6%95%99%E7%A8%8B/"/>
+    
+    
+    <category term="个人博客" scheme="https://jia_k3.gitee.io/blog/tags/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>新手下载Unity3D以及连接脚本编程软件(VS)教程</title>
+    <link href="https://jia_k3.gitee.io/blog/2022/01/07/%E6%96%B0%E6%89%8B%E4%B8%8B%E8%BD%BDUnity3D%E4%BB%A5%E5%8F%8A%E8%BF%9E%E6%8E%A5%E8%84%9A%E6%9C%AC%E7%BC%96%E7%A8%8B%E8%BD%AF%E4%BB%B6-VS-%E6%95%99%E7%A8%8B/"/>
+    <id>https://jia_k3.gitee.io/blog/2022/01/07/%E6%96%B0%E6%89%8B%E4%B8%8B%E8%BD%BDUnity3D%E4%BB%A5%E5%8F%8A%E8%BF%9E%E6%8E%A5%E8%84%9A%E6%9C%AC%E7%BC%96%E7%A8%8B%E8%BD%AF%E4%BB%B6-VS-%E6%95%99%E7%A8%8B/</id>
+    <published>2022-01-07T14:53:03.000Z</published>
+    <updated>2022-01-08T13:43:29.258Z</updated>
+    
+    <content type="html"><![CDATA[<p>本文可以解决除Unity下载的另外一个问题：新建C#脚本文件打开为杂项文件不可编译</p><p>首先下载Unity Hub安装包<a href="https://store.unity.com/cn/download?ref=personal">https://store.unity.com/cn/download?ref=personal</a></p><p>这是类似社区的软件，里面可以获取一些优秀资源，这里我们应用这个下载Unity。</p><p>在最后一栏“安装”的右边，可以找到安装按钮，选择版本以及附带组件即可安装，建议选择下载VS的选项，这样我们就可以直接将所有软件下载好，如果已经有VS了，可以不选VS选项，后面会提到VS配置。</p><p>安装好Unity后，在UnityHub新建项目打开Unity，在Unity最上面工具栏选择Edit中的Preferences选项，在External Tools中External Script Editor里选择VS，这里注意安装VS时要选上Unity对应组件，如果已经安装好VS，重新打开安装软件，选择已安装版本右上角“修改”，选择Unity开发组件添加即可，在Unity安装之前已经安装好VS的同此方法添加Unity组件即可。</p><p>现在在Unity里新建一个C#脚本（Project界面左上角+处），双击打开，若VS显示并不是杂项文件即成功。在这里，如果打开脚本文件显示为杂项文件要先检查上面提到的External Script Editor是否已经修改为VS，再检查是否VS已安装上面提到的Unity开发需要的插件，最后打开建立的Unity项目文件中.sln文件，找到新建的脚本文件，不是杂项文件，且可编译。</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;本文可以解决除Unity下载的另外一个问题：新建C#脚本文件打开为杂项文件不可编译&lt;/p&gt;
+&lt;p&gt;首先下载Unity Hub安装包&lt;a href=&quot;https://store.unity.com/cn/download?ref=personal&quot;&gt;https://store</summary>
+      
+    
+    
+    
+    <category term="教程" scheme="https://jia_k3.gitee.io/blog/categories/%E6%95%99%E7%A8%8B/"/>
+    
+    
+    <category term="Unity" scheme="https://jia_k3.gitee.io/blog/tags/Unity/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Git+Gitee关联教程</title>
+    <link href="https://jia_k3.gitee.io/blog/2022/01/07/Git-Gitee%E5%85%B3%E8%81%94%E6%95%99%E7%A8%8B/"/>
+    <id>https://jia_k3.gitee.io/blog/2022/01/07/Git-Gitee%E5%85%B3%E8%81%94%E6%95%99%E7%A8%8B/</id>
+    <published>2022-01-07T13:03:02.000Z</published>
+    <updated>2022-01-08T13:42:47.835Z</updated>
+    
+    <content type="html"><![CDATA[<p>1.下载Git：Git - Downloads (git-scm.com)</p><p>2.配置Gitee的SSH公钥</p><p>2.1右键打开Git Bash或者win+r（cmd）打开命令行</p><p>2.2输入指令：</p><pre><code>ssh-keygen (指定公钥类型(可有可无，无则默认rsa)：-t rsa) (区别注释(可有可无，添加后更有识别性): -C &quot;ooooooo@ooooo.com&quot;)（注释不必要是邮箱）完整版：ssh-keygen -t rsa -C &quot;123456@qwq.com&quot;</code></pre><p>2.3回车</p><p>2.4提示输入密码，可以直接回车，默认回车无密码</p><p>2.5确认密码，2.4输入什么这里就输入什么</p><p>2.6显示公钥文件存储位置，找到文件****.pub，打开文件复制ssh公钥</p><p>2.7进入Gitee网站登录，找到ssh公钥设置</p><p>2.8设置好标题，将2.6复制的公钥复制到公钥框，确定即可</p><p>3.Git常用命令</p><p>3.0初始化文件路径：git init</p><p>3.1复制库：git clone git链接</p><p>3.2关联远程库：git remote add 关联名称 git链接</p><p>3.2.1查看已链接远程库库：git remote -v</p><p>3.2.2删除已有远程库：git remote rm 关联名称</p><p>3.3向远程库提交文件：</p><p>3.3.1添加文件、文件夹：git add -A(文件夹或者文件名+后缀，-A表示全部)</p><p>3.3.2添加文件，提交前需要提供本次提交的注释：git commit -m “注释”</p><p>3.3.3提交文件：git push -u 关联名称 master</p><p>3.3.4后面提交文件：git push 关联名称（如果Git Bash关闭前面用3.3.3提交过一次，因已用-u确定默认分支，可以使用更为简化版的git push）</p><p>3.3.5向远程库提交文件报错error: failed to push some refs to，原因：两端都有内容且内容不一致，使用命令统一两端文件即可：git pull –rebase 关联名称 master</p><p>希望大家一起学习，共同进步，如果有疑问或错误欢迎联系笔者。</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;1.下载Git：Git - Downloads (git-scm.com)&lt;/p&gt;
+&lt;p&gt;2.配置Gitee的SSH公钥&lt;/p&gt;
+&lt;p&gt;2.1右键打开Git Bash或者win+r（cmd）打开命令行&lt;/p&gt;
+&lt;p&gt;2.2输入指令：&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;ssh-k</summary>
+      
+    
+    
+    
+    <category term="教程" scheme="https://jia_k3.gitee.io/blog/categories/%E6%95%99%E7%A8%8B/"/>
+    
+    
+    <category term="Git" scheme="https://jia_k3.gitee.io/blog/tags/Git/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>博客初建</title>
+    <link href="https://jia_k3.gitee.io/blog/2022/01/06/%E5%8D%9A%E5%AE%A2%E5%88%9D%E5%BB%BA/"/>
+    <id>https://jia_k3.gitee.io/blog/2022/01/06/%E5%8D%9A%E5%AE%A2%E5%88%9D%E5%BB%BA/</id>
+    <published>2022-01-06T10:18:39.000Z</published>
+    <updated>2022-01-08T13:43:14.962Z</updated>
+    
+    <content type="html"><![CDATA[<pre><code>我叫Jia_KHC，经过不断努力终于建立了个人博客，开心至极。</code></pre>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;pre&gt;&lt;code&gt;我叫Jia_KHC，经过不断努力终于建立了个人博客，开心至极。
+&lt;/code&gt;&lt;/pre&gt;
+</summary>
+      
+    
+    
+    
+    <category term="心情简记" scheme="https://jia_k3.gitee.io/blog/categories/%E5%BF%83%E6%83%85%E7%AE%80%E8%AE%B0/"/>
+    
+    
+    <category term="博客建立" scheme="https://jia_k3.gitee.io/blog/tags/%E5%8D%9A%E5%AE%A2%E5%BB%BA%E7%AB%8B/"/>
+    
+  </entry>
+  
+</feed>
