@@ -6,7 +6,7 @@
   <link href="https://jia_k3.gitee.io/blog/atom.xml" rel="self"/>
   
   <link href="https://jia_k3.gitee.io/blog/"/>
-  <updated>2022-01-10T16:29:22.405Z</updated>
+  <updated>2022-01-10T16:53:46.278Z</updated>
   <id>https://jia_k3.gitee.io/blog/</id>
   
   <author>
@@ -15,6 +15,133 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>串的模式匹配KMP算法</title>
+    <link href="https://jia_k3.gitee.io/blog/2022/01/11/chuan-de-mo-shi-pi-pei-kmp-suan-fa/"/>
+    <id>https://jia_k3.gitee.io/blog/2022/01/11/chuan-de-mo-shi-pi-pei-kmp-suan-fa/</id>
+    <published>2022-01-10T16:50:51.000Z</published>
+    <updated>2022-01-10T16:53:46.278Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;​&lt;/p&gt;
+&lt;p&gt;1.&lt;strong&gt;起源&lt;/strong&gt;：由于串的模式匹配的简单算法的时间复杂度不稳定，结合串匹配时指针的移动规律，出现KMP算法&lt;/p&gt;
+&lt;p&gt;2.与简单匹配的&lt;strong&gt;区别&lt;/strong&gt;：匹配比较字符不同时，KMP算法的主串指针不回溯，模式</summary>
+        
+      
+    
+    
+    
+    <category term="笔记" scheme="https://jia_k3.gitee.io/blog/categories/%E7%AC%94%E8%AE%B0/"/>
+    
+    
+    <category term="算法" scheme="https://jia_k3.gitee.io/blog/tags/%E7%AE%97%E6%B3%95/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>图的遍历---深度优先搜索+广度优先搜索</title>
+    <link href="https://jia_k3.gitee.io/blog/2022/01/11/tu-de-bian-li-shen-du-you-xian-sou-suo-guang-du-you-xian-sou-suo/"/>
+    <id>https://jia_k3.gitee.io/blog/2022/01/11/tu-de-bian-li-shen-du-you-xian-sou-suo-guang-du-you-xian-sou-suo/</id>
+    <published>2022-01-10T16:47:52.000Z</published>
+    <updated>2022-01-10T16:49:26.385Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;一、深度优先搜索&quot;&gt;&lt;a href=&quot;#一、深度优先搜索&quot; class=&quot;headerlink&quot; title=&quot;一、深度优先搜索&quot;&gt;&lt;/a&gt;一、深度优先搜索&lt;/h2&gt;&lt;h3 id=&quot;1-基本思想&quot;&gt;&lt;a href=&quot;#1-基本思想&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="笔记" scheme="https://jia_k3.gitee.io/blog/categories/%E7%AC%94%E8%AE%B0/"/>
+    
+    
+    <category term="算法" scheme="https://jia_k3.gitee.io/blog/tags/%E7%AE%97%E6%B3%95/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>最小生成树---Prim算法与Kruskal算法</title>
+    <link href="https://jia_k3.gitee.io/blog/2022/01/11/zui-xiao-sheng-cheng-shu-prim-suan-fa-yu-kruskal-suan-fa/"/>
+    <id>https://jia_k3.gitee.io/blog/2022/01/11/zui-xiao-sheng-cheng-shu-prim-suan-fa-yu-kruskal-suan-fa/</id>
+    <published>2022-01-10T16:45:56.000Z</published>
+    <updated>2022-01-10T16:47:00.519Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h3 id=&quot;一、概念&quot;&gt;&lt;a href=&quot;#一、概念&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="笔记" scheme="https://jia_k3.gitee.io/blog/categories/%E7%AC%94%E8%AE%B0/"/>
+    
+    
+    <category term="算法" scheme="https://jia_k3.gitee.io/blog/tags/%E7%AE%97%E6%B3%95/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>有向无环图的应用</title>
+    <link href="https://jia_k3.gitee.io/blog/2022/01/11/you-xiang-wu-huan-tu-de-ying-yong/"/>
+    <id>https://jia_k3.gitee.io/blog/2022/01/11/you-xiang-wu-huan-tu-de-ying-yong/</id>
+    <published>2022-01-10T16:42:53.000Z</published>
+    <updated>2022-01-10T16:45:06.170Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h3 id=&quot;一、概念&quot;&gt;&lt;a href=&quot;#一、概念&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="笔记" scheme="https://jia_k3.gitee.io/blog/categories/%E7%AC%94%E8%AE%B0/"/>
+    
+    
+    <category term="算法" scheme="https://jia_k3.gitee.io/blog/tags/%E7%AE%97%E6%B3%95/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>浅谈哈夫曼树与哈夫曼编码</title>
+    <link href="https://jia_k3.gitee.io/blog/2022/01/11/qian-tan-ha-fu-man-shu-yu-ha-fu-man-bian-ma/"/>
+    <id>https://jia_k3.gitee.io/blog/2022/01/11/qian-tan-ha-fu-man-shu-yu-ha-fu-man-bian-ma/</id>
+    <published>2022-01-10T16:39:47.000Z</published>
+    <updated>2022-01-10T16:41:37.796Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h3 id=&quot;一、最优树的定义&quot;&gt;&lt;a href=&quot;#一、最优树的定义&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="笔记" scheme="https://jia_k3.gitee.io/blog/categories/%E7%AC%94%E8%AE%B0/"/>
+    
+    
+    <category term="算法" scheme="https://jia_k3.gitee.io/blog/tags/%E7%AE%97%E6%B3%95/"/>
+    
+  </entry>
   
   <entry>
     <title>数据结构---内部排序</title>
