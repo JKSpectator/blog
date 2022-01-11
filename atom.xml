@@ -6,7 +6,7 @@
   <link href="https://jia_k3.gitee.io/blog/atom.xml" rel="self"/>
   
   <link href="https://jia_k3.gitee.io/blog/"/>
-  <updated>2022-01-11T04:19:56.561Z</updated>
+  <updated>2022-01-11T04:39:22.289Z</updated>
   <id>https://jia_k3.gitee.io/blog/</id>
   
   <author>
@@ -15,6 +15,89 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Unity实现多屏分屏效果</title>
+    <link href="https://jia_k3.gitee.io/blog/2022/01/11/unity-shi-xian-duo-ping-fen-ping-xiao-guo/"/>
+    <id>https://jia_k3.gitee.io/blog/2022/01/11/unity-shi-xian-duo-ping-fen-ping-xiao-guo/</id>
+    <published>2022-01-11T04:34:53.000Z</published>
+    <updated>2022-01-11T04:39:22.289Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;Unity版本2021.1.13f1c1        效果：&lt;/p&gt;
+&lt;p&gt;&lt;img</summary>
+        
+      
+    
+    
+    
+    <category term="应用软件-Unity" scheme="https://jia_k3.gitee.io/blog/categories/%E5%BA%94%E7%94%A8%E8%BD%AF%E4%BB%B6-Unity/"/>
+    
+    
+    <category term="Unity" scheme="https://jia_k3.gitee.io/blog/tags/Unity/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Unity制作自适应透明背景（PC端）</title>
+    <link href="https://jia_k3.gitee.io/blog/2022/01/11/unity-zhi-zuo-zi-gua-ying-tou-ming-bei-jing-pc-duan/"/>
+    <id>https://jia_k3.gitee.io/blog/2022/01/11/unity-zhi-zuo-zi-gua-ying-tou-ming-bei-jing-pc-duan/</id>
+    <published>2022-01-11T04:30:40.000Z</published>
+    <updated>2022-01-11T04:32:45.975Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;实现步骤：&lt;/p&gt;
+&lt;p&gt;1.设置MainCamera&lt;/p&gt;
+&lt;p&gt;2.添加C#脚本&lt;/p&gt;
+&lt;p&gt;一、设置MainCamera里的Camera组件，以下图为例子&lt;/p&gt;
+&lt;p&gt;&lt;img</summary>
+        
+      
+    
+    
+    
+    <category term="应用软件-Unity" scheme="https://jia_k3.gitee.io/blog/categories/%E5%BA%94%E7%94%A8%E8%BD%AF%E4%BB%B6-Unity/"/>
+    
+    
+    <category term="Unity" scheme="https://jia_k3.gitee.io/blog/tags/Unity/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>初学者下载Unity3D以及连接脚本编程软件（VS）教程</title>
+    <link href="https://jia_k3.gitee.io/blog/2022/01/11/chu-xue-zhe-xia-zai-unity3d-yi-ji-lian-jie-jiao-ben-bian-cheng-ruan-jian-vs-jiao-cheng/"/>
+    <id>https://jia_k3.gitee.io/blog/2022/01/11/chu-xue-zhe-xia-zai-unity3d-yi-ji-lian-jie-jiao-ben-bian-cheng-ruan-jian-vs-jiao-cheng/</id>
+    <published>2022-01-11T04:27:54.000Z</published>
+    <updated>2022-01-11T04:30:00.148Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;本文可以解决除Unity下载的一个问题：新建C#脚本文件打开为杂项文件不可编译&lt;/p&gt;
+&lt;p&gt;首先下载Unity Hub安装包&lt;a href=&quot;https://store.unity.com/cn/download?ref=personal&quot; title=&quot;Unity</summary>
+        
+      
+    
+    
+    
+    <category term="应用软件-Unity3D" scheme="https://jia_k3.gitee.io/blog/categories/%E5%BA%94%E7%94%A8%E8%BD%AF%E4%BB%B6-Unity3D/"/>
+    
+    
+    <category term="Unity3D" scheme="https://jia_k3.gitee.io/blog/tags/Unity3D/"/>
+    
+    <category term="VS" scheme="https://jia_k3.gitee.io/blog/tags/VS/"/>
+    
+  </entry>
   
   <entry>
     <title>QT与MYSQL（64位）数据库的连接方法</title>
