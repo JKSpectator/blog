@@ -13,7 +13,7 @@
       
       <categories>
           
-          <category> 应用程序-Unity </category>
+          <category> 应用软件-Unity </category>
           
       </categories>
       
@@ -42,7 +42,7 @@
       
       <categories>
           
-          <category> 应用程序-Unity </category>
+          <category> 应用软件-Unity </category>
           
       </categories>
       
@@ -146,7 +146,7 @@
       
       <categories>
           
-          <category> 应用软件-Unity3D </category>
+          <category> 应用软件-Unity </category>
           
       </categories>
       
@@ -458,31 +458,6 @@
         <tags>
             
             <tag> 个人博客 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>新手下载Unity3D以及连接脚本编程软件(VS)教程</title>
-      <link href="/blog/2022/01/07/xin-shou-xia-zai-unity3d-yi-ji-lian-jie-jiao-ben-bian-cheng-ruan-jian-vs-jiao-cheng/"/>
-      <url>/blog/2022/01/07/xin-shou-xia-zai-unity3d-yi-ji-lian-jie-jiao-ben-bian-cheng-ruan-jian-vs-jiao-cheng/</url>
-      
-        <content type="html"><![CDATA[<p>本文可以解决除Unity下载的另外一个问题：新建C#脚本文件打开为杂项文件不可编译</p><p>首先下载Unity Hub安装包<a href="https://store.unity.com/cn/download?ref=personal">https://store.unity.com/cn/download?ref=personal</a></p><p>这是类似社区的软件，里面可以获取一些优秀资源，这里我们应用这个下载Unity。</p><p>在最后一栏“安装”的右边，可以找到安装按钮，选择版本以及附带组件即可安装，建议选择下载VS的选项，这样我们就可以直接将所有软件下载好，如果已经有VS了，可以不选VS选项，后面会提到VS配置。</p><p>安装好Unity后，在UnityHub新建项目打开Unity，在Unity最上面工具栏选择Edit中的Preferences选项，在External Tools中External Script Editor里选择VS，这里注意安装VS时要选上Unity对应组件，如果已经安装好VS，重新打开安装软件，选择已安装版本右上角“修改”，选择Unity开发组件添加即可，在Unity安装之前已经安装好VS的同此方法添加Unity组件即可。</p><p>现在在Unity里新建一个C#脚本（Project界面左上角+处），双击打开，若VS显示并不是杂项文件即成功。在这里，如果打开脚本文件显示为杂项文件要先检查上面提到的External Script Editor是否已经修改为VS，再检查是否VS已安装上面提到的Unity开发需要的插件，最后打开建立的Unity项目文件中.sln文件，找到新建的脚本文件，不是杂项文件，且可编译。</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> 教程 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> Unity </tag>
             
         </tags>
       

@@ -6,7 +6,7 @@
   <link href="https://jia_k3.gitee.io/blog/atom.xml" rel="self"/>
   
   <link href="https://jia_k3.gitee.io/blog/"/>
-  <updated>2022-01-11T08:05:09.886Z</updated>
+  <updated>2022-01-11T08:12:42.642Z</updated>
   <id>https://jia_k3.gitee.io/blog/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="https://jia_k3.gitee.io/blog/2022/01/11/unity-ying-yong-zi-dai-ugui-yu-epplus-ku-zhi-zuo-zi-zhi-excel-xlsx-cao-zuo-cheng-xu/"/>
     <id>https://jia_k3.gitee.io/blog/2022/01/11/unity-ying-yong-zi-dai-ugui-yu-epplus-ku-zhi-zuo-zi-zhi-excel-xlsx-cao-zuo-cheng-xu/</id>
     <published>2022-01-11T07:57:33.000Z</published>
-    <updated>2022-01-11T08:05:09.886Z</updated>
+    <updated>2022-01-11T08:12:42.642Z</updated>
     
     
       
@@ -38,7 +38,7 @@
     
     
     
-    <category term="应用程序-Unity" scheme="https://jia_k3.gitee.io/blog/categories/%E5%BA%94%E7%94%A8%E7%A8%8B%E5%BA%8F-Unity/"/>
+    <category term="应用软件-Unity" scheme="https://jia_k3.gitee.io/blog/categories/%E5%BA%94%E7%94%A8%E8%BD%AF%E4%BB%B6-Unity/"/>
     
     
     <category term="Unity" scheme="https://jia_k3.gitee.io/blog/tags/Unity/"/>
@@ -54,7 +54,7 @@
     <link href="https://jia_k3.gitee.io/blog/2022/01/11/unity-ying-yong-epplus-cao-zuo-excel-xlsx-wen-jian-2021-ban/"/>
     <id>https://jia_k3.gitee.io/blog/2022/01/11/unity-ying-yong-epplus-cao-zuo-excel-xlsx-wen-jian-2021-ban/</id>
     <published>2022-01-11T07:48:26.000Z</published>
-    <updated>2022-01-11T07:59:54.537Z</updated>
+    <updated>2022-01-11T08:12:30.877Z</updated>
     
     
       
@@ -68,7 +68,7 @@
     
     
     
-    <category term="应用程序-Unity" scheme="https://jia_k3.gitee.io/blog/categories/%E5%BA%94%E7%94%A8%E7%A8%8B%E5%BA%8F-Unity/"/>
+    <category term="应用软件-Unity" scheme="https://jia_k3.gitee.io/blog/categories/%E5%BA%94%E7%94%A8%E8%BD%AF%E4%BB%B6-Unity/"/>
     
     
     <category term="Unity" scheme="https://jia_k3.gitee.io/blog/tags/Unity/"/>
@@ -164,7 +164,7 @@
     <link href="https://jia_k3.gitee.io/blog/2022/01/11/chu-xue-zhe-xia-zai-unity3d-yi-ji-lian-jie-jiao-ben-bian-cheng-ruan-jian-vs-jiao-cheng/"/>
     <id>https://jia_k3.gitee.io/blog/2022/01/11/chu-xue-zhe-xia-zai-unity3d-yi-ji-lian-jie-jiao-ben-bian-cheng-ruan-jian-vs-jiao-cheng/</id>
     <published>2022-01-11T04:27:54.000Z</published>
-    <updated>2022-01-11T07:34:18.474Z</updated>
+    <updated>2022-01-11T08:13:03.849Z</updated>
     
     
       
@@ -178,7 +178,7 @@
     
     
     
-    <category term="应用软件-Unity3D" scheme="https://jia_k3.gitee.io/blog/categories/%E5%BA%94%E7%94%A8%E8%BD%AF%E4%BB%B6-Unity3D/"/>
+    <category term="应用软件-Unity" scheme="https://jia_k3.gitee.io/blog/categories/%E5%BA%94%E7%94%A8%E8%BD%AF%E4%BB%B6-Unity/"/>
     
     
     <category term="Unity" scheme="https://jia_k3.gitee.io/blog/tags/Unity/"/>
@@ -495,32 +495,6 @@
   </entry>
   
   <entry>
-    <title>新手下载Unity3D以及连接脚本编程软件(VS)教程</title>
-    <link href="https://jia_k3.gitee.io/blog/2022/01/07/xin-shou-xia-zai-unity3d-yi-ji-lian-jie-jiao-ben-bian-cheng-ruan-jian-vs-jiao-cheng/"/>
-    <id>https://jia_k3.gitee.io/blog/2022/01/07/xin-shou-xia-zai-unity3d-yi-ji-lian-jie-jiao-ben-bian-cheng-ruan-jian-vs-jiao-cheng/</id>
-    <published>2022-01-07T14:53:03.000Z</published>
-    <updated>2022-01-08T13:43:29.258Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;本文可以解决除Unity下载的另外一个问题：新建C#脚本文件打开为杂项文件不可编译&lt;/p&gt;
-&lt;p&gt;首先下载Unity Hub安装包&lt;a</summary>
-        
-      
-    
-    
-    
-    <category term="教程" scheme="https://jia_k3.gitee.io/blog/categories/%E6%95%99%E7%A8%8B/"/>
-    
-    
-    <category term="Unity" scheme="https://jia_k3.gitee.io/blog/tags/Unity/"/>
-    
-  </entry>
-  
-  <entry>
     <title>Git+Gitee关联教程</title>
     <link href="https://jia_k3.gitee.io/blog/2022/01/07/git-gitee-guan-lian-jiao-cheng/"/>
     <id>https://jia_k3.gitee.io/blog/2022/01/07/git-gitee-guan-lian-jiao-cheng/</id>
@@ -544,6 +518,33 @@
     
     
     <category term="Git" scheme="https://jia_k3.gitee.io/blog/tags/Git/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>博客初建</title>
+    <link href="https://jia_k3.gitee.io/blog/2022/01/06/bo-ke-chu-jian/"/>
+    <id>https://jia_k3.gitee.io/blog/2022/01/06/bo-ke-chu-jian/</id>
+    <published>2022-01-06T10:18:39.000Z</published>
+    <updated>2022-01-08T13:43:14.962Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;pre&gt;&lt;code&gt;我叫Jia_KHC，经过不断努力终于建立了个人博客，开心至极。
+&lt;/code&gt;&lt;/pre&gt;
+</summary>
+        
+      
+    
+    
+    
+    <category term="心情简记" scheme="https://jia_k3.gitee.io/blog/categories/%E5%BF%83%E6%83%85%E7%AE%80%E8%AE%B0/"/>
+    
+    
+    <category term="博客建立" scheme="https://jia_k3.gitee.io/blog/tags/%E5%8D%9A%E5%AE%A2%E5%BB%BA%E7%AB%8B/"/>
     
   </entry>
   
