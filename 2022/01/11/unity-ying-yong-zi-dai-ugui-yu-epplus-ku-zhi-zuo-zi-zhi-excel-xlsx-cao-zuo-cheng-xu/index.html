@@ -541,63 +541,63 @@ public class TableCreate : MonoBehaviour
     }
 }
 <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<pre class="line-numbers language-c#"><code class="language-c#">using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-using OfficeOpenXml;
-using System.IO;
-using UnityEngine.UI;
+<pre class="line-numbers language-csharp"><code class="language-csharp"><span class="token keyword">using</span> System<span class="token punctuation">.</span>Collections<span class="token punctuation">;</span>
+<span class="token keyword">using</span> System<span class="token punctuation">.</span>Collections<span class="token punctuation">.</span>Generic<span class="token punctuation">;</span>
+<span class="token keyword">using</span> UnityEngine<span class="token punctuation">;</span>
+<span class="token keyword">using</span> OfficeOpenXml<span class="token punctuation">;</span>
+<span class="token keyword">using</span> System<span class="token punctuation">.</span>IO<span class="token punctuation">;</span>
+<span class="token keyword">using</span> UnityEngine<span class="token punctuation">.</span>UI<span class="token punctuation">;</span>
 
-public class myexcel : MonoBehaviour
-{
-    private  InputField Input_field;
-    public Button Input_button;
-    public Button Open_button;
-    public InputField Filepath_field;
-    public Text filename_text;
+<span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">myexcel</span> <span class="token punctuation">:</span> MonoBehaviour
+<span class="token punctuation">{</span>
+    <span class="token keyword">private</span>  InputField Input_field<span class="token punctuation">;</span>
+    <span class="token keyword">public</span> Button Input_button<span class="token punctuation">;</span>
+    <span class="token keyword">public</span> Button Open_button<span class="token punctuation">;</span>
+    <span class="token keyword">public</span> InputField Filepath_field<span class="token punctuation">;</span>
+    <span class="token keyword">public</span> Text filename_text<span class="token punctuation">;</span>
     
-    public bool isok;
+    <span class="token keyword">public</span> <span class="token keyword">bool</span> isok<span class="token punctuation">;</span>
 
-    public FileInfo fileInfo;
-    private TableCreate tc;
-    private ExcelPackage excelPackage;
-    private string m_Path;
-    private void Awake()
-    {
-        isok = false;
-        tc = this.GetComponent<TableCreate>();
-        Input_button.interactable = false;
-        Input_button.GetComponent<Button>().onClick.AddListener(Input_button_OnClickDown);
-        Open_button.GetComponent<Button>().onClick.AddListener(Open_button_OnClickDown);
-    }
-    void Input_button_OnClickDown()
-    {
-        using (excelPackage = new ExcelPackage(fileInfo))
-        {
-            ExcelWorksheet worksheet = excelPackage.Workbook.Worksheets[1];
-            for(int i=1;i<=tc.Row;i++)
-            {
-                for(int j=1;j<=tc.Col;j++)
-                {
-                    Debug.Log("Canvas/look_Panel/Scroll View/Viewport/Content/row" + i.ToString() + "/Cell" + j.ToString());
-                    Input_field = GameObject.Find("Canvas/look_Panel/Scroll View/Viewport/Content/row" + i.ToString()+"/Cell"+j.ToString()).GetComponent<InputField>();
-                    if (Input_field.text.ToString() != null)
-                        worksheet.Cells[i, j].Value = Input_field.text.ToString();
-                }
-            }
-            excelPackage.Save();
-        }
-    }
-    void Open_button_OnClickDown()
-    {
-        m_Path = Filepath_field.text;//"D:/JK/try.xlsx";
-        fileInfo = new FileInfo(m_Path);
-        filename_text.text = Filepath_field.text;
-        Input_button.interactable = true;
-        Open_button.interactable = false;
-        isok = true;
-    }
-}
+    <span class="token keyword">public</span> FileInfo fileInfo<span class="token punctuation">;</span>
+    <span class="token keyword">private</span> TableCreate tc<span class="token punctuation">;</span>
+    <span class="token keyword">private</span> ExcelPackage excelPackage<span class="token punctuation">;</span>
+    <span class="token keyword">private</span> <span class="token keyword">string</span> m_Path<span class="token punctuation">;</span>
+    <span class="token keyword">private</span> <span class="token keyword">void</span> <span class="token function">Awake</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+    <span class="token punctuation">{</span>
+        isok <span class="token operator">=</span> <span class="token keyword">false</span><span class="token punctuation">;</span>
+        tc <span class="token operator">=</span> <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token generic-method function">GetComponent<span class="token punctuation">&lt;</span>TableCreate<span class="token punctuation">></span></span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        Input_button<span class="token punctuation">.</span>interactable <span class="token operator">=</span> <span class="token keyword">false</span><span class="token punctuation">;</span>
+        Input_button<span class="token punctuation">.</span><span class="token generic-method function">GetComponent<span class="token punctuation">&lt;</span>Button<span class="token punctuation">></span></span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span>onClick<span class="token punctuation">.</span><span class="token function">AddListener</span><span class="token punctuation">(</span>Input_button_OnClickDown<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        Open_button<span class="token punctuation">.</span><span class="token generic-method function">GetComponent<span class="token punctuation">&lt;</span>Button<span class="token punctuation">></span></span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span>onClick<span class="token punctuation">.</span><span class="token function">AddListener</span><span class="token punctuation">(</span>Open_button_OnClickDown<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    <span class="token keyword">void</span> <span class="token function">Input_button_OnClickDown</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+    <span class="token punctuation">{</span>
+        <span class="token keyword">using</span> <span class="token punctuation">(</span>excelPackage <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">ExcelPackage</span><span class="token punctuation">(</span>fileInfo<span class="token punctuation">)</span><span class="token punctuation">)</span>
+        <span class="token punctuation">{</span>
+            ExcelWorksheet worksheet <span class="token operator">=</span> excelPackage<span class="token punctuation">.</span>Workbook<span class="token punctuation">.</span>Worksheets<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+            <span class="token keyword">for</span><span class="token punctuation">(</span><span class="token keyword">int</span> i<span class="token operator">=</span><span class="token number">1</span><span class="token punctuation">;</span>i<span class="token operator">&lt;=</span>tc<span class="token punctuation">.</span>Row<span class="token punctuation">;</span>i<span class="token operator">++</span><span class="token punctuation">)</span>
+            <span class="token punctuation">{</span>
+                <span class="token keyword">for</span><span class="token punctuation">(</span><span class="token keyword">int</span> j<span class="token operator">=</span><span class="token number">1</span><span class="token punctuation">;</span>j<span class="token operator">&lt;=</span>tc<span class="token punctuation">.</span>Col<span class="token punctuation">;</span>j<span class="token operator">++</span><span class="token punctuation">)</span>
+                <span class="token punctuation">{</span>
+                    Debug<span class="token punctuation">.</span><span class="token function">Log</span><span class="token punctuation">(</span><span class="token string">"Canvas/look_Panel/Scroll View/Viewport/Content/row"</span> <span class="token operator">+</span> i<span class="token punctuation">.</span><span class="token function">ToString</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">+</span> <span class="token string">"/Cell"</span> <span class="token operator">+</span> j<span class="token punctuation">.</span><span class="token function">ToString</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+                    Input_field <span class="token operator">=</span> GameObject<span class="token punctuation">.</span><span class="token function">Find</span><span class="token punctuation">(</span><span class="token string">"Canvas/look_Panel/Scroll View/Viewport/Content/row"</span> <span class="token operator">+</span> i<span class="token punctuation">.</span><span class="token function">ToString</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">+</span><span class="token string">"/Cell"</span><span class="token operator">+</span>j<span class="token punctuation">.</span><span class="token function">ToString</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token generic-method function">GetComponent<span class="token punctuation">&lt;</span>InputField<span class="token punctuation">></span></span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+                    <span class="token keyword">if</span> <span class="token punctuation">(</span>Input_field<span class="token punctuation">.</span>text<span class="token punctuation">.</span><span class="token function">ToString</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">!=</span> <span class="token keyword">null</span><span class="token punctuation">)</span>
+                        worksheet<span class="token punctuation">.</span>Cells<span class="token punctuation">[</span>i<span class="token punctuation">,</span> j<span class="token punctuation">]</span><span class="token punctuation">.</span>Value <span class="token operator">=</span> Input_field<span class="token punctuation">.</span>text<span class="token punctuation">.</span><span class="token function">ToString</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+                <span class="token punctuation">}</span>
+            <span class="token punctuation">}</span>
+            excelPackage<span class="token punctuation">.</span><span class="token function">Save</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+    <span class="token keyword">void</span> <span class="token function">Open_button_OnClickDown</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+    <span class="token punctuation">{</span>
+        m_Path <span class="token operator">=</span> Filepath_field<span class="token punctuation">.</span>text<span class="token punctuation">;</span><span class="token comment" spellcheck="true">//"D:/JK/try.xlsx";</span>
+        fileInfo <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">FileInfo</span><span class="token punctuation">(</span>m_Path<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        filename_text<span class="token punctuation">.</span>text <span class="token operator">=</span> Filepath_field<span class="token punctuation">.</span>text<span class="token punctuation">;</span>
+        Input_button<span class="token punctuation">.</span>interactable <span class="token operator">=</span> <span class="token keyword">true</span><span class="token punctuation">;</span>
+        Open_button<span class="token punctuation">.</span>interactable <span class="token operator">=</span> <span class="token keyword">false</span><span class="token punctuation">;</span>
+        isok <span class="token operator">=</span> <span class="token keyword">true</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
 <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <p>在Hierarchy视图中最外层新建空物体，将上面两个脚本添加到此物体上，将此物体作为中控器</p>
 <p>关于脚本所需外部录入值参考下图：</p>
