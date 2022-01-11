@@ -6,7 +6,7 @@
   <link href="https://jia_k3.gitee.io/blog/atom.xml" rel="self"/>
   
   <link href="https://jia_k3.gitee.io/blog/"/>
-  <updated>2022-01-11T08:45:33.449Z</updated>
+  <updated>2022-01-11T09:33:42.040Z</updated>
   <id>https://jia_k3.gitee.io/blog/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>《近世代数》笔记</title>
+    <link href="https://jia_k3.gitee.io/blog/2022/01/11/jin-shi-dai-shu-bi-ji/"/>
+    <id>https://jia_k3.gitee.io/blog/2022/01/11/jin-shi-dai-shu-bi-ji/</id>
+    <published>2022-01-11T09:17:49.000Z</published>
+    <updated>2022-01-11T09:33:42.040Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;一、基本概念&quot;&gt;&lt;a href=&quot;#一、基本概念&quot; class=&quot;headerlink&quot; title=&quot;一、基本概念&quot;&gt;&lt;/a&gt;一、基本概念&lt;/h2&gt;&lt;h3 id=&quot;1-二元运算的定义&quot;&gt;&lt;a href=&quot;#1-二元运算的定义&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="笔记" scheme="https://jia_k3.gitee.io/blog/categories/%E7%AC%94%E8%AE%B0/"/>
+    
+    
+    <category term="理论" scheme="https://jia_k3.gitee.io/blog/tags/%E7%90%86%E8%AE%BA/"/>
+    
+  </entry>
   
   <entry>
     <title>《Head First Java》读书笔记</title>
@@ -518,33 +543,6 @@
     
     
     <category term="个人博客" scheme="https://jia_k3.gitee.io/blog/tags/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Git+Gitee关联教程</title>
-    <link href="https://jia_k3.gitee.io/blog/2022/01/07/git-gitee-guan-lian-jiao-cheng/"/>
-    <id>https://jia_k3.gitee.io/blog/2022/01/07/git-gitee-guan-lian-jiao-cheng/</id>
-    <published>2022-01-07T13:03:02.000Z</published>
-    <updated>2022-01-10T10:03:13.723Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;1.下载Git：Git - Downloads (git-scm.com)&lt;/p&gt;
-&lt;p&gt;2.配置Gitee的SSH公钥&lt;/p&gt;
-&lt;p&gt;2.1右键打开Git</summary>
-        
-      
-    
-    
-    
-    <category term="教程" scheme="https://jia_k3.gitee.io/blog/categories/%E6%95%99%E7%A8%8B/"/>
-    
-    
-    <category term="Git" scheme="https://jia_k3.gitee.io/blog/tags/Git/"/>
     
   </entry>
   
