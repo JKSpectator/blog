@@ -4,6 +4,83 @@
   
     
     <entry>
+      <title>QT与MYSQL（64位）数据库的连接方法</title>
+      <link href="/blog/2022/01/11/qt-yu-mysql-64-wei-shu-ju-ku-de-lian-jie-fang-fa/"/>
+      <url>/blog/2022/01/11/qt-yu-mysql-64-wei-shu-ju-ku-de-lian-jie-fang-fa/</url>
+      
+        <content type="html"><![CDATA[<p>首先打开一个QT项目，在.pro里输入下图代码</p><p><img src="/blog/2022/01/11/qt-yu-mysql-64-wei-shu-ju-ku-de-lian-jie-fang-fa/266541412234715.png">​</p><p>然后在main.cpp文件就可以引用头文件如下图</p><p><img src="/blog/2022/01/11/qt-yu-mysql-64-wei-shu-ju-ku-de-lian-jie-fang-fa/263451412252502.png">​</p><p>在**.ui文件**中添加一个QLabel</p><p>在其对应**.h文件**中添加自定义函数void show1(void);这里注意.h文件并不是ui_**.h</p><p>在其对应**.cpp文件**添加如下代码</p><p><img src="/blog/2022/01/11/qt-yu-mysql-64-wei-shu-ju-ku-de-lian-jie-fang-fa/260391412225547.png">​</p><p>其中的test\jk\123456分别对应连接<strong>数据库名称</strong>、数据库<strong>user名称</strong>（初始为root)、user的<strong>密码</strong></p><p>点击运行</p><p>如果界面上Label显示1，则恭喜你连接成功！！</p><p>如果报错没有MYSQL驱动的话，在MYSQL文件夹里<strong>lib文件夹</strong>下找到下图文件</p><p><img src="/blog/2022/01/11/qt-yu-mysql-64-wei-shu-ju-ku-de-lian-jie-fang-fa/254311412224938.png">​</p><p>复制到QT的<strong>bin文件</strong>下，重启QT，打开项目，点击运行，主界面显示1，则恭喜你成功了！！</p><p>如果还不成功，显示无MYSQL驱动，而在这行下一行又提示MYSQL驱动存在，请检查MYSQL的位数，应该是64位，而我们的QT一般是32位的，接下来我们要使QT可以与MYSQL 连接的话，有<strong>两个办法</strong>：</p><p>1.重新下载32位MYSQL</p><p>2.通过操作应用QT64位编译器（VS），也可以直接在VS编程，接下开讲解如何在QT采用64位编程</p><p>首先在VS上找到QT扩展，并下载，或者通过其他渠道下载</p><p>只需在QT新建文件时有如图选项</p><p><img src="/blog/2022/01/11/qt-yu-mysql-64-wei-shu-ju-ku-de-lian-jie-fang-fa/251251412232053.png">​</p><p>新建一个勾选上个选项的QT文件，然后开始下一步配置</p><p><img src="/blog/2022/01/11/qt-yu-mysql-64-wei-shu-ju-ku-de-lian-jie-fang-fa/248191412223106.png">​</p><p><img src="/blog/2022/01/11/qt-yu-mysql-64-wei-shu-ju-ku-de-lian-jie-fang-fa/240131412220602.png">​</p><p><img src="/blog/2022/01/11/qt-yu-mysql-64-wei-shu-ju-ku-de-lian-jie-fang-fa/236081412230072.png">​</p><p> 有困难的可能在Debugger这里，要下载Windows Kits</p><p><a href="https://developer.microsoft.com/zh-cn/windows/downloads/windows-10-sdk/" title="Windows 10 SDK - Windows 应用开发 (microsoft.com)">Windows 10 SDK - Windows 应用开发 (microsoft.com)</a></p><p>下载后安装时勾选Debugger选项</p><p>QT应该会自己感应到，可以重启QT尝试（要么就手动配置）</p><p>应用上图选项后点击运行，可能会报错</p><p>‘nullptr’ is incompatible with C++98</p><p>按照下图配置</p><p><img src="/blog/2022/01/11/qt-yu-mysql-64-wei-shu-ju-ku-de-lian-jie-fang-fa/233021412236938.png">​</p><p>点击运行应该行了</p><p>最后提醒：新建项目选择VS编译器（64位），其他选项修改完成后单击OK，可以重新进入查看修改是否完成。</p><p>​</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 应用软件-QT </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> QT </tag>
+            
+            <tag> MYSQL </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>QT程序打包方法</title>
+      <link href="/blog/2022/01/11/qt-cheng-xu-da-bao-fang-fa/"/>
+      <url>/blog/2022/01/11/qt-cheng-xu-da-bao-fang-fa/</url>
+      
+        <content type="html"><![CDATA[<p>要想使自己的QT程序可以在其他电脑上运行，要学会打包</p><p>首先，打开要打包的项目，在右下角</p><p><img src="/blog/2022/01/11/qt-cheng-xu-da-bao-fang-fa/239330812243392.png">​</p><p>选择release，点击运行</p><p>找到生成的对应的release文件夹，找到对应的.exe文件，复制到你一个新建的文件夹，用来储存打包后的文件，然后找到编译器对应的命令行程序</p><p><img src="/blog/2022/01/11/qt-cheng-xu-da-bao-fang-fa/233230812248256.png">​</p><p>编译器可以在前面找文件时发现</p><p><img src="/blog/2022/01/11/qt-cheng-xu-da-bao-fang-fa/226170812225816.png">​</p><p>进入命令行程序，cd到前面提到的存放.exe的文件夹目录</p><p>具体命令行代码：</p><p>1.cd到另一个盘，要先加上D：回车，然后如2</p><p>2.输入：cd (文件夹目录）回车</p><p>最后输入<code>windeployqt name.exe</code></p><p>name替换为自己的.exe文件名称即可，点击回车，等到下一个可输入行推出就行了</p><p>​</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 应用软件-QT </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 程序打包 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>QT:Tab Widget的简单使用</title>
+      <link href="/blog/2022/01/11/qt-tab-widget-de-jian-dan-shi-yong/"/>
+      <url>/blog/2022/01/11/qt-tab-widget-de-jian-dan-shi-yong/</url>
+      
+        <content type="html"><![CDATA[<h1 id="一、QT的UI设计界面中Tab-Widget可进行的图形界面操作"><a href="#一、QT的UI设计界面中Tab-Widget可进行的图形界面操作" class="headerlink" title="一、QT的UI设计界面中Tab Widget可进行的图形界面操作"></a>一、QT的UI设计界面中Tab Widget可进行的图形界面操作</h1><h2 id="1-添加、删除Tab"><a href="#1-添加、删除Tab" class="headerlink" title="1.添加、删除Tab"></a>1.添加、删除Tab</h2><h3 id="1-1添加Tab"><a href="#1-1添加Tab" class="headerlink" title="1.1添加Tab"></a>1.1添加Tab</h3><p><img src="/blog/2022/01/11/qt-tab-widget-de-jian-dan-shi-yong/315645411244575.png">​</p><h3 id="1-2删除Tab"><a href="#1-2删除Tab" class="headerlink" title="1.2删除Tab"></a>1.2删除Tab</h3><p><img src="/blog/2022/01/11/qt-tab-widget-de-jian-dan-shi-yong/312575411247073.png"></p><h2 id="2-每个Tab的属性修改"><a href="#2-每个Tab的属性修改" class="headerlink" title="2.每个Tab的属性修改"></a>2.每个Tab的属性修改</h2><h3 id="2-1名字等基本属性修改"><a href="#2-1名字等基本属性修改" class="headerlink" title="2.1名字等基本属性修改"></a>2.1名字等基本属性修改</h3><p><img src="/blog/2022/01/11/qt-tab-widget-de-jian-dan-shi-yong/309495411249469.png">​</p><h3 id="2-2修改Tab标签大小"><a href="#2-2修改Tab标签大小" class="headerlink" title="2.2修改Tab标签大小"></a>2.2修改Tab标签大小</h3><p>2.2.0修改Tab标签名称，Tab标签大小自动适应 </p><h1 id="二、QT的程序编辑界面中Tab-Widget可进行的代码操作"><a href="#二、QT的程序编辑界面中Tab-Widget可进行的代码操作" class="headerlink" title="二、QT的程序编辑界面中Tab Widget可进行的代码操作"></a>二、QT的程序编辑界面中Tab Widget可进行的代码操作</h1><h2 id="1-通过QT自带帮助文档找到可进行的操作"><a href="#1-通过QT自带帮助文档找到可进行的操作" class="headerlink" title="1.通过QT自带帮助文档找到可进行的操作"></a>1.通过QT自带帮助文档找到可进行的操作</h2><p><img src="/blog/2022/01/11/qt-tab-widget-de-jian-dan-shi-yong/306425411231589.png">​</p><h2 id="2-常用属性"><a href="#2-常用属性" class="headerlink" title="2.常用属性"></a>2.常用属性</h2><h3 id="2-1count"><a href="#2-1count" class="headerlink" title="2.1count"></a>2.1count</h3><p>2.1.0描述Tab页的数量</p><p><img src="/blog/2022/01/11/qt-tab-widget-de-jian-dan-shi-yong/302355411235835.png"></p><h3 id="2-2"><a href="#2-2" class="headerlink" title="2.2"></a>2.2</h3><p>currentIndex</p><p>2.2.0描述正在展示Tab页的序号</p><p><img src="/blog/2022/01/11/qt-tab-widget-de-jian-dan-shi-yong/299295411239280.png">​</p><h2 id="3-常用函数"><a href="#3-常用函数" class="headerlink" title="3.常用函数"></a>3.常用函数</h2><h3 id="3-1addTab"><a href="#3-1addTab" class="headerlink" title="3.1addTab"></a>3.1addTab</h3><p>3.1.0添加Tab页（界面，Tab图标，Tab名字）</p><p><img src="/blog/2022/01/11/qt-tab-widget-de-jian-dan-shi-yong/296215411246611.png">​</p><h3 id="3-2insertTab"><a href="#3-2insertTab" class="headerlink" title="3.2insertTab"></a>3.2insertTab</h3><p>3.2.0向指定位置插入Tab页（插入位置，界面，Tab界面，Tab名字）</p><p><img src="/blog/2022/01/11/qt-tab-widget-de-jian-dan-shi-yong/292145411226445.png">​</p><h3 id="3-3removeTab"><a href="#3-3removeTab" class="headerlink" title="3.3removeTab"></a>3.3removeTab</h3><p>3.3.0删除指定Tab页（Tab页序号）</p><p><img src="/blog/2022/01/11/qt-tab-widget-de-jian-dan-shi-yong/288085411238578.png">​</p><h3 id="3-4currentIndex"><a href="#3-4currentIndex" class="headerlink" title="3.4currentIndex"></a>3.4currentIndex</h3><p>3.4.0输出正在显示Tab页的序号</p><p><img src="/blog/2022/01/11/qt-tab-widget-de-jian-dan-shi-yong/285015411220152.png">​</p><h3 id="3-5setCurrentIndex"><a href="#3-5setCurrentIndex" class="headerlink" title="3.5setCurrentIndex"></a>3.5setCurrentIndex</h3><p>3.5.0将指定序号的Tab页显示（Tab页序号）</p><hr><p>希望大家一起学习，共同进步，如果有疑问或错误欢迎联系笔者。</p><p>​</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 应用软件-QT </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> QT组件 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>串的模式匹配KMP算法</title>
       <link href="/blog/2022/01/11/chuan-de-mo-shi-pi-pei-kmp-suan-fa/"/>
       <url>/blog/2022/01/11/chuan-de-mo-shi-pi-pei-kmp-suan-fa/</url>

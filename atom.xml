@@ -6,7 +6,7 @@
   <link href="https://jia_k3.gitee.io/blog/atom.xml" rel="self"/>
   
   <link href="https://jia_k3.gitee.io/blog/"/>
-  <updated>2022-01-10T16:57:46.572Z</updated>
+  <updated>2022-01-11T04:19:56.561Z</updated>
   <id>https://jia_k3.gitee.io/blog/</id>
   
   <author>
@@ -17,11 +17,91 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>QT与MYSQL（64位）数据库的连接方法</title>
+    <link href="https://jia_k3.gitee.io/blog/2022/01/11/qt-yu-mysql-64-wei-shu-ju-ku-de-lian-jie-fang-fa/"/>
+    <id>https://jia_k3.gitee.io/blog/2022/01/11/qt-yu-mysql-64-wei-shu-ju-ku-de-lian-jie-fang-fa/</id>
+    <published>2022-01-11T04:14:01.000Z</published>
+    <updated>2022-01-11T04:19:56.561Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;首先打开一个QT项目，在.pro里输入下图代码&lt;/p&gt;
+&lt;p&gt;&lt;img</summary>
+        
+      
+    
+    
+    
+    <category term="应用软件-QT" scheme="https://jia_k3.gitee.io/blog/categories/%E5%BA%94%E7%94%A8%E8%BD%AF%E4%BB%B6-QT/"/>
+    
+    
+    <category term="QT" scheme="https://jia_k3.gitee.io/blog/tags/QT/"/>
+    
+    <category term="MYSQL" scheme="https://jia_k3.gitee.io/blog/tags/MYSQL/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>QT程序打包方法</title>
+    <link href="https://jia_k3.gitee.io/blog/2022/01/11/qt-cheng-xu-da-bao-fang-fa/"/>
+    <id>https://jia_k3.gitee.io/blog/2022/01/11/qt-cheng-xu-da-bao-fang-fa/</id>
+    <published>2022-01-11T04:10:06.000Z</published>
+    <updated>2022-01-11T04:13:21.657Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;要想使自己的QT程序可以在其他电脑上运行，要学会打包&lt;/p&gt;
+&lt;p&gt;首先，打开要打包的项目，在右下角&lt;/p&gt;
+&lt;p&gt;&lt;img</summary>
+        
+      
+    
+    
+    
+    <category term="应用软件-QT" scheme="https://jia_k3.gitee.io/blog/categories/%E5%BA%94%E7%94%A8%E8%BD%AF%E4%BB%B6-QT/"/>
+    
+    
+    <category term="程序打包" scheme="https://jia_k3.gitee.io/blog/tags/%E7%A8%8B%E5%BA%8F%E6%89%93%E5%8C%85/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>QT:Tab Widget的简单使用</title>
+    <link href="https://jia_k3.gitee.io/blog/2022/01/11/qt-tab-widget-de-jian-dan-shi-yong/"/>
+    <id>https://jia_k3.gitee.io/blog/2022/01/11/qt-tab-widget-de-jian-dan-shi-yong/</id>
+    <published>2022-01-11T03:46:04.000Z</published>
+    <updated>2022-01-11T04:12:26.887Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;一、QT的UI设计界面中Tab-Widget可进行的图形界面操作&quot;&gt;&lt;a href=&quot;#一、QT的UI设计界面中Tab-Widget可进行的图形界面操作&quot; class=&quot;headerlink&quot; title=&quot;一、QT的UI设计界面中Tab</summary>
+        
+      
+    
+    
+    
+    <category term="应用软件-QT" scheme="https://jia_k3.gitee.io/blog/categories/%E5%BA%94%E7%94%A8%E8%BD%AF%E4%BB%B6-QT/"/>
+    
+    
+    <category term="QT组件" scheme="https://jia_k3.gitee.io/blog/tags/QT%E7%BB%84%E4%BB%B6/"/>
+    
+  </entry>
+  
+  <entry>
     <title>串的模式匹配KMP算法</title>
     <link href="https://jia_k3.gitee.io/blog/2022/01/11/chuan-de-mo-shi-pi-pei-kmp-suan-fa/"/>
     <id>https://jia_k3.gitee.io/blog/2022/01/11/chuan-de-mo-shi-pi-pei-kmp-suan-fa/</id>
     <published>2022-01-10T16:50:51.000Z</published>
-    <updated>2022-01-10T16:57:46.572Z</updated>
+    <updated>2022-01-10T17:03:49.961Z</updated>
     
     
       
