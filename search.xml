@@ -4,6 +4,58 @@
   
     
     <entry>
+      <title>Unity应用EPPlus操作Excel（.xlsx）文件（2021版）</title>
+      <link href="/blog/2022/01/11/unity-ying-yong-epplus-cao-zuo-excel-xlsx-wen-jian-2021-ban/"/>
+      <url>/blog/2022/01/11/unity-ying-yong-epplus-cao-zuo-excel-xlsx-wen-jian-2021-ban/</url>
+      
+        <content type="html"><![CDATA[<p>实现步骤：</p><p>1.Unity连接VS，参考<a href="https://jia_k3.gitee.io/blog/2022/01/11/chu-xue-zhe-xia-zai-unity3d-yi-ji-lian-jie-jiao-ben-bian-cheng-ruan-jian-vs-jiao-cheng/">初学者下载Unity3D以及连接脚本编程软件（VS）教程</a></p><p>2.获取EPPlus.dll并导入Unity</p><p>3.代码实现</p><p>一、本文实现主要基于VS，所以需要Unity连接VS，参考博客：</p><p><a href="https://jia_k3.gitee.io/blog/2022/01/11/chu-xue-zhe-xia-zai-unity3d-yi-ji-lian-jie-jiao-ben-bian-cheng-ruan-jian-vs-jiao-cheng/">初学者下载Unity3D以及连接脚本编程软件（VS）教程</a></p><p>二、在Unity里新建C#文件，双击文件用VS打开（如未采用第一步连接VS，需要导入Epplus.dll文件，如Unity连接VS后在VS做如下步骤后不需要导入Epplus.dll文件）</p><p>在VS界面右侧， 右键解决方案，点击管理解决方案的NuGet程序包</p><p><img src="/blog/2022/01/11/unity-ying-yong-epplus-cao-zuo-excel-xlsx-wen-jian-2021-ban/123324915243922.png">​</p><p> 进入以下界面，检索EPPlus（版本笔者这里安装4.*版本可以，最新版报错），如下图安装：</p><p><img src="/blog/2022/01/11/unity-ying-yong-epplus-cao-zuo-excel-xlsx-wen-jian-2021-ban/118264915248814.png">​</p><p> 在右侧界面解决方案里选择Assembly-CSharp/Assembly-CSharp.Player点击，进入以下界面，点击EPPlus</p><p><img src="/blog/2022/01/11/unity-ying-yong-epplus-cao-zuo-excel-xlsx-wen-jian-2021-ban/113164915230005.png">​</p><p> 打开属性板（一般在解决方案界面下方，也可右键EPPlus打开属性），找到路径</p><p><img src="/blog/2022/01/11/unity-ying-yong-epplus-cao-zuo-excel-xlsx-wen-jian-2021-ban/109094915237146.png">​</p><p> 在文件管理器打开路径，找到EPPlus.dll</p><p><img src="/blog/2022/01/11/unity-ying-yong-epplus-cao-zuo-excel-xlsx-wen-jian-2021-ban/104044915246410.png">​</p><p> 在Unity的Project界面新建文件夹Plugins，将EPPlus.dll复制进去</p><p>三、在VS打开上面新建的C#文件，编写代码：</p><p>添加命名空间引用</p><pre class="line-numbers language-c#"><code class="language-c#">using OfficeOpenXml;using System.IO;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre><p> 打开文件，m_Path是Excel表格文件的路径，这里可以尝试使用using语句（强行释放无用空间），或是自己挨个释放</p><pre class="line-numbers language-c#"><code class="language-c#">FileInfo fileInfo = new FileInfo(m_Path);ExcelPackage excelPackage = new ExcelPackage(fileInfo)<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre><p>编辑文件内容</p><pre class="line-numbers language-c#"><code class="language-c#">//获取文件内表，[]从1开始ExcelWorksheet worksheet = excelPackage.Workbook.Worksheets[1];//获取元素，第一行第一列元素//string a11 = worksheet.Cells[1, 1].Value.ToString();//输入元素，直接赋值//worksheet.Cells[1, 1].Value = "222";//建立新表操作：打开不存在的表<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><p>最后用Debug语句可以查看表内容读取情况：Debug.Log(元素）;</p><p>参考资料：<a href="https://www.bilibili.com/video/BV1Yt411F7CB?share_source=copy_web" title="【Unity教程】Excel文件的读取和写入 (使用EPPlus)_哔哩哔哩_bilibili">【Unity教程】Excel文件的读取和写入 (使用EPPlus)_哔哩哔哩_bilibili</a></p><p>如若项目有任何问题，欢迎批评指正或讨论。</p><p>​</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 应用程序-Unity </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Unity </tag>
+            
+            <tag> EPPlus </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Unity制作简单的精灵图动画</title>
+      <link href="/blog/2022/01/11/unity-zhi-zuo-jian-dan-de-jing-ling-tu-dong-hua/"/>
+      <url>/blog/2022/01/11/unity-zhi-zuo-jian-dan-de-jing-ling-tu-dong-hua/</url>
+      
+        <content type="html"><![CDATA[<p> <strong>使用精灵图制作动画步骤：</strong></p><p>1.精灵图准备</p><p>2.制作动画</p><p><strong>一、精灵图导入与切割</strong></p><p>第一种情况：导入的是已经切割好的精灵图，请直接跳动到二</p><p>第二种情况：导入的是需要切割的精灵图，需要切割，切割步骤：</p><p>1按照下图设置导入的图片</p><p><img src="/blog/2022/01/11/unity-zhi-zuo-jian-dan-de-jing-ling-tu-dong-hua/32084415245778.png">​</p><p>2点击上图中右下角按钮（Sprite Editor)，进入精灵图切割界面，一般只需要自动切割即可</p><p><img src="/blog/2022/01/11/unity-zhi-zuo-jian-dan-de-jing-ling-tu-dong-hua/27014415240023.png"></p><p> 点击切割界面左上角Slice按钮，配置如上图，点击Slice，自动切割后点击切割界面右上角Apply</p><p>至此切割完成。</p><p><strong>二、制作动画步骤</strong></p><p>1选择上面精灵图中合适的一张图，拖入Hierarchy界面</p><p>2选中1中图片的情况下调出动画编辑界面，如下图（按Ctrl+6同样可以）</p><p><img src="/blog/2022/01/11/unity-zhi-zuo-jian-dan-de-jing-ling-tu-dong-hua/23954415221980.png">​</p><p> 3进入动画编辑界面后新建第一个动画，选择储存位置后开始制作动画（或是按照下图新建动画）</p><p><img src="/blog/2022/01/11/unity-zhi-zuo-jian-dan-de-jing-ling-tu-dong-hua/17904415231649.png">​</p><p>点击Create New Clip…即可新建动画</p><p>4在精灵图中选择合适的图拖入编辑界面（下图的右侧）</p><p><img src="/blog/2022/01/11/unity-zhi-zuo-jian-dan-de-jing-ling-tu-dong-hua/13834415234882.png">​</p><p>按照合适顺序调整精灵图顺序，动画播放速度不用太考虑，调用动画时可以调整（如下图，下图为调用动画时状态机界面调整示意）</p><p><img src="/blog/2022/01/11/unity-zhi-zuo-jian-dan-de-jing-ling-tu-dong-hua/9784415241837.png"></p><p>编辑完动画后退出动画编辑界面即可 。</p><p>如若项目有任何问题，欢迎批评指正或讨论。</p><p>​</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 应用软件-Unity </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Unity </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Unity实现多屏分屏效果</title>
       <link href="/blog/2022/01/11/unity-shi-xian-duo-ping-fen-ping-xiao-guo/"/>
       <url>/blog/2022/01/11/unity-shi-xian-duo-ping-fen-ping-xiao-guo/</url>
