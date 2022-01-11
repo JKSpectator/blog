@@ -6,7 +6,7 @@
   <link href="https://jia_k3.gitee.io/blog/atom.xml" rel="self"/>
   
   <link href="https://jia_k3.gitee.io/blog/"/>
-  <updated>2022-01-11T07:54:26.193Z</updated>
+  <updated>2022-01-11T08:05:09.886Z</updated>
   <id>https://jia_k3.gitee.io/blog/</id>
   
   <author>
@@ -17,11 +17,44 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>Unity应用自带UGUI与EPPlus库制作自制Excel（.xlsx）操作程序</title>
+    <link href="https://jia_k3.gitee.io/blog/2022/01/11/unity-ying-yong-zi-dai-ugui-yu-epplus-ku-zhi-zuo-zi-zhi-excel-xlsx-cao-zuo-cheng-xu/"/>
+    <id>https://jia_k3.gitee.io/blog/2022/01/11/unity-ying-yong-zi-dai-ugui-yu-epplus-ku-zhi-zuo-zi-zhi-excel-xlsx-cao-zuo-cheng-xu/</id>
+    <published>2022-01-11T07:57:33.000Z</published>
+    <updated>2022-01-11T08:05:09.886Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;实现步骤：&lt;/p&gt;
+&lt;p&gt;1.向Unity导入EPPlus相关文件，助力Unity操作Excel文件&lt;/p&gt;
+&lt;p&gt;2.应用Unity自带UGUI制作基础表格&lt;/p&gt;
+&lt;p&gt;3.基于前两步制作可存可改Excel信息的表格&lt;/p&gt;
+&lt;p&gt;一、向Unity中导入EPPlus相关</summary>
+        
+      
+    
+    
+    
+    <category term="应用程序-Unity" scheme="https://jia_k3.gitee.io/blog/categories/%E5%BA%94%E7%94%A8%E7%A8%8B%E5%BA%8F-Unity/"/>
+    
+    
+    <category term="Unity" scheme="https://jia_k3.gitee.io/blog/tags/Unity/"/>
+    
+    <category term="C#" scheme="https://jia_k3.gitee.io/blog/tags/C/"/>
+    
+    <category term="EPPlus" scheme="https://jia_k3.gitee.io/blog/tags/EPPlus/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Unity应用EPPlus操作Excel（.xlsx）文件（2021版）</title>
     <link href="https://jia_k3.gitee.io/blog/2022/01/11/unity-ying-yong-epplus-cao-zuo-excel-xlsx-wen-jian-2021-ban/"/>
     <id>https://jia_k3.gitee.io/blog/2022/01/11/unity-ying-yong-epplus-cao-zuo-excel-xlsx-wen-jian-2021-ban/</id>
     <published>2022-01-11T07:48:26.000Z</published>
-    <updated>2022-01-11T07:54:26.193Z</updated>
+    <updated>2022-01-11T07:59:54.537Z</updated>
     
     
       
@@ -40,7 +73,7 @@
     
     <category term="Unity" scheme="https://jia_k3.gitee.io/blog/tags/Unity/"/>
     
-    <category term="EPPlus" scheme="https://jia_k3.gitee.io/blog/tags/EPPlus/"/>
+    <category term="EPPlus - C#" scheme="https://jia_k3.gitee.io/blog/tags/EPPlus-C/"/>
     
   </entry>
   
@@ -100,7 +133,7 @@
     <link href="https://jia_k3.gitee.io/blog/2022/01/11/unity-zhi-zuo-zi-gua-ying-tou-ming-bei-jing-pc-duan/"/>
     <id>https://jia_k3.gitee.io/blog/2022/01/11/unity-zhi-zuo-zi-gua-ying-tou-ming-bei-jing-pc-duan/</id>
     <published>2022-01-11T04:30:40.000Z</published>
-    <updated>2022-01-11T04:32:45.975Z</updated>
+    <updated>2022-01-11T08:05:30.378Z</updated>
     
     
       
@@ -121,6 +154,8 @@
     
     
     <category term="Unity" scheme="https://jia_k3.gitee.io/blog/tags/Unity/"/>
+    
+    <category term="C#" scheme="https://jia_k3.gitee.io/blog/tags/C/"/>
     
   </entry>
   
@@ -509,33 +544,6 @@
     
     
     <category term="Git" scheme="https://jia_k3.gitee.io/blog/tags/Git/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>博客初建</title>
-    <link href="https://jia_k3.gitee.io/blog/2022/01/06/bo-ke-chu-jian/"/>
-    <id>https://jia_k3.gitee.io/blog/2022/01/06/bo-ke-chu-jian/</id>
-    <published>2022-01-06T10:18:39.000Z</published>
-    <updated>2022-01-08T13:43:14.962Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;pre&gt;&lt;code&gt;我叫Jia_KHC，经过不断努力终于建立了个人博客，开心至极。
-&lt;/code&gt;&lt;/pre&gt;
-</summary>
-        
-      
-    
-    
-    
-    <category term="心情简记" scheme="https://jia_k3.gitee.io/blog/categories/%E5%BF%83%E6%83%85%E7%AE%80%E8%AE%B0/"/>
-    
-    
-    <category term="博客建立" scheme="https://jia_k3.gitee.io/blog/tags/%E5%8D%9A%E5%AE%A2%E5%BB%BA%E7%AB%8B/"/>
     
   </entry>
   
