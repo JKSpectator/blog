@@ -6,7 +6,7 @@
   <link href="https://jia_k3.gitee.io/blog/atom.xml" rel="self"/>
   
   <link href="https://jia_k3.gitee.io/blog/"/>
-  <updated>2022-01-11T08:12:42.642Z</updated>
+  <updated>2022-01-11T08:45:33.449Z</updated>
   <id>https://jia_k3.gitee.io/blog/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>《Head First Java》读书笔记</title>
+    <link href="https://jia_k3.gitee.io/blog/2022/01/11/head-first-java-du-shu-bi-ji/"/>
+    <id>https://jia_k3.gitee.io/blog/2022/01/11/head-first-java-du-shu-bi-ji/</id>
+    <published>2022-01-11T08:43:21.000Z</published>
+    <updated>2022-01-11T08:45:33.449Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;一、进入Java的世界（基本概念）&quot;&gt;&lt;a href=&quot;#一、进入Java的世界（基本概念）&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="笔记" scheme="https://jia_k3.gitee.io/blog/categories/%E7%AC%94%E8%AE%B0/"/>
+    
+    
+    <category term="Java" scheme="https://jia_k3.gitee.io/blog/tags/Java/"/>
+    
+  </entry>
   
   <entry>
     <title>Unity应用自带UGUI与EPPlus库制作自制Excel（.xlsx）操作程序</title>
@@ -520,33 +545,6 @@
     
     
     <category term="Git" scheme="https://jia_k3.gitee.io/blog/tags/Git/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>博客初建</title>
-    <link href="https://jia_k3.gitee.io/blog/2022/01/06/bo-ke-chu-jian/"/>
-    <id>https://jia_k3.gitee.io/blog/2022/01/06/bo-ke-chu-jian/</id>
-    <published>2022-01-06T10:18:39.000Z</published>
-    <updated>2022-01-08T13:43:14.962Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;pre&gt;&lt;code&gt;我叫Jia_KHC，经过不断努力终于建立了个人博客，开心至极。
-&lt;/code&gt;&lt;/pre&gt;
-</summary>
-        
-      
-    
-    
-    
-    <category term="心情简记" scheme="https://jia_k3.gitee.io/blog/categories/%E5%BF%83%E6%83%85%E7%AE%80%E8%AE%B0/"/>
-    
-    
-    <category term="博客建立" scheme="https://jia_k3.gitee.io/blog/tags/%E5%8D%9A%E5%AE%A2%E5%BB%BA%E7%AB%8B/"/>
     
   </entry>
   
