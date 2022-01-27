@@ -6,7 +6,7 @@
   <link href="https://jia_k3.gitee.io/blog/atom.xml" rel="self"/>
   
   <link href="https://jia_k3.gitee.io/blog/"/>
-  <updated>2022-01-11T12:09:36.612Z</updated>
+  <updated>2022-01-27T15:30:33.683Z</updated>
   <id>https://jia_k3.gitee.io/blog/</id>
   
   <author>
@@ -15,6 +15,33 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>《Head First设计模式》读书笔记</title>
+    <link href="https://jia_k3.gitee.io/blog/2022/01/27/head-first-she-ji-mo-shi-du-shu-bi-ji/"/>
+    <id>https://jia_k3.gitee.io/blog/2022/01/27/head-first-she-ji-mo-shi-du-shu-bi-ji/</id>
+    <published>2022-01-27T15:09:46.000Z</published>
+    <updated>2022-01-27T15:30:33.683Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;​&lt;/p&gt;
+&lt;p&gt; &lt;strong&gt;目录&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a</summary>
+        
+      
+    
+    
+    
+    <category term="笔记" scheme="https://jia_k3.gitee.io/blog/categories/%E7%AC%94%E8%AE%B0/"/>
+    
+    
+    <category term="设计模式" scheme="https://jia_k3.gitee.io/blog/tags/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/"/>
+    
+  </entry>
   
   <entry>
     <title>《近世代数》笔记</title>
@@ -516,31 +543,6 @@
     
     
     <category term="算法" scheme="https://jia_k3.gitee.io/blog/tags/%E7%AE%97%E6%B3%95/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>hexo框架下博客文章插入本地图片教程</title>
-    <link href="https://jia_k3.gitee.io/blog/2022/01/08/hexo-kuang-jia-xia-bo-ke-wen-zhang-cha-ru-ben-di-tu-pian-jiao-cheng/"/>
-    <id>https://jia_k3.gitee.io/blog/2022/01/08/hexo-kuang-jia-xia-bo-ke-wen-zhang-cha-ru-ben-di-tu-pian-jiao-cheng/</id>
-    <published>2022-01-08T13:40:20.000Z</published>
-    <updated>2022-01-11T12:09:50.430Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;在建立个人博客时，出现博客文章中引用本地图片的需求。下面是步骤：&lt;br&gt;首先，下载hexo-asset-image这个package，（这里结合网络上其他教程内容，得知直接下载官方现在版本有bug，笔者直接采取代替途径做修改）输入命令cnpm install &lt;a</summary>
-        
-      
-    
-    
-    
-    <category term="教程" scheme="https://jia_k3.gitee.io/blog/categories/%E6%95%99%E7%A8%8B/"/>
-    
-    
-    <category term="个人博客" scheme="https://jia_k3.gitee.io/blog/tags/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/"/>
     
   </entry>
   
