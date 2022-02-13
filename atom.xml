@@ -6,7 +6,7 @@
   <link href="https://jia_k3.gitee.io/blog/atom.xml" rel="self"/>
   
   <link href="https://jia_k3.gitee.io/blog/"/>
-  <updated>2022-01-27T15:30:33.683Z</updated>
+  <updated>2022-02-13T11:45:22.580Z</updated>
   <id>https://jia_k3.gitee.io/blog/</id>
   
   <author>
@@ -15,6 +15,33 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>修勾相处手册</title>
+    <link href="https://jia_k3.gitee.io/blog/2022/02/13/xiu-gou-xiang-chu-shou-ce/"/>
+    <id>https://jia_k3.gitee.io/blog/2022/02/13/xiu-gou-xiang-chu-shou-ce/</id>
+    <published>2022-02-13T11:40:44.000Z</published>
+    <updated>2022-02-13T11:45:22.580Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;1.如何判断小狗狗性格（结合网络内容，真伪未知）：&lt;/p&gt;
+&lt;p&gt;1.1将小狗背部向下，手按在小狗胸腔与肚子之间的区域（小小力），如果不挣扎，说明小狗温柔，容易相处；如果挣扎，表示有点硬气；如果挣扎的同时想咬人，说明比较凶，不太好相处&lt;/p&gt;
+&lt;p&gt;1.2将小狗环抱怀中，若</summary>
+        
+      
+    
+    
+    
+    <category term="笔记" scheme="https://jia_k3.gitee.io/blog/categories/%E7%AC%94%E8%AE%B0/"/>
+    
+    
+    <category term="生活" scheme="https://jia_k3.gitee.io/blog/tags/%E7%94%9F%E6%B4%BB/"/>
+    
+  </entry>
   
   <entry>
     <title>《Head First设计模式》读书笔记</title>
@@ -509,31 +536,6 @@
         
         
     <summary type="html">&lt;h2 id=&quot;一、相关概念&quot;&gt;&lt;a href=&quot;#一、相关概念&quot; class=&quot;headerlink&quot;</summary>
-        
-      
-    
-    
-    
-    <category term="笔记" scheme="https://jia_k3.gitee.io/blog/categories/%E7%AC%94%E8%AE%B0/"/>
-    
-    
-    <category term="算法" scheme="https://jia_k3.gitee.io/blog/tags/%E7%AE%97%E6%B3%95/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>最短路径算法</title>
-    <link href="https://jia_k3.gitee.io/blog/2022/01/10/zui-duan-lu-jing-suan-fa/"/>
-    <id>https://jia_k3.gitee.io/blog/2022/01/10/zui-duan-lu-jing-suan-fa/</id>
-    <published>2022-01-10T15:37:25.000Z</published>
-    <updated>2022-01-11T12:12:05.807Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h3 id=&quot;一、概念&quot;&gt;&lt;a href=&quot;#一、概念&quot; class=&quot;headerlink&quot;</summary>
         
       
     
