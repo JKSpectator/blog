@@ -6,7 +6,7 @@
   <link href="https://jia_k3.gitee.io/blog/atom.xml" rel="self"/>
   
   <link href="https://jia_k3.gitee.io/blog/"/>
-  <updated>2022-02-27T08:08:16.225Z</updated>
+  <updated>2022-03-16T06:13:51.867Z</updated>
   <id>https://jia_k3.gitee.io/blog/</id>
   
   <author>
@@ -15,6 +15,34 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Unity应用单件模式</title>
+    <link href="https://jia_k3.gitee.io/blog/2022/03/16/unity-ying-yong-dan-jian-mo-shi/"/>
+    <id>https://jia_k3.gitee.io/blog/2022/03/16/unity-ying-yong-dan-jian-mo-shi/</id>
+    <published>2022-03-16T06:09:27.000Z</published>
+    <updated>2022-03-16T06:13:51.867Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;​&lt;/p&gt;
+&lt;h3 id=&quot;一、基础概念&quot;&gt;&lt;a href=&quot;#一、基础概念&quot; class=&quot;headerlink&quot; title=&quot;一、基础概念&quot;&gt;&lt;/a&gt;一、基础概念&lt;/h3&gt;&lt;p&gt;&lt;strong&gt;引用另一篇博客&lt;/strong&gt;：&lt;a</summary>
+        
+      
+    
+    
+    
+    <category term="应用软件-Unity" scheme="https://jia_k3.gitee.io/blog/categories/%E5%BA%94%E7%94%A8%E8%BD%AF%E4%BB%B6-Unity/"/>
+    
+    
+    <category term="Unity" scheme="https://jia_k3.gitee.io/blog/tags/Unity/"/>
+    
+    <category term="Csharp" scheme="https://jia_k3.gitee.io/blog/tags/Csharp/"/>
+    
+  </entry>
   
   <entry>
     <title>Python蟒书第一部分读书笔记——基础知识</title>
@@ -102,7 +130,7 @@
     <link href="https://jia_k3.gitee.io/blog/2022/01/27/head-first-she-ji-mo-shi-du-shu-bi-ji/"/>
     <id>https://jia_k3.gitee.io/blog/2022/01/27/head-first-she-ji-mo-shi-du-shu-bi-ji/</id>
     <published>2022-01-27T15:09:46.000Z</published>
-    <updated>2022-01-27T15:30:33.683Z</updated>
+    <updated>2022-03-16T06:14:36.461Z</updated>
     
     
       
@@ -110,8 +138,7 @@
         
         
     <summary type="html">&lt;p&gt;​&lt;/p&gt;
-&lt;p&gt; &lt;strong&gt;目录&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a</summary>
+&lt;h3 id=&quot;一、设计模式入门与策略模式&quot;&gt;&lt;a href=&quot;#一、设计模式入门与策略模式&quot; class=&quot;headerlink&quot;</summary>
         
       
     
@@ -515,31 +542,6 @@
         
         
     <summary type="html">&lt;h3 id=&quot;一、概念&quot;&gt;&lt;a href=&quot;#一、概念&quot; class=&quot;headerlink&quot;</summary>
-        
-      
-    
-    
-    
-    <category term="笔记" scheme="https://jia_k3.gitee.io/blog/categories/%E7%AC%94%E8%AE%B0/"/>
-    
-    
-    <category term="算法" scheme="https://jia_k3.gitee.io/blog/tags/%E7%AE%97%E6%B3%95/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>浅谈哈夫曼树与哈夫曼编码</title>
-    <link href="https://jia_k3.gitee.io/blog/2022/01/11/qian-tan-ha-fu-man-shu-yu-ha-fu-man-bian-ma/"/>
-    <id>https://jia_k3.gitee.io/blog/2022/01/11/qian-tan-ha-fu-man-shu-yu-ha-fu-man-bian-ma/</id>
-    <published>2022-01-10T16:39:47.000Z</published>
-    <updated>2022-01-11T12:11:31.141Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h3 id=&quot;一、最优树的定义&quot;&gt;&lt;a href=&quot;#一、最优树的定义&quot; class=&quot;headerlink&quot;</summary>
         
       
     
