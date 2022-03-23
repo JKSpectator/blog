@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>starUML破解</title>
+      <link href="/blog/2022/03/23/staruml-po-jie/"/>
+      <url>/blog/2022/03/23/staruml-po-jie/</url>
+      
+        <content type="html"><![CDATA[<p>​</p><p>1.下载starUML并安装<a href="https://staruml.io/" title="​​​​​​​​​​​​StarUML">​​​​​​​​​​​​StarUML<img src="vx_images/359392414220364.png">https://staruml.io/</a></p><p>2.下载反编译工具asar</p><p>命令行：cnpm install -g asar</p><p>3.找到starUML安装目录（从桌面上快捷方式打开文件所在位置）</p><p>4.打开文件夹resources找到app.asar文件（里面包含有判断license的代码）</p><p>5.将app.asar剪切到其他文件夹（可以桌面上新建一个文件夹，放置app.asar）</p><p>6.命令行cd到桌面新建的文件夹（或者其他放置着app.asar文件的文件夹）</p><p>命令行：cd C:\Users\player\Desktop\新建文件夹</p><p>7.反编译app.asar</p><p>命令行：asar extract app.asar xxx</p><p>asar:反编译工具</p><p>extract:反编译命令</p><p>app.asar:反编译对象</p><p>xxx:文件夹名称，随便填</p><p>有可能报错 operation not permitted，所以需要将app.asar剪切到其他文件夹，避开防止“快速打开”的代码</p><p>8.在反编译文件夹搜索找到license-manager.js文件打开</p><p>9.找到checkLicenseValidity函数，其中有setStatus(this, false)语句，将其中false改为true，并且将与这个语句并列的其他语句删除，根据现在版本只需要删除UnregisteredDialog.showDialog()语句</p><p>10.打开命令行并cd到app.asar放置的文件夹</p><p>命令行：cd C:\Users\player\Desktop\新建文件夹</p><p>11.编译更新app.asar</p><p>命令行：asar pack xxx app.asar</p><p>pack:编译更新</p><p>xxx:反编译文件夹</p><p>12.将新的app.asar文件剪切粘贴到app.asar的源文件夹(resources)</p><p>13.打开starUML，Help-&gt;Enter License Key…，提示You already have a valid license.</p><hr><p>希望大家一起学习，共同进步，如果有疑问或错误欢迎联系笔者。</p><p>​</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 教程 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 反编译 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Unity应用单件模式</title>
       <link href="/blog/2022/03/16/unity-ying-yong-dan-jian-mo-shi/"/>
       <url>/blog/2022/03/16/unity-ying-yong-dan-jian-mo-shi/</url>

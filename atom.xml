@@ -6,7 +6,7 @@
   <link href="https://jia_k3.gitee.io/blog/atom.xml" rel="self"/>
   
   <link href="https://jia_k3.gitee.io/blog/"/>
-  <updated>2022-03-16T06:13:51.867Z</updated>
+  <updated>2022-03-23T06:27:38.992Z</updated>
   <id>https://jia_k3.gitee.io/blog/</id>
   
   <author>
@@ -15,6 +15,32 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>starUML破解</title>
+    <link href="https://jia_k3.gitee.io/blog/2022/03/23/staruml-po-jie/"/>
+    <id>https://jia_k3.gitee.io/blog/2022/03/23/staruml-po-jie/</id>
+    <published>2022-03-23T06:24:59.000Z</published>
+    <updated>2022-03-23T06:27:38.992Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;​&lt;/p&gt;
+&lt;p&gt;1.下载starUML并安装&lt;a href=&quot;https://staruml.io/&quot; title=&quot;​​​​​​​​​​​​StarUML&quot;&gt;​​​​​​​​​​​​StarUML&lt;img</summary>
+        
+      
+    
+    
+    
+    <category term="教程" scheme="https://jia_k3.gitee.io/blog/categories/%E6%95%99%E7%A8%8B/"/>
+    
+    
+    <category term="反编译" scheme="https://jia_k3.gitee.io/blog/tags/%E5%8F%8D%E7%BC%96%E8%AF%91/"/>
+    
+  </entry>
   
   <entry>
     <title>Unity应用单件模式</title>
@@ -510,31 +536,6 @@
     <id>https://jia_k3.gitee.io/blog/2022/01/11/zui-xiao-sheng-cheng-shu-prim-suan-fa-yu-kruskal-suan-fa/</id>
     <published>2022-01-10T16:45:56.000Z</published>
     <updated>2022-01-11T12:12:13.999Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h3 id=&quot;一、概念&quot;&gt;&lt;a href=&quot;#一、概念&quot; class=&quot;headerlink&quot;</summary>
-        
-      
-    
-    
-    
-    <category term="笔记" scheme="https://jia_k3.gitee.io/blog/categories/%E7%AC%94%E8%AE%B0/"/>
-    
-    
-    <category term="算法" scheme="https://jia_k3.gitee.io/blog/tags/%E7%AE%97%E6%B3%95/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>有向无环图的应用</title>
-    <link href="https://jia_k3.gitee.io/blog/2022/01/11/you-xiang-wu-huan-tu-de-ying-yong/"/>
-    <id>https://jia_k3.gitee.io/blog/2022/01/11/you-xiang-wu-huan-tu-de-ying-yong/</id>
-    <published>2022-01-10T16:42:53.000Z</published>
-    <updated>2022-01-11T12:11:57.944Z</updated>
     
     
       
