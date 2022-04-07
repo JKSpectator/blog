@@ -4,6 +4,33 @@
   
     
     <entry>
+      <title>时序图绘制</title>
+      <link href="/blog/2022/04/07/shi-xu-tu-hui-zhi/"/>
+      <url>/blog/2022/04/07/shi-xu-tu-hui-zhi/</url>
+      
+        <content type="html"><![CDATA[<h2 id="一、时序图元素"><a href="#一、时序图元素" class="headerlink" title="一、时序图元素"></a>一、时序图元素</h2><h3 id="1-基本概念"><a href="#1-基本概念" class="headerlink" title="1.基本概念"></a>1.基本概念</h3><p>1.1Sequence Diagram:顺序图或称为时序图，亦称为序列图、循序图，是一种UML交互图。它通过描述对象之间发送消息的时间顺序显示多个对象之间的动态协作<br>1.2使用时序图的好处：可以很清楚地表示按照时间顺序的消息传递（方法调用）<br>1.3时序图是一个二维图，横轴表示对象，纵轴表示时间，消息在各对象之间横向传递，依照时间顺序纵向排列</p><h3 id="2-组成元素"><a href="#2-组成元素" class="headerlink" title="2.组成元素"></a>2.组成元素</h3><p>2.1角色(Actor)：用于表示外部角色，可以是人、机器、其他系统、子系统<br>2.2对象(Object)：<br>2.2.1对象的命名方式：“对象名：类名”，“：类名”（匿名对象），“对象名”<br>2.2.2对象先后排列：交互频繁的对象距离短，初始化整个交互活动的对象放置于最左端<br>2.3生命线(Lifeline)：在时序图中表示为从对象图标向下延伸的一条虚线，表示对象存在的时间<br>2.4控制焦点(Focus of Control)：又称为激活期，在时序图中用小矩形表示，表示执行相应操作的时间段<br>2.5消息(Message)：一般分为同步消息（发送信息后发送者等待返回信息）、异步消息（发送信息后发送者不等待返回信息）、返回消息（过程调用返回）和自关联消息（方法调用自身方法或自身对象方法）<br>2.6组合片段：用来解决交互执行的条件和方式，它允许在序列图中直接表示逻辑组件，用于指定条件或子进程的应用区域，为任何生命线的任何部分定义特殊条件和子进程<br>| 片段类型    |   名称  | 说明    |<br>| :-: | :-: | :-: |<br>|   Opt  |   选项  | 包含一个可能发生或不发生的序列，可以在临界中指定序列发生的条件   |<br>|    Alt |  抉择   |   包含一个片段列表，这些片段包含备选消息序列。相当于IF-ELSE，在任何场合下只发生不超过一个序列  |<br>|     Loop|  循环   |  片段重复一定次数，可以在临界中指示片段重复的条件   |<br>|     Break|  中断   |   若执行次片段，则放弃序列的其余部分  |<br>|    Par |   并行  |  并行处理事件   |<br>|    Critical |  关键   |  用于Par或Seq片段中，表示此片段中的消息不得与其他消息交错   |<br>|    Seq |  弱顺序   | 对于多个操作数片段，只有涉及同一生命线的消息必须以片段的顺序发生    |<br>|    Strict |   强顺序  |  对于多个操作数片段，必须以片段的顺序发生   |<br>2.7时序图复用(ref)：引用其他地方定义的时序图，表示先遣行为</p><h2 id="二、starUML绘制"><a href="#二、starUML绘制" class="headerlink" title="二、starUML绘制"></a>二、starUML绘制</h2><h3 id="1-时序图建立"><a href="#1-时序图建立" class="headerlink" title="1.时序图建立"></a>1.时序图建立</h3><p>1.1工具栏Model&gt;Add Diagram&gt;Sequence Diagram<br>1.2右击右边栏显示的主文件，选择Add Diagram&gt;Sequence Diagram</p><h3 id="2-时序图组件建立"><a href="#2-时序图组件建立" class="headerlink" title="2.时序图组件建立"></a>2.时序图组件建立</h3><p>2.1角色(Actor)等：在右边栏选择合适的文件位置，右击选择Add&gt;Actor等<br>2.2图示：左下边栏3种交互图示<br>2.3片段类型选择：点选片段(Combined Fragment)-&gt;右下侧属性栏-&gt;Properties-&gt;interactionOpertor<br>2.3区分片段与时序图复用框：<br>2.3.1片段Combined Fragment<br>2.3.2时序图复用Interaction Use<br>2.4迷失信息：<br>Found Message:来源迷失<br>Lost Message:目标迷失</p><hr><p>希望大家一起学习，共同进步，如果有疑问或错误欢迎联系笔者。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 教程 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> starUML </tag>
+            
+            <tag> 时序图 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>CSS属性速查表</title>
       <link href="/blog/2022/04/01/css-shu-xing-su-cha-biao/"/>
       <url>/blog/2022/04/01/css-shu-xing-su-cha-biao/</url>
@@ -96,6 +123,8 @@
         <tags>
             
             <tag> 反编译 </tag>
+            
+            <tag> starUML </tag>
             
         </tags>
       
