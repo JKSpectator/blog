@@ -6,7 +6,7 @@
   <link href="https://jia_k3.gitee.io/blog/atom.xml" rel="self"/>
   
   <link href="https://jia_k3.gitee.io/blog/"/>
-  <updated>2022-04-10T08:45:13.689Z</updated>
+  <updated>2022-04-23T12:55:46.844Z</updated>
   <id>https://jia_k3.gitee.io/blog/</id>
   
   <author>
@@ -15,6 +15,33 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>高级语言网络通信程序-端口</title>
+    <link href="https://jia_k3.gitee.io/blog/2022/04/23/gao-ji-yu-yan-wang-luo-tong-xin-cheng-xu-duan-kou/"/>
+    <id>https://jia_k3.gitee.io/blog/2022/04/23/gao-ji-yu-yan-wang-luo-tong-xin-cheng-xu-duan-kou/</id>
+    <published>2022-04-23T12:51:22.000Z</published>
+    <updated>2022-04-23T12:55:46.844Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;端口理解&quot;&gt;&lt;a href=&quot;#端口理解&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="理解分析" scheme="https://jia_k3.gitee.io/blog/categories/%E7%90%86%E8%A7%A3%E5%88%86%E6%9E%90/"/>
+    
+    
+    <category term="Python" scheme="https://jia_k3.gitee.io/blog/tags/Python/"/>
+    
+    <category term="网络通信" scheme="https://jia_k3.gitee.io/blog/tags/%E7%BD%91%E7%BB%9C%E9%80%9A%E4%BF%A1/"/>
+    
+  </entry>
   
   <entry>
     <title>观察者模式在C#和Java中的应用</title>
@@ -531,34 +558,6 @@
     <category term="Unity" scheme="https://jia_k3.gitee.io/blog/tags/Unity/"/>
     
     <category term="VS" scheme="https://jia_k3.gitee.io/blog/tags/VS/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>QT与MYSQL（64位）数据库的连接方法</title>
-    <link href="https://jia_k3.gitee.io/blog/2022/01/11/qt-yu-mysql-64-wei-shu-ju-ku-de-lian-jie-fang-fa/"/>
-    <id>https://jia_k3.gitee.io/blog/2022/01/11/qt-yu-mysql-64-wei-shu-ju-ku-de-lian-jie-fang-fa/</id>
-    <published>2022-01-11T04:14:01.000Z</published>
-    <updated>2022-01-11T12:09:20.392Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;首先打开一个QT项目，在.pro里输入下图代码&lt;/p&gt;
-&lt;p&gt;&lt;img</summary>
-        
-      
-    
-    
-    
-    <category term="应用软件-QT" scheme="https://jia_k3.gitee.io/blog/categories/%E5%BA%94%E7%94%A8%E8%BD%AF%E4%BB%B6-QT/"/>
-    
-    
-    <category term="QT" scheme="https://jia_k3.gitee.io/blog/tags/QT/"/>
-    
-    <category term="MYSQL" scheme="https://jia_k3.gitee.io/blog/tags/MYSQL/"/>
     
   </entry>
   
