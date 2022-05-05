@@ -6,7 +6,7 @@
   <link href="https://jia_k3.gitee.io/blog/atom.xml" rel="self"/>
   
   <link href="https://jia_k3.gitee.io/blog/"/>
-  <updated>2022-04-23T12:55:46.844Z</updated>
+  <updated>2022-05-05T09:17:22.134Z</updated>
   <id>https://jia_k3.gitee.io/blog/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Python课程笔记</title>
+    <link href="https://jia_k3.gitee.io/blog/2022/05/05/python-ke-cheng-bi-ji/"/>
+    <id>https://jia_k3.gitee.io/blog/2022/05/05/python-ke-cheng-bi-ji/</id>
+    <published>2022-05-05T09:11:03.000Z</published>
+    <updated>2022-05-05T09:17:22.134Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;一、基础知识&quot;&gt;&lt;a href=&quot;#一、基础知识&quot; class=&quot;headerlink&quot; title=&quot;一、基础知识&quot;&gt;&lt;/a&gt;一、基础知识&lt;/h1&gt;&lt;h2 id=&quot;1-基础数据与操作&quot;&gt;&lt;a href=&quot;#1-基础数据与操作&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="笔记" scheme="https://jia_k3.gitee.io/blog/categories/%E7%AC%94%E8%AE%B0/"/>
+    
+    
+    <category term="Python" scheme="https://jia_k3.gitee.io/blog/tags/Python/"/>
+    
+  </entry>
   
   <entry>
     <title>高级语言网络通信程序-端口</title>
@@ -530,34 +555,6 @@
     <category term="Unity" scheme="https://jia_k3.gitee.io/blog/tags/Unity/"/>
     
     <category term="Csharp" scheme="https://jia_k3.gitee.io/blog/tags/Csharp/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>初学者下载Unity3D以及连接脚本编程软件（VS）教程</title>
-    <link href="https://jia_k3.gitee.io/blog/2022/01/11/chu-xue-zhe-xia-zai-unity3d-yi-ji-lian-jie-jiao-ben-bian-cheng-ruan-jian-vs-jiao-cheng/"/>
-    <id>https://jia_k3.gitee.io/blog/2022/01/11/chu-xue-zhe-xia-zai-unity3d-yi-ji-lian-jie-jiao-ben-bian-cheng-ruan-jian-vs-jiao-cheng/</id>
-    <published>2022-01-11T04:27:54.000Z</published>
-    <updated>2022-01-11T12:11:13.277Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;本文可以解决除Unity下载的一个问题：新建C#脚本文件打开为杂项文件不可编译&lt;/p&gt;
-&lt;p&gt;首先下载Unity Hub安装包&lt;a href=&quot;https://store.unity.com/cn/download?ref=personal&quot; title=&quot;Unity</summary>
-        
-      
-    
-    
-    
-    <category term="应用软件-Unity" scheme="https://jia_k3.gitee.io/blog/categories/%E5%BA%94%E7%94%A8%E8%BD%AF%E4%BB%B6-Unity/"/>
-    
-    
-    <category term="Unity" scheme="https://jia_k3.gitee.io/blog/tags/Unity/"/>
-    
-    <category term="VS" scheme="https://jia_k3.gitee.io/blog/tags/VS/"/>
     
   </entry>
   
