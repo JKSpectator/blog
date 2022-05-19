@@ -6,7 +6,7 @@
   <link href="https://jia_k3.gitee.io/blog/atom.xml" rel="self"/>
   
   <link href="https://jia_k3.gitee.io/blog/"/>
-  <updated>2022-05-05T09:17:22.134Z</updated>
+  <updated>2022-05-19T06:11:48.818Z</updated>
   <id>https://jia_k3.gitee.io/blog/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>《运筹学与最优化方法》笔记</title>
+    <link href="https://jia_k3.gitee.io/blog/2022/05/19/yun-chou-xue-yu-zui-you-hua-fang-fa-bi-ji/"/>
+    <id>https://jia_k3.gitee.io/blog/2022/05/19/yun-chou-xue-yu-zui-you-hua-fang-fa-bi-ji/</id>
+    <published>2022-05-19T00:52:08.000Z</published>
+    <updated>2022-05-19T06:11:48.818Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;一、绪论&quot;&gt;&lt;a href=&quot;#一、绪论&quot; class=&quot;headerlink&quot; title=&quot;一、绪论&quot;&gt;&lt;/a&gt;一、绪论&lt;/h2&gt;&lt;h3 id=&quot;1-运筹学与优化问题简介&quot;&gt;&lt;a href=&quot;#1-运筹学与优化问题简介&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="笔记" scheme="https://jia_k3.gitee.io/blog/categories/%E7%AC%94%E8%AE%B0/"/>
+    
+    
+    <category term="理论" scheme="https://jia_k3.gitee.io/blog/tags/%E7%90%86%E8%AE%BA/"/>
+    
+  </entry>
   
   <entry>
     <title>Python课程笔记</title>
@@ -526,35 +551,6 @@
     
     
     <category term="Unity" scheme="https://jia_k3.gitee.io/blog/tags/Unity/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Unity制作自适应透明背景（PC端）</title>
-    <link href="https://jia_k3.gitee.io/blog/2022/01/11/unity-zhi-zuo-zi-gua-ying-tou-ming-bei-jing-pc-duan/"/>
-    <id>https://jia_k3.gitee.io/blog/2022/01/11/unity-zhi-zuo-zi-gua-ying-tou-ming-bei-jing-pc-duan/</id>
-    <published>2022-01-11T04:30:40.000Z</published>
-    <updated>2022-01-11T16:54:12.163Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h2 id=&quot;实现步骤：&quot;&gt;&lt;a href=&quot;#实现步骤：&quot; class=&quot;headerlink&quot; title=&quot;实现步骤：&quot;&gt;&lt;/a&gt;实现步骤：&lt;/h2&gt;&lt;p&gt;1.设置MainCamera&lt;/p&gt;
-&lt;p&gt;2.添加C#脚本&lt;/p&gt;
-&lt;h2</summary>
-        
-      
-    
-    
-    
-    <category term="应用软件-Unity" scheme="https://jia_k3.gitee.io/blog/categories/%E5%BA%94%E7%94%A8%E8%BD%AF%E4%BB%B6-Unity/"/>
-    
-    
-    <category term="Unity" scheme="https://jia_k3.gitee.io/blog/tags/Unity/"/>
-    
-    <category term="Csharp" scheme="https://jia_k3.gitee.io/blog/tags/Csharp/"/>
     
   </entry>
   
