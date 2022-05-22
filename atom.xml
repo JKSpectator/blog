@@ -6,7 +6,7 @@
   <link href="https://jia_k3.gitee.io/blog/atom.xml" rel="self"/>
   
   <link href="https://jia_k3.gitee.io/blog/"/>
-  <updated>2022-05-19T06:11:48.818Z</updated>
+  <updated>2022-05-22T09:38:23.509Z</updated>
   <id>https://jia_k3.gitee.io/blog/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>《算法设计与分析》课程笔记</title>
+    <link href="https://jia_k3.gitee.io/blog/2022/05/22/suan-fa-she-ji-yu-fen-xi-ke-cheng-bi-ji/"/>
+    <id>https://jia_k3.gitee.io/blog/2022/05/22/suan-fa-she-ji-yu-fen-xi-ke-cheng-bi-ji/</id>
+    <published>2022-05-22T09:20:33.000Z</published>
+    <updated>2022-05-22T09:38:23.509Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;一、绪论&quot;&gt;&lt;a href=&quot;#一、绪论&quot; class=&quot;headerlink&quot; title=&quot;一、绪论&quot;&gt;&lt;/a&gt;一、绪论&lt;/h2&gt;&lt;h3 id=&quot;1-算法在计算机科学中扮演的角色&quot;&gt;&lt;a href=&quot;#1-算法在计算机科学中扮演的角色&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="笔记" scheme="https://jia_k3.gitee.io/blog/categories/%E7%AC%94%E8%AE%B0/"/>
+    
+    
+    <category term="理论" scheme="https://jia_k3.gitee.io/blog/tags/%E7%90%86%E8%AE%BA/"/>
+    
+  </entry>
   
   <entry>
     <title>《运筹学与最优化方法》笔记</title>
@@ -516,32 +541,6 @@
         
         
     <summary type="html">&lt;h2 id=&quot;使用精灵图制作动画步骤：&quot;&gt;&lt;a href=&quot;#使用精灵图制作动画步骤：&quot; class=&quot;headerlink&quot;</summary>
-        
-      
-    
-    
-    
-    <category term="应用软件-Unity" scheme="https://jia_k3.gitee.io/blog/categories/%E5%BA%94%E7%94%A8%E8%BD%AF%E4%BB%B6-Unity/"/>
-    
-    
-    <category term="Unity" scheme="https://jia_k3.gitee.io/blog/tags/Unity/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Unity实现多屏分屏效果</title>
-    <link href="https://jia_k3.gitee.io/blog/2022/01/11/unity-shi-xian-duo-ping-fen-ping-xiao-guo/"/>
-    <id>https://jia_k3.gitee.io/blog/2022/01/11/unity-shi-xian-duo-ping-fen-ping-xiao-guo/</id>
-    <published>2022-01-11T04:34:53.000Z</published>
-    <updated>2022-01-11T12:10:14.113Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;Unity版本2021.1.13f1c1        效果：&lt;/p&gt;
-&lt;p&gt;&lt;img</summary>
         
       
     
