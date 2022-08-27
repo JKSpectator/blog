@@ -6,7 +6,7 @@
   <link href="https://jia_k3.gitee.io/blog/atom.xml" rel="self"/>
   
   <link href="https://jia_k3.gitee.io/blog/"/>
-  <updated>2022-06-02T01:39:08.364Z</updated>
+  <updated>2022-08-27T11:07:07.898Z</updated>
   <id>https://jia_k3.gitee.io/blog/</id>
   
   <author>
@@ -15,6 +15,32 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Unity安卓打包报错解决方法</title>
+    <link href="https://jia_k3.gitee.io/blog/2022/08/27/unity-an-zhuo-da-bao-bao-cuo-jie-jue-fang-fa/"/>
+    <id>https://jia_k3.gitee.io/blog/2022/08/27/unity-an-zhuo-da-bao-bao-cuo-jie-jue-fang-fa/</id>
+    <published>2022-08-27T11:04:54.000Z</published>
+    <updated>2022-08-27T11:07:07.898Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;Unity版本2021.3.8f1c1&lt;/p&gt;
+&lt;h3 id=&quot;核心报错：&quot;&gt;&lt;a href=&quot;#核心报错：&quot; class=&quot;headerlink&quot; title=&quot;核心报错：&quot;&gt;&lt;/a&gt;核心报错：&lt;/h3&gt;&lt;p&gt;CommandInvokationFailure:</summary>
+        
+      
+    
+    
+    
+    <category term="应用软件-Unity" scheme="https://jia_k3.gitee.io/blog/categories/%E5%BA%94%E7%94%A8%E8%BD%AF%E4%BB%B6-Unity/"/>
+    
+    
+    <category term="Unity" scheme="https://jia_k3.gitee.io/blog/tags/Unity/"/>
+    
+  </entry>
   
   <entry>
     <title>《数据库系统》课程笔记</title>
@@ -508,36 +534,6 @@
 &lt;p&gt;2.应用Unity自带UGUI制作基础表格&lt;/p&gt;
 &lt;p&gt;3.基于前两步制作可存可改Excel信息的表格&lt;/p&gt;
 &lt;p&gt;一、向Unity中导入EPPlus相关</summary>
-        
-      
-    
-    
-    
-    <category term="应用软件-Unity" scheme="https://jia_k3.gitee.io/blog/categories/%E5%BA%94%E7%94%A8%E8%BD%AF%E4%BB%B6-Unity/"/>
-    
-    
-    <category term="Unity" scheme="https://jia_k3.gitee.io/blog/tags/Unity/"/>
-    
-    <category term="Csharp" scheme="https://jia_k3.gitee.io/blog/tags/Csharp/"/>
-    
-    <category term="EPPlus" scheme="https://jia_k3.gitee.io/blog/tags/EPPlus/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Unity应用EPPlus操作Excel（.xlsx）文件（2021版）</title>
-    <link href="https://jia_k3.gitee.io/blog/2022/01/11/unity-ying-yong-epplus-cao-zuo-excel-xlsx-wen-jian-2021-ban/"/>
-    <id>https://jia_k3.gitee.io/blog/2022/01/11/unity-ying-yong-epplus-cao-zuo-excel-xlsx-wen-jian-2021-ban/</id>
-    <published>2022-01-11T07:48:26.000Z</published>
-    <updated>2022-01-11T16:53:43.997Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;实现步骤：&lt;/p&gt;
-&lt;p&gt;1.Unity连接VS，参考&lt;a</summary>
         
       
     

@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>Unity安卓打包报错解决方法</title>
+      <link href="/blog/2022/08/27/unity-an-zhuo-da-bao-bao-cuo-jie-jue-fang-fa/"/>
+      <url>/blog/2022/08/27/unity-an-zhuo-da-bao-bao-cuo-jie-jue-fang-fa/</url>
+      
+        <content type="html"><![CDATA[<p>Unity版本2021.3.8f1c1</p><h3 id="核心报错："><a href="#核心报错：" class="headerlink" title="核心报错："></a>核心报错：</h3><p>CommandInvokationFailure: Gradle build failed.</p><h3 id="错误原因："><a href="#错误原因：" class="headerlink" title="错误原因："></a>错误原因：</h3><p>Gradle打包需要签名</p><h3 id="错误解决："><a href="#错误解决：" class="headerlink" title="错误解决："></a>错误解决：</h3><p>1.前往File-&gt;Build Settings-&gt;Player Settings-&gt;Publishing Settings-&gt;Keystore Manager新建用户签名<br>2.返回Publishing Settings选择Custom Keystore为True<br>3.在下方选择签名（一般自动会选择）</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 应用软件-Unity </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Unity </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>《数据库系统》课程笔记</title>
       <link href="/blog/2022/06/01/shu-ju-ku-xi-tong-ke-cheng-bi-ji/"/>
       <url>/blog/2022/06/01/shu-ju-ku-xi-tong-ke-cheng-bi-ji/</url>
