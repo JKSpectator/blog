@@ -4,6 +4,33 @@
   
     
     <entry>
+      <title>APK汉化经历</title>
+      <link href="/blog/2022/11/05/apk-han-hua-jing-li/"/>
+      <url>/blog/2022/11/05/apk-han-hua-jing-li/</url>
+      
+        <content type="html"><![CDATA[<h3 id="一、使用到的工具："><a href="#一、使用到的工具：" class="headerlink" title="一、使用到的工具："></a>一、使用到的工具：</h3><p>1.apktool(jdk命令)</p><p>需要安装Java，一般自带apktool工具</p><p>使用apktool来反编译apk修改英文翻译</p><p>2.MT管理器(安卓)</p><p>使用自带签名功能，无需VIP</p><h3 id="二、操作步骤"><a href="#二、操作步骤" class="headerlink" title="二、操作步骤"></a>二、操作步骤</h3><p><strong>注：本次汉化程序选择GnaCAD，一个安卓手机绘图软件</strong></p><p>1.将需要的apk放置在一个文件夹中，在该位置打开命令行(可以在文件管理器的地址栏输入cmd来快速打开)，反编译apk</p><p>反编译命令：将APK反编译出同名文件夹</p><pre class="line-numbers language-bash"><code class="language-bash">apktool d gnacad.apk<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p>2.打开gnacad&gt;res&gt;values&gt;strings.xml，替换英文</p><p>3.在1中唤出的命令行输入编译命令编译新的APK</p><p>编译命令：</p><pre class="line-numbers language-bash"><code class="language-bash">apktool b gnacad -o cad.apk<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p>4.将新编译出的APK发送到安卓手机，用MT管理器找到安装包</p><p>长按APK选择签名功能，使用默认V1+V2+V3签名方式，获得新的已签名APK</p><p>5.点击安装</p><h3 id="三、问题"><a href="#三、问题" class="headerlink" title="三、问题"></a>三、问题</h3><p>问题：使用jarsigner签名安装失败</p><p>解决方法：使用jarsigner需要用不同代码先后为APK添加不同等级的签名</p><p>​</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 经历 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Android </tag>
+            
+            <tag> Java </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Unity安卓打包报错解决方法</title>
       <link href="/blog/2022/08/27/unity-an-zhuo-da-bao-bao-cuo-jie-jue-fang-fa/"/>
       <url>/blog/2022/08/27/unity-an-zhuo-da-bao-bao-cuo-jie-jue-fang-fa/</url>
@@ -172,9 +199,9 @@
       
         <tags>
             
-            <tag> Csharp </tag>
-            
             <tag> Java </tag>
+            
+            <tag> Csharp </tag>
             
             <tag> 设计模式 </tag>
             

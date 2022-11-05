@@ -6,7 +6,7 @@
   <link href="https://jia_k3.gitee.io/blog/atom.xml" rel="self"/>
   
   <link href="https://jia_k3.gitee.io/blog/"/>
-  <updated>2022-08-27T11:07:07.898Z</updated>
+  <updated>2022-11-05T07:42:41.955Z</updated>
   <id>https://jia_k3.gitee.io/blog/</id>
   
   <author>
@@ -15,6 +15,33 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>APK汉化经历</title>
+    <link href="https://jia_k3.gitee.io/blog/2022/11/05/apk-han-hua-jing-li/"/>
+    <id>https://jia_k3.gitee.io/blog/2022/11/05/apk-han-hua-jing-li/</id>
+    <published>2022-11-05T07:38:34.000Z</published>
+    <updated>2022-11-05T07:42:41.955Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h3 id=&quot;一、使用到的工具：&quot;&gt;&lt;a href=&quot;#一、使用到的工具：&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="经历" scheme="https://jia_k3.gitee.io/blog/categories/%E7%BB%8F%E5%8E%86/"/>
+    
+    
+    <category term="Android" scheme="https://jia_k3.gitee.io/blog/tags/Android/"/>
+    
+    <category term="Java" scheme="https://jia_k3.gitee.io/blog/tags/Java/"/>
+    
+  </entry>
   
   <entry>
     <title>Unity安卓打包报错解决方法</title>
@@ -191,9 +218,9 @@
     <category term="应用分析" scheme="https://jia_k3.gitee.io/blog/categories/%E5%BA%94%E7%94%A8%E5%88%86%E6%9E%90/"/>
     
     
-    <category term="Csharp" scheme="https://jia_k3.gitee.io/blog/tags/Csharp/"/>
-    
     <category term="Java" scheme="https://jia_k3.gitee.io/blog/tags/Java/"/>
+    
+    <category term="Csharp" scheme="https://jia_k3.gitee.io/blog/tags/Csharp/"/>
     
     <category term="设计模式" scheme="https://jia_k3.gitee.io/blog/tags/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/"/>
     
@@ -514,39 +541,6 @@
     
     
     <category term="Java" scheme="https://jia_k3.gitee.io/blog/tags/Java/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Unity应用自带UGUI与EPPlus库制作自制Excel（.xlsx）操作程序</title>
-    <link href="https://jia_k3.gitee.io/blog/2022/01/11/unity-ying-yong-zi-dai-ugui-yu-epplus-ku-zhi-zuo-zi-zhi-excel-xlsx-cao-zuo-cheng-xu/"/>
-    <id>https://jia_k3.gitee.io/blog/2022/01/11/unity-ying-yong-zi-dai-ugui-yu-epplus-ku-zhi-zuo-zi-zhi-excel-xlsx-cao-zuo-cheng-xu/</id>
-    <published>2022-01-11T07:57:33.000Z</published>
-    <updated>2022-01-11T16:52:43.699Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;实现步骤：&lt;/p&gt;
-&lt;p&gt;1.向Unity导入EPPlus相关文件，助力Unity操作Excel文件&lt;/p&gt;
-&lt;p&gt;2.应用Unity自带UGUI制作基础表格&lt;/p&gt;
-&lt;p&gt;3.基于前两步制作可存可改Excel信息的表格&lt;/p&gt;
-&lt;p&gt;一、向Unity中导入EPPlus相关</summary>
-        
-      
-    
-    
-    
-    <category term="应用软件-Unity" scheme="https://jia_k3.gitee.io/blog/categories/%E5%BA%94%E7%94%A8%E8%BD%AF%E4%BB%B6-Unity/"/>
-    
-    
-    <category term="Unity" scheme="https://jia_k3.gitee.io/blog/tags/Unity/"/>
-    
-    <category term="Csharp" scheme="https://jia_k3.gitee.io/blog/tags/Csharp/"/>
-    
-    <category term="EPPlus" scheme="https://jia_k3.gitee.io/blog/tags/EPPlus/"/>
     
   </entry>
   
