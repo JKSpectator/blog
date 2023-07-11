@@ -1,0 +1,249 @@
+<!DOCTYPE HTML><html lang="zh-CH"><head><meta charset="utf-8"><meta name="keywords" content="Python课程笔记, 布执刀"><meta name="description" content="一、基础知识1.基础数据与操作1.1基本语法1.版本说明：Python 3.0并没有向下兼容2.标识符：2.1作用：表示变量、函数、类、模块等对象的名称2.2规则：由字母、数字、”_”组成，首字符不能是数字2.3注意：大小写敏感3.关键字："><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no"><meta name="renderer" content="webkit|ie-stand|ie-comp"><meta name="mobile-web-app-capable" content="yes"><meta name="format-detection" content="telephone=no"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><meta name="referrer" content="no-referrer-when-downgrade"><title>Python课程笔记 | 布执刀</title><link rel="icon" type="image/png" href="/blog/favicon.png"><link rel="stylesheet" href="/blog/libs/awesome/css/all.min.css"><link rel="stylesheet" href="/blog/libs/materialize/materialize.min.css"><link rel="stylesheet" href="/blog/libs/aos/aos.css"><link rel="stylesheet" href="/blog/libs/animate/animate.min.css"><link rel="stylesheet" href="/blog/libs/lightGallery/css/lightgallery.min.css"><link rel="stylesheet" href="/blog/css/matery.css"><link rel="stylesheet" href="/blog/css/my.css"><script src="/blog/libs/jquery/jquery-3.6.0.min.js"></script><meta name="generator" content="Hexo 6.0.0"><link rel="stylesheet" href="/blog/css/prism.css"><link rel="stylesheet" href="/blog/css/prism-line-numbers.css"><style>.github-emoji{position:relative;display:inline-block;width:1.2em;min-height:1.2em;overflow:hidden;vertical-align:top;color:transparent}.github-emoji>span{position:relative;z-index:10}.github-emoji .fancybox,.github-emoji img{margin:0!important;padding:0!important;border:none!important;outline:0!important;text-decoration:none!important;user-select:none!important;cursor:auto!important}.github-emoji img{height:1.2em!important;width:1.2em!important;position:absolute!important;left:50%!important;top:50%!important;transform:translate(-50%,-50%)!important;user-select:none!important;cursor:auto!important}.github-emoji-fallback{color:inherit}.github-emoji-fallback img{opacity:0!important}</style><link rel="alternate" href="/blog/atom.xml" title="布执刀" type="application/atom+xml"></head><style lang="css">#loading-container{position:fixed;top:0;left:0;min-height:100vh;width:100vw;z-index:9999;display:flex;flex-direction:column;justify-content:center;align-items:center;background:#fff;text-align:center;-webkit-transition:opacity 1s ease;-moz-transition:opacity 1s ease;-o-transition:opacity 1s ease;transition:opacity 1s ease}.loading-image{width:120px;height:50px;transform:translate(-50%)}.loading-image div:nth-child(2){-webkit-animation:pacman-balls 1s linear 0s infinite;animation:pacman-balls 1s linear 0s infinite}.loading-image div:nth-child(3){-webkit-animation:pacman-balls 1s linear .33s infinite;animation:pacman-balls 1s linear .33s infinite}.loading-image div:nth-child(4){-webkit-animation:pacman-balls 1s linear .66s infinite;animation:pacman-balls 1s linear .66s infinite}.loading-image div:nth-child(5){-webkit-animation:pacman-balls 1s linear .99s infinite;animation:pacman-balls 1s linear .99s infinite}.loading-image div:first-of-type{width:0;height:0;border:25px solid #49b1f5;border-right-color:transparent;border-radius:25px;-webkit-animation:rotate_pacman_half_up .5s 0s infinite;animation:rotate_pacman_half_up .5s 0s infinite}.loading-image div:nth-child(2){width:0;height:0;border:25px solid #49b1f5;border-right-color:transparent;border-radius:25px;-webkit-animation:rotate_pacman_half_down .5s 0s infinite;animation:rotate_pacman_half_down .5s 0s infinite;margin-top:-50px}@-webkit-keyframes rotate_pacman_half_up{0%{transform:rotate(270deg)}50%{transform:rotate(1turn)}to{transform:rotate(270deg)}}@keyframes rotate_pacman_half_up{0%{transform:rotate(270deg)}50%{transform:rotate(1turn)}to{transform:rotate(270deg)}}@-webkit-keyframes rotate_pacman_half_down{0%{transform:rotate(90deg)}50%{transform:rotate(0)}to{transform:rotate(90deg)}}@keyframes rotate_pacman_half_down{0%{transform:rotate(90deg)}50%{transform:rotate(0)}to{transform:rotate(90deg)}}@-webkit-keyframes pacman-balls{75%{opacity:.7}to{transform:translate(-100px,-6.25px)}}@keyframes pacman-balls{75%{opacity:.7}to{transform:translate(-100px,-6.25px)}}.loading-image div:nth-child(3),.loading-image div:nth-child(4),.loading-image div:nth-child(5),.loading-image div:nth-child(6){background-color:#49b1f5;width:15px;height:15px;border-radius:100%;margin:2px;width:10px;height:10px;position:absolute;transform:translateY(-6.25px);top:25px;left:100px}.loading-text{margin-bottom:20vh;text-align:center;color:#2c3e50;font-size:2rem;box-sizing:border-box;padding:0 10px;text-shadow:0 2px 10px rgba(0,0,0,.2)}@media only screen and (max-width:500px){.loading-text{font-size:1.5rem}}.fadeout{opacity:0}@-webkit-keyframes fadeInDown{0%{opacity:0;-webkit-transform:translate3d(0,-100%,0);transform:translate3d(0,-100%,0)}100%{opacity:1;-webkit-transform:none;transform:none}}@keyframes fadeInDown{0%{opacity:0;-webkit-transform:translate3d(0,-100%,0)}}</style><script>(function () {
+    const loaded = function(){
+       setTimeout(function(){
+            const loader = document.getElementById("loading-container");
+            loader.className="fadeout" ;//使用渐隐的方法淡出loading page
+            // document.getElementById("body-wrap").style.display="flex";
+            setTimeout(function(){
+                loader.style.display="none";
+            },2500); 
+        },1000);//强制显示loading page 1s  
+    };
+    loaded();
+})()</script><body><div id="loading-container"><p class="loading-text">嘘~ 正在从服务器偷取页面 . . .</p><div class="loading-image"><div></div><div></div><div></div><div></div><div></div></div></div><header class="navbar-fixed"><nav id="headNav" class="bg-color nav-transparent"><div id="navContainer" class="nav-wrapper container"><div class="brand-logo"><a href="/blog/" class="waves-effect waves-light"><img src="/blog/medias/logo.png" class="logo-img" alt="LOGO"> <span class="logo-span">布执刀</span></a></div><a href="#" data-target="mobile-nav" class="sidenav-trigger button-collapse"><i class="fas fa-bars"></i></a><ul class="right nav-menu"><li class="hide-on-med-and-down nav-item"><a href="/blog/" class="waves-effect waves-light"><i class="fas fa-home" style="zoom:.6"></i> <span>Index</span></a></li><li class="hide-on-med-and-down nav-item"><a href="/blog/tags" class="waves-effect waves-light"><i class="fas fa-tags" style="zoom:.6"></i> <span>Tags</span></a></li><li class="hide-on-med-and-down nav-item"><a href="/blog/categories" class="waves-effect waves-light"><i class="fas fa-bookmark" style="zoom:.6"></i> <span>Categories</span></a></li><li class="hide-on-med-and-down nav-item"><a href="/blog/archives" class="waves-effect waves-light"><i class="fas fa-archive" style="zoom:.6"></i> <span>Archives</span></a></li><li class="hide-on-med-and-down nav-item"><a href="/blog/about" class="waves-effect waves-light"><i class="fas fa-user-circle" style="zoom:.6"></i> <span>About</span></a></li><li class="hide-on-med-and-down nav-item"><a href="https://jia_k3.gitee.io/game/" class="waves-effect waves-light"><i class="fas fa-gamepad" style="zoom:.6"></i> <span>Game</span></a></li><li><a href="#searchModal" class="modal-trigger waves-effect waves-light"><i id="searchIcon" class="fas fa-search" title="Search" style="zoom:.85"></i></a></li></ul><div id="mobile-nav" class="side-nav sidenav"><div class="mobile-head bg-color"><img src="/blog/medias/logo.png" class="logo-img circle responsive-img"><div class="logo-name">布执刀</div><div class="logo-desc">欢迎大家与我一起交流学习</div></div><ul class="menu-list mobile-menu-list"><li class="m-nav-item"><a href="/blog/" class="waves-effect waves-light"><i class="fa-fw fas fa-home"></i> Index</a></li><li class="m-nav-item"><a href="/blog/tags" class="waves-effect waves-light"><i class="fa-fw fas fa-tags"></i> Tags</a></li><li class="m-nav-item"><a href="/blog/categories" class="waves-effect waves-light"><i class="fa-fw fas fa-bookmark"></i> Categories</a></li><li class="m-nav-item"><a href="/blog/archives" class="waves-effect waves-light"><i class="fa-fw fas fa-archive"></i> Archives</a></li><li class="m-nav-item"><a href="/blog/about" class="waves-effect waves-light"><i class="fa-fw fas fa-user-circle"></i> About</a></li><li class="m-nav-item"><a href="https://jia_k3.gitee.io/game/" class="waves-effect waves-light"><i class="fa-fw fas fa-gamepad"></i> Game</a></li></ul></div></div></nav></header><div class="bg-cover pd-header post-cover" style="background-image:url(/blog/medias/featureimages/19.jpg)"><div class="container" style="right:0;left:0"><div class="row"><div class="col s12 m12 l12"><div class="brand"><h1 class="description center-align post-title">Python课程笔记</h1></div></div></div></div></div><main class="post-container content"><link rel="stylesheet" href="/blog/libs/tocbot/tocbot.css"><style>#articleContent h1::before,#articleContent h2::before,#articleContent h3::before,#articleContent h4::before,#articleContent h5::before,#articleContent h6::before{display:block;content:" ";height:100px;margin-top:-100px;visibility:hidden}#articleContent :focus{outline:0}.toc-fixed{position:fixed;top:64px}.toc-widget{width:345px;padding-left:20px;background-color:rgb(255,255,255,.7);border-radius:10px;box-shadow:0 10px 35px 2px rgba(0,0,0,.15),0 5px 15px rgba(0,0,0,.07),0 2px 5px -5px rgba(0,0,0,.1)!important}.toc-widget .toc-title{padding:35px 0 15px 17px;font-size:1.5rem;font-weight:700;line-height:1.5rem}.toc-widget ol{padding:0;list-style:none}#toc-content{padding-bottom:30px;overflow:auto}#toc-content ol{padding-left:10px}#toc-content ol li{padding-left:10px}#toc-content .toc-link:hover{color:#42b983;font-weight:700;text-decoration:underline}#toc-content .toc-link::before{background-color:transparent;max-height:25px;position:absolute;right:23.5vw;display:block}#toc-content .is-active-link{color:#42b983}#floating-toc-btn{position:fixed;right:15px;bottom:76px;padding-top:15px;margin-bottom:0;z-index:998}#floating-toc-btn .btn-floating{width:48px;height:48px}#floating-toc-btn .btn-floating i{line-height:48px;font-size:1.4rem}</style><div class="row"><div id="main-content" class="col s12 m12 l9"><div id="artDetail"><div class="card"><div class="card-content article-info"><div class="row tag-cate"><div class="col s7"><div class="article-tag"><a href="/blog/tags/Python/"><span class="chip bg-color">Python</span></a></div></div><div class="col s5 right-align"><div class="post-cate"><i class="fas fa-bookmark fa-fw icon-category"></i> <a href="/blog/categories/%E7%AC%94%E8%AE%B0/" class="post-category">笔记</a></div></div></div><div class="post-info"><div class="post-date info-break-policy"><i class="far fa-calendar-minus fa-fw"></i> Publish Date:&nbsp;&nbsp; 2022-05-05</div></div></div><hr class="clearfix"><div class="card-content article-card-content"><div id="articleContent"><h1 id="一、基础知识"><a href="#一、基础知识" class="headerlink" title="一、基础知识"></a>一、基础知识</h1><h2 id="1-基础数据与操作"><a href="#1-基础数据与操作" class="headerlink" title="1.基础数据与操作"></a>1.基础数据与操作</h2><h3 id="1-1基本语法"><a href="#1-1基本语法" class="headerlink" title="1.1基本语法"></a>1.1基本语法</h3><p>1.版本说明：Python 3.0并没有向下兼容<br>2.标识符：<br>2.1作用：表示变量、函数、类、模块等对象的名称<br>2.2规则：由字母、数字、”_”组成，首字符不能是数字<br>2.3注意：大小写敏感<br>3.关键字：Python语言规定其语法含义<br>查看关键字的方法：</p><pre class="line-numbers language-Python"><code class="language-Python">&gt;&gt;&gt;help()
+Help&gt;keyworks
+Help&gt;return
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre><p>4.预定义标识符：Python语言包含的预定义的内置类、异常、函数等<br>5.保留标识符：<br>5.1”_”在交互式执行中使用，代表计算结果</p><pre class="line-numbers language-Python"><code class="language-Python">&gt;&gt;&gt;100+200 #300
+&gt;&gt;&gt;_+200 #500
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre><p>5.2”__*__“系统定义的函数名字<br>如：<code>__new__() #创建新对象的函数</code><br>6.Python语句：<br>6.1通常一行编写一个语句<br>6.2Python语句的结束符：换行或分号，其中分号表示多条语句同行<br>7.缩进规则：<br>7.1在代码行前面添加空格或Tab，代表从属关系<br>7.2平级的语句行（代码块）缩进必须相同<br>7.3分支、循环、函数定义都采用缩进格式，且末尾有冒号<br>8.注释：</p><pre class="line-numbers language-Python"><code class="language-Python">#单行注释
+'''
+多行注释
+'''
+"""
+多行注释
+"""
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><p>9.输入：</p><pre class="line-numbers language-Python"><code class="language-Python">#&lt;变量&gt;=input([提示])
+a=int(input("请输入整数："))
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre><p>10.输出：</p><pre class="line-numbers language-Python"><code class="language-Python">#print(&lt;输出项列表&gt;,sep=&lt;分隔符&gt;,end=&lt;结束符&gt;)
+a=6
+b=6.28
+print(a,b,sep=',',end=';')
+#6,6.28;
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre><h3 id="1-2数字类型"><a href="#1-2数字类型" class="headerlink" title="1.2数字类型"></a>1.2数字类型</h3><p>1.常量：内存中用于保存固定值的单元，在程序中常量的值不能发生改变<br>1.1Python常量包括数字、字符串、布尔值和空值等<br>1.2在库中也有可能存在关联紧密的常量<br>2.对象：某种类型事务的一个具体实例<br>2.1Python中一切皆对象<br>2.2通过一些函数可以对所有类型对象操作：<code>id()</code>,<code>type()</code>,<code>del()</code><br>2.3对象的类型是不能改变的<br>3.变量：运行过程中值可以改变的量<br>3.1变量是一个标识符，通过赋值运算符创建，指向一个对象<br>3.2Python变量不需要声明，可以随时赋不同类型的值，也可以使用一个赋值符号给多个变量赋值<br>4.对象与数据：对象包含属性和方法，数据是某类对象的属性值<br>5.数字类型：整数型、浮点型、复数型、布尔型、高精度数与分数</p><h3 id="1-3运算符"><a href="#1-3运算符" class="headerlink" title="1.3运算符"></a>1.3运算符</h3><p>1.基本概念：<br>1.1运算：对数据的变换<br>1.2运算符：运算的符号<br>1.3操作数：运算数、操作对象<br>1.4表达式：按运算规则将值、变量和操作符组合<br>2.算术运算符：+，-，<em>，/，%，//，</em>*<br>2.1对于数字操作数来讲，运算符全部适用，且//为整除，*<em>为指数<br>2.2对于字符串操作数来讲，+代表连接两个字符串，</em>代表复制多次<br>3.lambda：</p><pre class="line-numbers language-Python"><code class="language-Python">f=lambda x,y:x+y
+f(1,2)
+#输出3
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre><p>4.if…else：<code>m=x if y else z</code><br>5.逻辑运算符：or\and\not<br>6.关系运算符：&lt;,&lt;=,!=,==…<br>7.复合运算符：+=，-=…<br>8.位运算符：|,^,&amp;,&gt;&gt;,&lt;&lt;,~<br>9.成员运算符：in,not in,is,is not</p><pre class="line-numbers language-Python"><code class="language-Python">x="bc"
+y="abc"
+x in y #True
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre><p>10.运算符优先级（由高到低）：函数调用、寻址、下标-&gt;幂运算(**)-&gt;翻转运算符(~)-&gt;正负变换(+x,-x)-&gt;算术运算符(*,/,%,//)-&gt;算术运算符(+,-)-&gt;位运算符(&gt;&gt;,&lt;&lt;,&amp;,|,^)-&gt;关系运算符(&lt;,&lt;=,!=,==…)-&gt;赋值运算符(=,/=..)-&gt;同一性运算符(is,is not)-&gt;成员运算符(in,not in)-&gt;逻辑运算符(not,and,or)</p><h3 id="1-4内置函数"><a href="#1-4内置函数" class="headerlink" title="1.4内置函数"></a>1.4内置函数</h3><p>1.Python提供67个内置函数<br>2.转换函数：2.1abs(x),bin(x),bool(x),int(x),complex([real[,imag]]),ord(x),bytes([source[,encoding[,errors]]]),str(x)<br>2.2divmod(a,b)返回a除以b的商和余数<code>x,y=divmod(a,b)</code><br>2.3eval(expression)返回字符串表达式的值<code>x=eval("a+b")</code><br>2.4pow(x,y)返回x的y次方<br>2.5sorted()返回有序表</p><h3 id="1-5模块"><a href="#1-5模块" class="headerlink" title="1.5模块"></a>1.5模块</h3><p>1.模块：多个函数及变量可以组成模块，多个模块可以组成包，多个包可以组成库<br>2.要使用模块中的函数，需要导入模块</p><pre class="line-numbers language-Python"><code class="language-Python">#两种导入方式
+#全模块导入
+import math
+math.sin(0.7)
+#只导入需要的部分
+from math import sin
+sin(0.7)
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><h2 id="2-控制结构与异常处理"><a href="#2-控制结构与异常处理" class="headerlink" title="2.控制结构与异常处理"></a>2.控制结构与异常处理</h2><h3 id="2-1顺序与条件分支控制结构"><a href="#2-1顺序与条件分支控制结构" class="headerlink" title="2.1顺序与条件分支控制结构"></a>2.1顺序与条件分支控制结构</h3><p>1.一路分支结构：</p><pre class="line-numbers language-Python"><code class="language-Python">if &lt;条件表达式&gt;:
+    &lt;语句块&gt;
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre><p>2.二路分支结构</p><pre class="line-numbers language-Python"><code class="language-Python">if &lt;条件表达式&gt;:
+    &lt;语句块1&gt;
+else:
+    &lt;语句块2&gt;
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre><p>3.多路分支结构</p><pre class="line-numbers language-Python"><code class="language-Python">if &lt;条件1&gt;:
+    &lt;语句块1&gt;
+elif &lt;条件2&gt;:
+    &lt;语句块2&gt;
+......
+elif &lt;条件n&gt;:
+    &lt;语句块n&gt;
+else:
+    &lt;语句块n+1&gt;
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><p>4.分支嵌套：用缩进表示嵌套层次</p><h3 id="2-2顺序程序设计"><a href="#2-2顺序程序设计" class="headerlink" title="2.2顺序程序设计"></a>2.2顺序程序设计</h3><p>1.列表-集合类数据类型<br>1.1定义：在一对方括号中用逗号隔开的若干数据<br>1.2成员特点：任何合法数据类型，多个成员的数据类型可以不同<br>1.3访问方式：正向索引、逆向索引、区间访问<br>1.4相关操作：+*\in\len()\min()\max()<br>1.5用列表表示多维数据：列表的每个维度长度可以不同，元素类型可以不同<br>2.for循环<br>2.1常用格式：</p><pre class="line-numbers language-Python"><code class="language-Python">for <variable> in range(begin,end,step):
+    &lt;循环块&gt;/&lt;语句块&gt;
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></variable></code></pre><p>2.2一般格式：</p><pre class="line-numbers language-Python"><code class="language-Python">for <variable> in &lt;可迭代对象的集合&gt;:
+    &lt;循环体&gt;/&lt;语句块&gt;
+else:
+    &lt;语句块&gt;
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></variable></code></pre><p>3.while循环格式：</p><pre class="line-numbers language-Python"><code class="language-Python">while&lt;循环条件&gt;:
+    &lt;循环块&gt;/&lt;语句块&gt;
+else:
+    &lt;语句块&gt;
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre><p>4.循环中的特殊语句<br>4.1<code>break</code>中断循环<br>4.2<code>continue</code>跳过当前剩余语句，执行下一次循环<br>4.3<code>pass</code>啥也不做</p><h3 id="2-3异常处理"><a href="#2-3异常处理" class="headerlink" title="2.3异常处理"></a>2.3异常处理</h3><p>1.异常：程序中产生的错误<br>2.后果：若异常对象未被处理或捕获，程序就会用所谓的回溯(Traceback)终止执行<br>3.格式：</p><pre class="line-numbers language-Python"><code class="language-Python">try:
+    <statements1>
+except <name1>:
+    <statements2>#捕获异常name1
+except <name2 ,name3>:
+    <statements3>#捕获异常name2，name3
+else:
+    <statements4>#无异常
+finally:
+    <statements5>#无论有无异常，一定执行
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></statements5></statements4></statements3></name2></statements2></name1></statements1></code></pre><p>4.自定义异常类</p><pre class="line-numbers language-Pyhton"><code class="language-Pyhton">class SomeCustomException(Exception)
+    pass
+#抛出异常：raise
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre><p>5.断言<br>5.1用途：期望满足用户指定的条件。当用户定义的约束不满足时触发AssertionError异常。它是条件式的raise语句<br>5.2一般格式</p><pre class="line-numbers language-Python"><code class="language-Python">assert <test>,<data>#test为逻辑表达式,data是test为假时的提示信息
+#等效于下列代码
+if not <test>:
+    raise AssertionError(<test>)
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></test></test></data></test></code></pre><h3 id="2-4函数"><a href="#2-4函数" class="headerlink" title="2.4函数"></a>2.4函数</h3><p>1.函数定义一般格式：</p><pre class="line-numbers language-Python"><code class="language-Python">def 函数名(&lt;形式参数&gt;):
+#形式参数可以=默认值
+#参数可以设置可变长
+    &lt;函数体&gt;
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre><p>2.参数传递方式：<br>2.1位置绑定<br>2.2关键字绑定<br>3.函数可以返回多个数值</p><h3 id="2-5函数式编程"><a href="#2-5函数式编程" class="headerlink" title="2.5函数式编程"></a>2.5函数式编程</h3><p>1.匿名函数lambda</p><pre class="line-numbers language-Python"><code class="language-Python">#格式：lambda 参数列表:语句块
+f=lambda x,y:x+y
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre><p>2.内嵌函数：可以在函数中内嵌函数，在本函数中可以使用次内嵌函数<br>3.递归算法的设计要点：<br>3.1递推公式<br>3.2递归结束条件<br>4.高阶函数：<br>4.1定义：一个函数可以作为参数传给另外一个函数，或者一个函数的返回值为另外一个函数，满足其一则为高阶函数<br>4.2内置高阶函数</p><pre class="line-numbers language-Python"><code class="language-Python">#zip函数：同时遍历多个序列,遍历次数为最短序列长度
+a=[1,2,3]
+b=['a','b']
+for x,y in zip(a,b):
+    print(x,y)
+#map函数：根据提供的函数对指定序列做映射
+print(*map(lambda x:x*x, [1,2,3]))
+#filter(function,iterable):根据函数对给定的可迭代对象进行过滤
+print(*filter(lambda x: x%2==1, [1,2,3]))
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><p>4.3闭包：函数的嵌套定义。在函数内部定义一个嵌套函数，将嵌套函数视为一个对象，将内嵌函数作为包含它的函数的返回结果（相当于返回一段函数代码）</p><pre class="line-numbers language-Python"><code class="language-Python">def func_lib():
+    def add(x,y):
+        return x+y
+    return add
+fadd=func_lib()
+print(fadd(1,2))
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><h2 id="3-面向对象编程"><a href="#3-面向对象编程" class="headerlink" title="3.面向对象编程"></a>3.面向对象编程</h2><h3 id="3-1类和对象"><a href="#3-1类和对象" class="headerlink" title="3.1类和对象"></a>3.1类和对象</h3><p>1.声明类：</p><pre class="line-numbers language-Python"><code class="language-Python">class 类名:
+    成员变量
+    成员函数
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre><p>2.定义类的对象：<code>对象名=类名()</code><br>3.成员变量：<code>私有变量格式：__xxx</code><br>4.构造函数<code>def __init__(self,其他参数)</code><br>5.析构函数<code>def __del__(self)</code><br>6.静态成员与静态方法：静态方法无须传入self参数</p><pre class="line-numbers language-Python"><code class="language-Python">#语法格式
+class 类名:
+    @staticmethod
+    def 静态方法名():
+        方法体
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre><h3 id="3-2类的继承"><a href="#3-2类的继承" class="headerlink" title="3.2类的继承"></a>3.2类的继承</h3><p>1.继承格式：</p><pre class="line-numbers language-Python"><code class="language-Python">class 派生类名(基类名1,基类名2,......):
+    类体
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre><p>2.派生类和基类的同名方法：</p><pre class="line-numbers language-Python"><code class="language-Python">class 派生类名(基类名1,基类名2,......):
+    与父类同名的子类方法(参数列表):
+        super(子类).基类同名方法
+        子类语句
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre><h3 id="3-3多态与重载"><a href="#3-3多态与重载" class="headerlink" title="3.3多态与重载"></a>3.3多态与重载</h3><p>1.抽象类和多态</p><pre class="line-numbers language-Python"><code class="language-Python">#定义抽象类格式
+from abc import ABCMeta,abstractmethod
+class myAbc(object):
+    __metaclass__=ABCMeta
+    @abstractmethod
+    def abstractmethod(self):pass
+    #函数重载
+    @classmethod
+    def 类方法名([cls[,参数列表]]):
+        方法体
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><p>2.运算符重载</p><pre class="line-numbers language-Python"><code class="language-Python">__add__(self,rhs)#+
+__sub__(self,rhs)#-
+__mul__(self,rhs)#*
+__truediv__(self,rhs)#/
+__floordiv__(self,rhs)#//整除
+__mod__(self,rhs)#%求余
+__pow__(self,rhs)#**
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><h3 id="3-4模态与类"><a href="#3-4模态与类" class="headerlink" title="3.4模态与类"></a>3.4模态与类</h3><p>1.文件名.py是模块，一个类一个块<br>2.引入类：<code>import 模块名</code>或<code>from 模块名 import 类名</code><br>3.包：一个包含__init__.py的文件夹被称为包<br>4.引入包中的模块：</p><pre class="line-numbers language-Python"><code class="language-Python">import 包名.模块名
+模块名.类名
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre><h2 id="4-复杂数据类型"><a href="#4-复杂数据类型" class="headerlink" title="4.复杂数据类型"></a>4.复杂数据类型</h2><h3 id="4-1序列的概念"><a href="#4-1序列的概念" class="headerlink" title="4.1序列的概念"></a>4.1序列的概念</h3><p>1.定义：若干有共同特征的数据元素的集合，元素容器<br>2.分类：列表list、元组tuple、字符串string、Unicode字符串、buffer对象和range对象<br>3.通用操作：<code>分片(sliceing)-取一部分内容：s[i:j:k]</code>、<code>元素的位置检索：s.index(x[,start[,end]])</code>、<code>计算元素出现的频率：s.count(x)</code></p><h3 id="4-2字符串"><a href="#4-2字符串" class="headerlink" title="4.2字符串"></a>4.2字符串</h3><p>1.定义：Unicode字符序列：’abc’"abc”'‘’abc’’’可以相互嵌套<br>2.索引方法：<br>2.1顺次：从左向右：0<del>n-1；从右向左：-1</del>-n<br>2.2片选：[N:M]：N到M-1；[:M]：左到M-1；[N:]：N到右<br>2.3字节序列：数据是一系列的字节，并以b为前缀的字符串，可以通过很多方法将字符串转换为字节序列<br>3.特有操作：<br>3.1数字与字符串相互转化-str(),int(),float()<br>3.2格式化生成字符串：<code>'目标字符串'%(数据1,数据2,......)</code><br>3.3子串查找与替换函数：<code>str.find(sub)</code>，<code>str.rfind(sub)</code>，<code>str.replace(old,new)</code><br>3.4查找子串的位置：<code>str.index(sub)</code><br>3.5统计元素出现的次数：<code>sub.count(sub)</code><br>3.6裁掉特定字符的函数：<code>str.lstrip([chars])</code>，<code>str.rstrip([chars])</code>，<code>str.strip([chars])</code><br>3.7分隔子串：<code>str.split(sep)</code></p><h3 id="4-3列表和元组"><a href="#4-3列表和元组" class="headerlink" title="4.3列表和元组"></a>4.3列表和元组</h3><p>1.列表操作函数：<br>1.1添加：<code>append()</code>，<code>extend()</code>，<code>insert()</code><br>1.2删除元素：<code>pop()</code>，<code>remove()</code>，<code>del命令</code><br>1.3元素位置查找：<code>index()</code><br>1.4统计元素出现的次数：<code>count()</code><br>1.5列表排序：<code>sort(key=None,reverse=None)</code>，<code>reverse()</code><br>1.6清空列表元素：<code>clear()</code><br>2.元组是不可变的，可以看做元素固定不变的列表</p><h3 id="4-4字典"><a href="#4-4字典" class="headerlink" title="4.4字典"></a>4.4字典</h3><p>1.字典定义：以{key:value}形式组织数据<br>2.基本操作：<br>2.1创建：变量D={}或dict #空字典对象<br>2.2元素修改：D[key]=value<br>2.3元素添加：D[newkey]=newvalue<br>2.4元素删除：del D[key],D.clear()<br>2.5测试元素在字典中：key in D<br>2.6元素个数：len(D)<br>2.7判断两个字典是否相同：D1==D2<br>3.操作函数：<br>3.1用keys(),values(),items()获取视图<br>3.2用get()获取字典的值<br>3.3创建字典fromkeys()<br>3.4用pop()删除字典的值<br>3.5用update()更新或添加元素</p><h3 id="4-5集合"><a href="#4-5集合" class="headerlink" title="4.5集合"></a>4.5集合</h3><p>1.元素是无序且不能重复的，分为可变集合(set)，不可变集合(frozenset)<br>2.操作：<br>2.1创建：<code>s=set(['a','b'])</code><br>2.2元素添加：<code>s.add(元素)</code>,<code>s.update()</code><br>2.3元素删除：<code>s.discard(obj)</code>,<code>s.remove(obj)</code>,<code>s.pop()</code>,<code>s.clear()</code><br>2.4判断元素是否属于集合：<code>s.discard('a')</code><br>2.5元素个数：<code>len(D)</code><br>3.集合间的关系运算：&gt;代表包含关系</p><h3 id="4-6迭代器和生成器"><a href="#4-6迭代器和生成器" class="headerlink" title="4.6迭代器和生成器"></a>4.6迭代器和生成器</h3><p>1.迭代器<br>1.1定义：提供在某种容器（列表、字典等）上的遍历元素的方法<br>1.2惰性求值：不需要事先准备好整个迭代过程中的所有元素，迭代至某个元素时才获取该元素。可以遍历巨大文件<br>1.3操作：创建：<code>iter(某种可迭代的对象)</code>；迭代器对象查看：<code>__iter__()/iter</code>；获取迭代器元素：<code>__next__()/next</code><br>2.生成器<br>2.1定义：生成器是一个带有yield语句的函数，他用于产生一系列数据<br>2.2格式：</p><pre class="line-numbers language-Python"><code class="language-Python">def 函数名(参数):
+    ......
+    yield变量
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre><h1 id="二、高级应用"><a href="#二、高级应用" class="headerlink" title="二、高级应用"></a>二、高级应用</h1><h2 id="1-网络程序"><a href="#1-网络程序" class="headerlink" title="1.网络程序"></a>1.网络程序</h2><h3 id="1-1网络通信模型"><a href="#1-1网络通信模型" class="headerlink" title="1.1网络通信模型"></a>1.1网络通信模型</h3><p>1.计算机网络：将地理位置不同且具有独立功能的多台计算机及其外部设备通过通讯线路连接起来，并在网络操作系统、网络管理软件及网络通讯协议的管理和协调下，实现资源共享和信息传递的计算机系统<br>2.PDU(Protocol Data Unit)对等协议之间交换的信息单元统称为协议数据单元<br>| OSI参考模型中的层次 | PDU的特定名称 |<br>| :-: | :-: |<br>| 传输层 | 数据段(Segment) |<br>| 网络层 | 数据包(Packet) |<br>| 数据链路层 | 数据帧(Frame) |<br>| 物理层 | 比特(Bit) |<br>3.TCP/IP是Internet的基础网络通信协议<br><img src="/blog/2022/05/05/python-ke-cheng-bi-ji/1.png"></p><h3 id="1-2Socket编程"><a href="#1-2Socket编程" class="headerlink" title="1.2Socket编程"></a>1.2Socket编程</h3><p>1.Socket基本概念<br>1.1定义：计算机之间进行网络通信的一套程序接口，网络编程的标准<br>1.2作用：Socket对象是网络通信的基础，相当于一个管道连接了发送端和接收端<br>2.基于UDP协议的网络编程函数<br>2.1socket():创建一个流式套接字，返回套接字号</p><pre class="line-numbers language-Python"><code class="language-Python">socket(family,type[,protocol])
+#family:地址家族，取值为AF_INET(IPv4)、AF_INET6(IPv6)
+#type:套接字类型，取值为SOCK_STREAM(TCP)、SOCK_DGRAM(UDP)
+#protocol:与特定的地址家族相关的协议，默认值为0
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre><p>2.2bind():将套接字绑定到一个已知的地址及端口号<br>2.3sendto():发送数据<br>2.4recvfrom():接收数据<br>3.基于TCP协议的网络编程函数<br>3.1服务器端<br>listen(backlog):开始监听TCP连接，backlog为网络最大连接数<br>accept():接受TCP连接并返回(conn,address)<br>3.2客户端<br>connect(address):连接到address处，address=(host,port)<br>3.3共有<br>recv(bufsize[,flag]):接受TCP数据，以字符串形式返回，bufsize表示接收的最大数据量<br>sendall(bytes[,flag]):完整发送TCP数据<br>settimeout(timeout):返回当前超时期的值，单位是秒</p><h3 id="1-3Internet编程"><a href="#1-3Internet编程" class="headerlink" title="1.3Internet编程"></a>1.3Internet编程</h3><p>1.网络协议：超文本传输协议(HTTP)<br>2.数据访问方式：通过统一资源定位符(URL=IP:Port)请求访问资源<br>3.访问web资源的方法：urllib模块<br>3.1urllib.request:打开和读取url<br>3.2urllib.parse:解析URL<br>3.3urllib.error:urllib.request引发的异常<br>3.4urllib.robotpaser:解析robots文件<br>4.urllib.request获取资源<br>4.1urlopen():创建一个表示远程URL的类文件对象<br>4.2info():返回一个httplib.HTTPMessage对象，表示远程服务器返回的头信息<br>4.3getcode():返回HTTP状态码<br>4.4geturl():返回请求的url<br>5.urllib.request保存web资源<br><code>urllib.request.urlretrieve(url[,filename[,reporthook[,data]]])</code><br>6.urllib.request的Request实例<br><code>urllib.request.Request(key=value[,key=value,…])</code><br>7.对url进行编码、解码的有用方法<br><code>urllib.quote(string[,safe]), urllib.unquote(string)</code>、<code>urllib.quote_plus(string[,safe])</code>、<code>urllib.unquote_plus(string)</code><br>8.邮件客户端编程：POP3(Post Office Protocol 3):负责从邮件服务器中检索电子邮件。支持多用户互联网邮件扩展，允许在电子邮件上附带二进制文件。是因特网电子邮件的第一个离线协议标准<br>9.POP3类：poplib<br>9.1POP3(host, post=POP3_PORT[,timeout]): 构造方法，连接host邮件服务器。POP3_PORT=110<br>9.2user(username): 发送邮件的账号(登录用户名)<br>9.3pass_(password): 发送用户密码<br>9.4getwelcome(): 返回欢迎信息<br>9.5stat():返回邮箱状态，结果为元组(邮件数量，邮件字节数)<br>9.6list():返回邮件列表，结果是一个三元组<br>9.7dele(i):设置邮件删除标志，调用quit()时从服务器删除<br>9.8quit(): 注销，释放连接<br>10.使用SMTP协议发送邮件<br>10.1SMTP(host=‘’,port=0,local_h=None[,timeout],src_addr=Noe),构造函数，其主要参数host是发送邮件的服务器<br>10.2login(user,password):登录服务器<br>10.3sendmail(from_addr, to_addr, msg, mail_option=[], rept_option=[]): 发送邮件<br>10.4send_message(msg, from_addr, to_addr): 以邮件对象的形式发送邮件。<br>10.5quit():注销，释放连接</p><h2 id="2-图形用户界面"><a href="#2-图形用户界面" class="headerlink" title="2.图形用户界面"></a>2.图形用户界面</h2><p>1.Python原生界面库：tkinter<br>2.Pack布局<br><img src="/blog/2022/05/05/python-ke-cheng-bi-ji/2.png"></p><h2 id="3-文件与数据库"><a href="#3-文件与数据库" class="headerlink" title="3.文件与数据库"></a>3.文件与数据库</h2><p>1.文件打开与关闭</p><pre class="line-numbers language-Python"><code class="language-Python">#打开文件
+fileObject = open(filename,mode)
+#filename存储文件路径
+#mode为打开方式：r,w,a,rb,wb,ab,+
+#文件关闭
+fileObject.close()
+#常用方式
+with open(filename,mode) as fileObject:
+    操作fileObject
+#with中语句执行完毕后，打开的文件自动关闭
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><p>2.打开文件异常<code>FileNotFoundError</code><br>3.使用struct读写二进制文件<br>3.1字节流：以字节为单位的一系列二进制数据为字节流<br>3.2struct的功能：将一系列不同类型的数据封装成一段字节流，或者字节解封<br>3.3常用函数：pack()数据封装函数,unpack()数据解封函数,calcsize()格式大小计算函数<br>4.使用pickle实现数据序列化<br>4.1序列化：将任意python对象转化为一系列的字节存储到文件中<br>4.2序列化方法：dump()将对象转换成字节流存入文件，load()解析文件中的字节流<br>5.连接数据库需要的Python库：pymysql</p><pre class="line-numbers language-Python"><code class="language-Python">#导入库
+import pymysql
+#打开数据库连接
+db = pymysql.connect(host="localhost",user="用户名",password="密码",database="连接的数据库")
+#创建一个游标对象，执行SQL操作，读取返回的信息
+cursor = db.cursor()
+#执行SQL查询
+cursor.execute("SQL语句")
+cursor.fetchone()#获取下一个查询结果集
+cursor.fetchall()#接收全部的返回结果行
+cursor.rowcount()#返回执行SQL语句（调用execute()方法）后影响的行数
+#关闭数据库连接
+db.close()
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><h2 id="4-前后端分离技术"><a href="#4-前后端分离技术" class="headerlink" title="4.前后端分离技术"></a>4.前后端分离技术</h2><p>1.基本概念：<br>1.1前端：展示数据并与用户进行交互的程序模块（浏览器）<br>1.2后端：为前端提供业务逻辑和数据准备程序模块<br>1.3战略地位：开发模式与web应用的架构模式<br>2.前后端分离优势：<br>2.1提升开发效率（并行开发）<br>2.2完美应对复杂多变的前端需求<br>2.3增强代码可维护性</p><h2 id="5-常用的AI工具库"><a href="#5-常用的AI工具库" class="headerlink" title="5.常用的AI工具库"></a>5.常用的AI工具库</h2><p>1.numpy：支持大量的多维数组与矩阵运算，此外针对数组运算提供大量的数学函数库<br>2.scipy：数学、科学、工程领域的常用软件包，可以有效计算numpy矩阵，结合numpy高效解决问题<br>3.sklearn-learn：专门用于机器学习的模块，具有分类、回归和聚类算法等功能，旨在联合numpy和scipy使用<br>4.pandas：基于numpy的一种工具，是为解决数据分析任务而创建的，提供了高效地操作大型数据集所需的工具<br>5.matplotlib：Python的绘图库，可与numpy一起使用，提供了一种有效的MatLab开源替代方案<br>6.seaborn：基于matplotlib的图形可视化Python包，提供高度交互式界面，便于用户能够做出各种有吸引力的统计图表<br>7.GBDT：梯度提升树<br>8.XGBoost：极端梯度提升<br>9.warnings：主要用于代码运行中忽略警告</p><hr><p>希望大家一起学习，共同进步，如果有疑问或错误欢迎联系笔者。</p></div><hr><div class="reprint" id="reprint-statement"><div class="reprint__author"><span class="reprint-meta" style="font-weight:700"><i class="fas fa-user">Author:</i></span> <span class="reprint-info"><a href="/blog/about" rel="external nofollow noreferrer">Jia_KHC</a></span></div><div class="reprint__type"><span class="reprint-meta" style="font-weight:700"><i class="fas fa-link">Link:</i></span> <span class="reprint-info"><a href="/blog/2022/05/05/python-ke-cheng-bi-ji/">Python课程笔记</a></span></div><div class="reprint__notice"><span class="reprint-meta" style="font-weight:700"><i class="fas fa-copyright">Reprint policy:</i></span> <span class="reprint-info">All articles in this blog are used except for special statements <a href="https://creativecommons.org/licenses/by/4.0/deed.zh" rel="external nofollow noreferrer" target="_blank">CC BY 4.0</a> reprint policy. If reproduced, please indicate source <a href="/blog/about" target="_blank">Jia_KHC</a> !</span></div></div><script async defer>document.addEventListener("copy", function (e) {
+        let toastHTML = '<span>Copied successfully, please follow the reprint policy of this article</span><button class="btn-flat toast-action" onclick="navToReprintStatement()" style="font-size: smaller">more</a>';
+        M.toast({html: toastHTML})
+      });
+
+      function navToReprintStatement() {
+        $("html, body").animate({scrollTop: $("#reprint-statement").offset().top - 80}, 800);
+      }</script><div class="tag_share" style="display:block"><div class="post-meta__tag-list" style="display:inline-block"><div class="article-tag"><a href="/blog/tags/Python/"><span class="chip bg-color">Python</span></a></div></div><div class="post_share" style="zoom:80%;width:fit-content;display:inline-block;float:right;margin:-.15rem 0"><link rel="stylesheet" href="/blog/libs/share/css/share.min.css"><div id="article-share"><div class="social-share" data-sites="twitter,facebook,google,qq,qzone,wechat,weibo,douban,linkedin" data-wechat-qrcode-helper="<p>微信扫一扫即可分享！</p>"></div><script src="/blog/libs/share/js/social-share.min.js"></script></div></div></div></div></div><article id="prenext-posts" class="prev-next articles"><div class="row article-row"><div class="article col s12 m6" data-aos="fade-up"><div class="article-badge left-badge text-color"><i class="fas fa-chevron-left"></i> &nbsp;Previous</div><div class="card"><a href="/blog/2022/05/19/yun-chou-xue-yu-zui-you-hua-fang-fa-bi-ji/"><div class="card-image"><img src="/blog/medias/featureimages/0.jpg" class="responsive-img" alt="《运筹学与最优化方法》笔记"> <span class="card-title">《运筹学与最优化方法》笔记</span></div></a><div class="card-content article-content"><div class="summary block-with-text"></div><div class="publish-info"><span class="publish-date"><i class="far fa-clock fa-fw icon-date"></i> 2022-05-19</span><span class="publish-author"><i class="fas fa-bookmark fa-fw icon-category"></i> <a href="/blog/categories/%E7%AC%94%E8%AE%B0/" class="post-category">笔记</a></span></div></div><div class="card-action article-tags"><a href="/blog/tags/%E7%90%86%E8%AE%BA/"><span class="chip bg-color">理论</span></a></div></div></div><div class="article col s12 m6" data-aos="fade-up"><div class="article-badge right-badge text-color">Next&nbsp;<i class="fas fa-chevron-right"></i></div><div class="card"><a href="/blog/2022/04/23/gao-ji-yu-yan-wang-luo-tong-xin-cheng-xu-duan-kou/"><div class="card-image"><img src="/blog/medias/featureimages/17.jpg" class="responsive-img" alt="高级语言网络通信程序-端口"> <span class="card-title">高级语言网络通信程序-端口</span></div></a><div class="card-content article-content"><div class="summary block-with-text"></div><div class="publish-info"><span class="publish-date"><i class="far fa-clock fa-fw icon-date"></i> 2022-04-23</span><span class="publish-author"><i class="fas fa-bookmark fa-fw icon-category"></i> <a href="/blog/categories/%E7%90%86%E8%A7%A3%E5%88%86%E6%9E%90/" class="post-category">理解分析</a></span></div></div><div class="card-action article-tags"><a href="/blog/tags/Python/"><span class="chip bg-color">Python</span></a> <a href="/blog/tags/%E7%BD%91%E7%BB%9C%E9%80%9A%E4%BF%A1/"><span class="chip bg-color">网络通信</span></a></div></div></div></div></article></div><script>$("#articleContent").on("copy",function(e){if(void 0!==window.getSelection){var n=window.getSelection();if(!((""+n).length<Number.parseInt("120"))){var t=document.getElementsByTagName("body")[0],o=document.createElement("div");o.style.position="absolute",o.style.left="-99999px",t.appendChild(o),o.appendChild(n.getRangeAt(0).cloneContents()),"PRE"!==n.getRangeAt(0).commonAncestorContainer.nodeName&&"CODE"!==n.getRangeAt(0).commonAncestorContainer.nodeName||(o.innerHTML="<pre>"+o.innerHTML+"</pre>");var i=document.location.href;o.innerHTML+='<br />From: 布执刀<br />Author: Jia_KHC<br />Link: <a href="'+i+'">'+i+"</a><br />本文章著作权归作者所有，任何形式的转载都请注明出处。",n.selectAllChildren(o),window.setTimeout(function(){t.removeChild(o)},200)}}})</script><script src="/blog/libs/codeBlock/codeBlockFuction.js"></script><script src="/blog/libs/codeBlock/codeLang.js"></script><script src="/blog/libs/codeBlock/codeCopy.js"></script><script src="/blog/libs/codeBlock/codeShrink.js"></script></div><div id="toc-aside" class="expanded col l3 hide-on-med-and-down"><div class="toc-widget card" style="max-height:600px;height:auto!important;overflow-y:auto"><div class="toc-title"><i class="far fa-list-alt"></i>&nbsp;&nbsp;TOC</div><div id="toc-content"></div></div></div></div><div id="floating-toc-btn" class="hide-on-med-and-down"><a class="btn-floating btn-large bg-color"><i class="fas fa-list-ul"></i></a></div><script src="/blog/libs/tocbot/tocbot.min.js"></script><script>$(function () {
+        tocbot.init({
+            tocSelector: '#toc-content',
+            contentSelector: '#articleContent',
+            headingsOffset: -($(window).height() * 0.4 - 45),
+            collapseDepth: Number('1'),
+            headingSelector: 'h1, h2, h3, h4'
+        });
+
+        // modify the toc link href to support Chinese.
+        let i = 0;
+        let tocHeading = 'toc-heading-';
+        $('#toc-content a').each(function () {
+            $(this).attr('href', '#' + tocHeading + (++i));
+        });
+
+        // modify the heading title id to support Chinese.
+        i = 0;
+        $('#articleContent').children('h1, h2, h3, h4').each(function () {
+            $(this).attr('id', tocHeading + (++i));
+        });
+
+        // Set scroll toc fixed.
+        let tocHeight = parseInt($(window).height() * 0.4 - 64);
+        let $tocWidget = $('.toc-widget');
+        $(window).scroll(function () {
+            let scroll = $(window).scrollTop();
+            /* add post toc fixed. */
+            if (scroll > tocHeight) {
+                $tocWidget.addClass('toc-fixed');
+            } else {
+                $tocWidget.removeClass('toc-fixed');
+            }
+        });
+
+        
+        /* 修复文章卡片 div 的宽度. */
+        let fixPostCardWidth = function (srcId, targetId) {
+            let srcDiv = $('#' + srcId);
+            if (srcDiv.length === 0) {
+                return;
+            }
+
+            let w = srcDiv.width();
+            if (w >= 450) {
+                w = w + 21;
+            } else if (w >= 350 && w < 450) {
+                w = w + 18;
+            } else if (w >= 300 && w < 350) {
+                w = w + 16;
+            } else {
+                w = w + 14;
+            }
+            $('#' + targetId).width(w);
+        };
+
+        // 切换TOC目录展开收缩的相关操作.
+        const expandedClass = 'expanded';
+        let $tocAside = $('#toc-aside');
+        let $mainContent = $('#main-content');
+        $('#floating-toc-btn .btn-floating').click(function () {
+            if ($tocAside.hasClass(expandedClass)) {
+                $tocAside.removeClass(expandedClass).hide();
+                $mainContent.removeClass('l9');
+            } else {
+                $tocAside.addClass(expandedClass).show();
+                $mainContent.addClass('l9');
+            }
+            fixPostCardWidth('artDetail', 'prenext-posts');
+        });
+        
+    });</script></main><footer class="page-footer bg-color"><link rel="stylesheet" href="/blog/libs/aplayer/APlayer.min.css"><style>.aplayer .aplayer-lrc p{display:none;font-size:12px;font-weight:700;line-height:16px!important}.aplayer .aplayer-lrc p.aplayer-lrc-current{display:none;font-size:15px;color:#42b983}.aplayer.aplayer-fixed.aplayer-narrow .aplayer-body{left:-66px!important}.aplayer.aplayer-fixed.aplayer-narrow .aplayer-body:hover{left:0!important}</style><div><div class="row"><meting-js class="col l8 offset-l2 m10 offset-m1 s12" server="netease" type="playlist" id="503838841" fixed="true" autoplay theme="#42b983" loop order="random" preload="auto" volume="0.7" list-folded="true"></meting-js></div></div><script src="/blog/libs/aplayer/APlayer.min.js"></script><script src="/blog/libs/aplayer/Meting.min.js"></script><div class="container row center-align" style="margin-bottom:15px!important"><div class="col s12 m8 l8 copy-right">Copyright&nbsp;&copy; <span id="year">2022-2023</span> <a href="/blog/about" target="_blank">Jia_KHC</a> |&nbsp;Powered by&nbsp;<a href="https://hexo.io/" target="_blank">Hexo</a> |&nbsp;Theme&nbsp;<a href="https://github.com/blinkfox/hexo-theme-matery" target="_blank">Matery</a><br><span id="busuanzi_container_site_pv">&nbsp;|&nbsp;<i class="far fa-eye"></i>&nbsp;Total visits:&nbsp;<span id="busuanzi_value_site_pv" class="white-color"></span></span> <span id="busuanzi_container_site_uv">&nbsp;|&nbsp;<i class="fas fa-users"></i>&nbsp;Total visitors:&nbsp;<span id="busuanzi_value_site_uv" class="white-color"></span></span><br><span id="sitetime">Loading ...</span><script>var calcSiteTime=function(){var e=new Date,t="2022",n=e.getFullYear(),i=e.getMonth()+1,a=e.getDate(),r=e.getHours(),s=e.getMinutes(),o=e.getSeconds(),g=Date.UTC(t,"1","9","16","11","0"),d=Date.UTC(n,i,a,r,s,o)-g,m=Math.floor(d/31536e6),l=Math.floor(d/864e5-365*m);if(t===String(n)){document.getElementById("year").innerHTML=n;var c="This site has been running for "+l+" days";0,document.getElementById("sitetime").innerHTML=c}else{document.getElementById("year").innerHTML=t+" - "+n;var u="This site has been running for "+m+" years and "+l+" days";0,document.getElementById("sitetime").innerHTML=u}};calcSiteTime()</script><br></div><div class="col s12 m4 l4 social-link social-statis"><a href="mailto:1073475535@qq.com" class="tooltipped" target="_blank" data-tooltip="邮件联系我" data-position="top" data-delay="50"><i class="fas fa-envelope-open"></i></a><a href="tencent://AddContact/?fromId=50&fromSubId=1&subcmd=all&uin=1073475535" class="tooltipped" target="_blank" data-tooltip="QQ联系我: 1073475535" data-position="top" data-delay="50"><i class="fab fa-qq"></i></a><a href="/blog/atom.xml" class="tooltipped" target="_blank" data-tooltip="RSS 订阅" data-position="top" data-delay="50"><i class="fas fa-rss"></i></a></div></div></footer><div class="progress-bar"></div><div id="searchModal" class="modal"><div class="modal-content"><div class="search-header"><span class="title"><i class="fas fa-search"></i> &nbsp;&nbsp;Search</span> <input type="search" id="searchInput" name="s" placeholder="Please enter a search keyword" class="search-input"></div><div id="searchResult"></div></div></div><script>$(function(){!function(t,a,s){"use strict";$.ajax({url:t,dataType:"xml",success:function(t){var e=$("entry",t).map(function(){return{title:$("title",this).text(),content:$("content",this).text(),url:$("url",this).text()}}).get(),r=document.getElementById(a),n=document.getElementById(s);r.addEventListener("input",function(){var f='<ul class="search-result-list">',m=this.value.trim().toLowerCase().split(/[\s\-]+/);n.innerHTML="",this.value.trim().length<=0||(e.forEach(function(t){var r=!0,n=t.title.trim().toLowerCase(),a=t.content.trim().replace(/<[^>]+>/g,"").toLowerCase(),e=t.url;e=0===e.indexOf("/")?t.url:"/"+e;var s=-1,i=-1,l=-1;if(""!==n&&""!==a&&m.forEach(function(t,e){s=n.indexOf(t),i=a.indexOf(t),s<0&&i<0?r=!1:(i<0&&(i=0),0===e&&(l=i))}),r){f+="<li><a href='"+e+"' class='search-result-title'>"+n+"</a>";var c=t.content.trim().replace(/<[^>]+>/g,"");if(0<=l){var u=l-20,o=l+80;u<0&&(u=0),0===u&&(o=100),o>c.length&&(o=c.length);var h=c.substr(u,o);m.forEach(function(t){var e=new RegExp(t,"gi");h=h.replace(e,'<em class="search-keyword">'+t+"</em>")}),f+='<p class="search-result">'+h+"...</p>"}f+="</li>"}}),f+="</ul>",n.innerHTML=f)})}})}("/blog/search.xml","searchInput","searchResult")})</script><div id="backTop" class="top-scroll"><a class="btn-floating btn-large waves-effect waves-light" href="#!"><i class="fas fa-arrow-up"></i></a></div><script src="/blog/libs/materialize/materialize.min.js"></script><script src="/blog/libs/masonry/masonry.pkgd.min.js"></script><script src="/blog/libs/aos/aos.js"></script><script src="/blog/libs/scrollprogress/scrollProgress.min.js"></script><script src="/blog/libs/lightGallery/js/lightgallery-all.min.js"></script><script src="/blog/js/matery.js"></script><script>var windowWidth=$(window).width();768<windowWidth&&document.write('<script type="text/javascript" src="/blog/libs/others/snow.js"><\/script>')</script><script src="https://ssl.captcha.qq.com/TCaptcha.js"></script><script src="/blog/libs/others/TencentCaptcha.js"></script><button id="TencentCaptcha" data-appid="xxxxxxxxxx" data-cbfn="callback" type="button" hidden></button><script>!function(){var t=document.createElement("script"),e=window.location.protocol.split(":")[0];t.src="https"===e?"https://zz.bdstatic.com/linksubmit/push.js":"http://push.zhanzhang.baidu.com/push.js";var s=document.getElementsByTagName("script")[0];s.parentNode.insertBefore(t,s)}()</script><script src="/blog/libs/others/clicklove.js" async></script><script async src="/blog/libs/others/busuanzi.pure.mini.js"></script><script src="/blog/libs/instantpage/instantpage.js" type="module"></script></body></html>
