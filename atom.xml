@@ -6,7 +6,7 @@
   <link href="https://jia_k3.gitee.io/blog/atom.xml" rel="self"/>
   
   <link href="https://jia_k3.gitee.io/blog/"/>
-  <updated>2024-08-01T08:22:05.345Z</updated>
+  <updated>2024-09-15T13:01:07.379Z</updated>
   <id>https://jia_k3.gitee.io/blog/</id>
   
   <author>
@@ -15,6 +15,34 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Ollama简单配置</title>
+    <link href="https://jia_k3.gitee.io/blog/2024/09/15/ollama-jian-dan-pei-zhi/"/>
+    <id>https://jia_k3.gitee.io/blog/2024/09/15/ollama-jian-dan-pei-zhi/</id>
+    <published>2024-09-15T12:58:52.000Z</published>
+    <updated>2024-09-15T13:01:07.379Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;Ollama介绍&quot;&gt;&lt;a href=&quot;#Ollama介绍&quot; class=&quot;headerlink&quot; title=&quot;Ollama介绍&quot;&gt;&lt;/a&gt;Ollama介绍&lt;/h2&gt;&lt;p&gt;Ollama是一个创建、运行和管理大语言模型(LLM)的工具。&lt;/p&gt;
+&lt;h2</summary>
+        
+      
+    
+    
+    
+    <category term="教程" scheme="https://jia_k3.gitee.io/blog/categories/%E6%95%99%E7%A8%8B/"/>
+    
+    
+    <category term="Linux" scheme="https://jia_k3.gitee.io/blog/tags/Linux/"/>
+    
+    <category term="LLM" scheme="https://jia_k3.gitee.io/blog/tags/LLM/"/>
+    
+  </entry>
   
   <entry>
     <title>《这本书能让你戒烟》读书笔记</title>
@@ -515,32 +543,6 @@
     <category term="Unity" scheme="https://jia_k3.gitee.io/blog/tags/Unity/"/>
     
     <category term="Csharp" scheme="https://jia_k3.gitee.io/blog/tags/Csharp/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Python蟒书第一部分读书笔记——基础知识</title>
-    <link href="https://jia_k3.gitee.io/blog/2022/02/27/python-mang-shu-di-yi-bu-fen-du-shu-bi-ji-ji-chu-zhi-shi/"/>
-    <id>https://jia_k3.gitee.io/blog/2022/02/27/python-mang-shu-di-yi-bu-fen-du-shu-bi-ji-ji-chu-zhi-shi/</id>
-    <published>2022-02-27T08:00:52.000Z</published>
-    <updated>2022-02-27T08:08:16.225Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;​&lt;/p&gt;
-&lt;h1 id=&quot;1-起步&quot;&gt;&lt;a href=&quot;#1-起步&quot; class=&quot;headerlink&quot; title=&quot;1.起步&quot;&gt;&lt;/a&gt;1.起步&lt;/h1&gt;&lt;p&gt;1.1如果系统安装了Python</summary>
-        
-      
-    
-    
-    
-    <category term="笔记" scheme="https://jia_k3.gitee.io/blog/categories/%E7%AC%94%E8%AE%B0/"/>
-    
-    
-    <category term="Python" scheme="https://jia_k3.gitee.io/blog/tags/Python/"/>
     
   </entry>
   

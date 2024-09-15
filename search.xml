@@ -4,6 +4,33 @@
   
     
     <entry>
+      <title>Ollama简单配置</title>
+      <link href="/blog/2024/09/15/ollama-jian-dan-pei-zhi/"/>
+      <url>/blog/2024/09/15/ollama-jian-dan-pei-zhi/</url>
+      
+        <content type="html"><![CDATA[<h2 id="Ollama介绍"><a href="#Ollama介绍" class="headerlink" title="Ollama介绍"></a>Ollama介绍</h2><p>Ollama是一个创建、运行和管理大语言模型(LLM)的工具。</p><h2 id="Ollama安装"><a href="#Ollama安装" class="headerlink" title="Ollama安装"></a>Ollama安装</h2><ol><li>官网：<a href="https://github.com/ollama/ollama">ollama</a></li><li>下载安装资源包并运行安装程序</li><li>输入<code>ollama</code>验证安装<h2 id="Ollama启动"><a href="#Ollama启动" class="headerlink" title="Ollama启动"></a>Ollama启动</h2></li><li>一般启动Ollama：<code>ollama serve</code></li><li>Linux设置Ollama为自启服务：<a href="https://github.com/ollama/ollama/blob/main/docs/linux.md">StartupService</a></li></ol><p>2.1. 创建Ollama用户与用户组</p><pre><code>sudo useradd -r -s /bin/false -U -m -d /usr/share/ollama ollamasudo usermod -a -G ollama $(whoami)</code></pre><p>2.2. 创建服务配置文件于<code>/etc/systemd/system/ollama.service</code></p><pre><code>[Unit]Description=Ollama ServiceAfter=network-online.target[Service]ExecStart=/usr/bin/ollama serveUser=ollamaGroup=ollamaRestart=alwaysRestartSec=3Environment="PATH=$PATH"[Install]WantedBy=default.target</code></pre><p>2.3. 启动服务</p><pre><code>sudo systemctl daemon-reloadsudo systemctl enable ollamasudo systemctl start ollamasudo systemctl status ollama</code></pre><h2 id="下载训练好的大模型"><a href="#下载训练好的大模型" class="headerlink" title="下载训练好的大模型"></a>下载训练好的大模型</h2><ol><li>在资源网站找到对应大模型：<a href="https://ollama.com/library">Models</a></li><li>运行介绍页面命令下载大模型<code>ollama run ***</code><h2 id="设置局域网访问-Linux"><a href="#设置局域网访问-Linux" class="headerlink" title="设置局域网访问(Linux)"></a>设置局域网访问(Linux)</h2></li><li>设置Ollama为自启服务启动</li><li>在<code>/etc/systemd/system/ollama.service</code>文件中Service条目添加如下代码<pre><code>Environment="OLLAMA_HOST=0.0.0.0:11434"Environment="OLLAMA_ORIGINS=*"</code></pre></li><li>重启服务<pre><code>systemctl daemon-reloadsystemctl restart ollama</code></pre>其他平台参考：<a href="https://github.com/ollama/ollama/blob/main/docs/faq.md">Setting environment variables</a><h2 id="卸载-Linux"><a href="#卸载-Linux" class="headerlink" title="卸载(Linux)"></a>卸载(Linux)</h2></li><li>如果设置了Ollama服务<pre><code>sudo systemctl stop ollamasudo systemctl disable ollamasudo rm /etc/systemd/system/ollama.servicesudo userdel ollamasudo groupdel ollama</code></pre></li><li>删除Ollama二进制文件<pre><code>sudo rm $(which ollama)</code></pre></li><li>删除下载的大模型<pre><code>sudo rm -r /usr/share/ollama</code></pre></li></ol>]]></content>
+      
+      
+      <categories>
+          
+          <category> 教程 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Linux </tag>
+            
+            <tag> LLM </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>《这本书能让你戒烟》读书笔记</title>
       <link href="/blog/2024/08/01/zhe-ben-shu-neng-rang-ni-jie-yan-du-shu-bi-ji/"/>
       <url>/blog/2024/08/01/zhe-ben-shu-neng-rang-ni-jie-yan-du-shu-bi-ji/</url>
