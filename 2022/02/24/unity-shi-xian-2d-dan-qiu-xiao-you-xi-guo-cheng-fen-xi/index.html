@@ -588,7 +588,7 @@ public class creatBox : MonoBehaviour
         num = ball_number;
         PlayerPrefs.SetInt("Key", 1);
         PlayerPrefs.SetInt("Num", 0);
-        aimLine = GetComponent<linerenderer>();
+        aimLine = GetComponent<LineRenderer>();
     }
     private void Update()
     {
@@ -612,7 +612,11 @@ public class creatBox : MonoBehaviour
         if(PlayerPrefs.GetInt("Key")==2)
         {
             GameObject[] enemy = GameObject.FindGameObjectsWithTag("Enemy");
-            for(int i=0;i<enemy.length;i++) &#123;="" enemy[i].transform.position="new" vector3(enemy[i].transform.position.x,="" enemy[i].transform.position.y="" -="" 1,="" enemy[i].transform.position.z);="" &#125;="" startcoroutine(this.transform.gameobject.getcomponent<createnemy="">().createEnemy(enemy_num));
+            for(int i=0;i<enemy.Length;i++)
+            {
+                enemy[i].transform.position = new Vector3(enemy[i].transform.position.x, enemy[i].transform.position.y - 1, enemy[i].transform.position.z);
+            }
+            StartCoroutine(this.transform.gameObject.GetComponent<creatEnemy>().createEnemy(enemy_num));
             PlayerPrefs.SetInt("Key", 1);
         }
     }
@@ -625,7 +629,7 @@ public class creatBox : MonoBehaviour
         if(Input.GetMouseButton(0))
         {
             touch = Input.GetTouch(0);
-            if(touch.position.y&gt;=Sh*9f/10f)
+            if(touch.position.y>=Sh*9f/10f)
             {
                 key = 0;
             }
@@ -643,7 +647,7 @@ public class creatBox : MonoBehaviour
             v.Normalize();
             v.x = v.x * 20;
             v.y = v.y * 20;
-            if (x &lt; 0)
+            if (x < 0)
             {
                 transform.rotation = Quaternion.AngleAxis(deg, Vector3.forward);
             }
@@ -665,14 +669,16 @@ public class creatBox : MonoBehaviour
     }
     IEnumerator shoot()
     {
-        for(int i=0;i<ball_number;i++) &#123;="" rb="GameObject.Instantiate(m_prefab," transform.position,="" quaternion.identity).getcomponent<rigidbody2d="">();
+        for(int i=0;i<ball_number;i++)
+        {
+            rb = GameObject.Instantiate(m_prefab, transform.position, Quaternion.identity).GetComponent<Rigidbody2D>();
             rb.velocity = v;
             PlayerPrefs.SetInt("Num", PlayerPrefs.GetInt("Num") + 1);
             yield return new WaitForSeconds(0.1f);
         }
     }
 }
-<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></ball_number;i++)></enemy.length;i++)></linerenderer></code></pre>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <p>2.2createEnemy.cs创建障碍物，随机生成障碍物元素</p>
 <pre class="line-numbers language-Csharp"><code class="language-Csharp">using System.Collections;
 using System.Collections.Generic;
@@ -698,13 +704,13 @@ public class creatEnemy : MonoBehaviour
     private float size_y;
     private int x, y;
 
-    private HashSet<vector2> enemy_positions = new HashSet<vector2>();
+    private HashSet<Vector2> enemy_positions = new HashSet<Vector2>();
     void Start()
     {
         GameObject t = GameObject.Instantiate(m_prefab1, transform.position, Quaternion.identity);
         t.transform.position.Set(this.transform.position.x,this.transform.position.y,this.transform.position.z);
-        size_x = t.transform.GetComponent<renderer>().bounds.size.x;
-        size_y = t.transform.GetComponent<renderer>().bounds.size.y;
+        size_x = t.transform.GetComponent<Renderer>().bounds.size.x;
+        size_y = t.transform.GetComponent<Renderer>().bounds.size.y;
         GameObject.Destroy(t.transform.gameObject, 0f);
         x = (int)((RU.transform.position.x - LU.transform.position.x) / size_x);
         y = (int)((RU.transform.position.y - RD.transform.position.y) / size_y);
@@ -714,7 +720,7 @@ public class creatEnemy : MonoBehaviour
     }
     public void CreateEnemy(int cnt)
     {
-        for (int i = 0; i &lt; cnt; i++)
+        for (int i = 0; i < cnt; i++)
         {
             randomcreate();
         }
@@ -725,7 +731,7 @@ public class creatEnemy : MonoBehaviour
     }
     public IEnumerator createEnemy(int cnt)
     {
-        for (int i = 0; i &lt; cnt; i++)
+        for (int i = 0; i < cnt; i++)
         {
             randomcreate();
             yield return null;
@@ -766,24 +772,26 @@ public class creatEnemy : MonoBehaviour
             m = GameObject.Instantiate(m_prefab6, transform.position, Quaternion.identity);
         }
         m.transform.position = new Vector3(tmp.x, tmp.y, this.transform.position.z);
-        m.GetComponent<createordestroy>().setLive(Random.Range(5 * PlayerPrefs.GetInt("Score")+1, 10 * PlayerPrefs.GetInt("Score") + 10));
-        m.GetComponent<renderer>().material.color = new Color(Random.Range(0, 255) / 255f, Random.Range(0, 255) / 255f, Random.Range(0, 255) / 255f);
+        m.GetComponent<CreateOrDestroy>().setLive(Random.Range(5 * PlayerPrefs.GetInt("Score")+1, 10 * PlayerPrefs.GetInt("Score") + 10));
+        m.GetComponent<Renderer>().material.color = new Color(Random.Range(0, 255) / 255f, Random.Range(0, 255) / 255f, Random.Range(0, 255) / 255f);
     }
 }
-<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></renderer></createordestroy></renderer></renderer></vector2></vector2></code></pre>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <h2 id="二、C-实现过程的收获"><a href="#二、C-实现过程的收获" class="headerlink" title="二、C#实现过程的收获"></a>二、C#实现过程的收获</h2><h3 id="1-项目实现阶段遇到Unity崩溃"><a href="#1-项目实现阶段遇到Unity崩溃" class="headerlink" title="1.项目实现阶段遇到Unity崩溃"></a>1.项目实现阶段遇到Unity崩溃</h3><p>根据网络上言论，通过打开**Temp/_Backupscenes/**<strong>0.backup文件</strong>修改后缀可以复原原来场景。这个方法未证实，但是确定了一件事：崩溃后重新打开unity后一切就没救了，所以一定要先尝试上面的方法后打开unity</p>
 <h3 id="2-unity协程使用"><a href="#2-unity协程使用" class="headerlink" title="2.unity协程使用"></a>2.unity协程使用</h3><p>2.1基本函数：StartCoroutine()，以IEnumerator为返回值的函数</p>
 <p>2.2代码示例：</p>
 <pre class="line-numbers language-Csharp"><code class="language-Csharp">//StartCoroutine(shoot());
     IEnumerator shoot()
     {
-        for(int i=0;i<ball_number;i++) &#123;="" rb="GameObject.Instantiate(m_prefab," transform.position,="" quaternion.identity).getcomponent<rigidbody2d="">();
+        for(int i=0;i<ball_number;i++)
+        {
+            rb = GameObject.Instantiate(m_prefab, transform.position, Quaternion.identity).GetComponent<Rigidbody2D>();
             rb.velocity = v;
             PlayerPrefs.SetInt("Num", PlayerPrefs.GetInt("Num") + 1);
             yield return new WaitForSeconds(0.1f);
         }
     }
-<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></ball_number;i++)></code></pre>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <p>2.3知识点：开始协程函数调用以IEnumerator为返回值的函数，此函数中返回值通过yield return来达到返回要求，事实上yield return的含义是每次运行函数前先运行一遍return后面的代码，示例代码中函数作用为延迟0.1s</p>
 <h3 id="3-调整游戏运行速度"><a href="#3-调整游戏运行速度" class="headerlink" title="3.调整游戏运行速度"></a>3.调整游戏运行速度</h3><p>3.1需要通过控制<strong>Time.timeScale</strong>的值，0：暂停、1：正常速度运行、2：2倍速运行</p>
 <h3 id="4-int与string相互转化"><a href="#4-int与string相互转化" class="headerlink" title="4.int与string相互转化"></a>4.int与string相互转化</h3><p>4.1int-&gt;string：调用int对象函数tosting()</p>

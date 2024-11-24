@@ -469,13 +469,30 @@ try:
         if not data or data.decode()=='-1':
             pass
         else:
-            c=data.decode().split('&lt;')
+            c=data.decode().split('<')
             if len(c)==4:
                 if c[2]=='aaa' and str(c[3])=='123456':
                     tar_address.append(c[0].encode('utf-8'))
                     tar_port.append(int(c[1]))
                     print("address:"+c[0]+";port:"+c[1]+" in\n")
-                    msg="password<ok" s.sendto(msg.encode('utf-8'),(c[0].encode('utf-8'),int(c[1])))="" else:="" msg="password<oo" print(data)="" elif="" len(c)="=2:" for="" i="" in="" range(0,len(tar_address),1):="" s.sendto(data,(tar_address[i],tar_port[i]))="" tar_address.remove(c[0].encode('utf-8'))="" tar_port.remove(int(c[1]))="" print("address:"+c[0]+";port:"+c[1]+"="" out\n")="" except="" exception="" as="" e:="" print("something="" is="" wrong",e)="" s.close()="" <span="" aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></ok"></code></pre>
+                    msg="password<ok"
+                    s.sendto(msg.encode('utf-8'),(c[0].encode('utf-8'),int(c[1])))
+                else:
+                    msg="password<oo"
+                    s.sendto(msg.encode('utf-8'),(c[0].encode('utf-8'),int(c[1])))
+                    print(data)
+            elif len(c)==2:
+                for i in range(0,len(tar_address),1):
+                    s.sendto(data,(tar_address[i],tar_port[i]))
+            else:
+                tar_address.remove(c[0].encode('utf-8'))
+                tar_port.remove(int(c[1]))
+                print("address:"+c[0]+";port:"+c[1]+" out\n")
+except Exception as e:
+    print("Something is wrong",e)
+    s.close()
+s.close()
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <p>2.UIControl客户端总控：调用界面类控制界面，UDP监听端口即为Python程序占用的端口</p>
 <pre class="line-numbers language-Python"><code class="language-Python">from UI.ChatUI import ChatUI
 from UI.LoginUI import LoginUI
@@ -502,14 +519,14 @@ class UIControl:
     def __del__(self):
         try:
             if self.key:
-                msg=self.address+"&lt;"+str(self.port)+"&lt;"+"quit"
+                msg=self.address+"<"+str(self.port)+"<"+"quit"
                 self.sendMessage(msg)
             self.s.close()
         except Exception as e:
             print(e)
 
     def sendMsg(self):
-        msg=self.id+"&lt;"+self.c.msg.get()
+        msg=self.id+"<"+self.c.msg.get()
         self.sendMessage(msg)
 
     def sendMessage(self,msg):
@@ -519,10 +536,10 @@ class UIControl:
         return self.s.recvfrom(1024)
 
     def login(self):
-        msg=self.address+"&lt;"+str(self.port)+"&lt;"+self.l.id.get()+"&lt;"+self.l.password.get()
+        msg=self.address+"<"+str(self.port)+"<"+self.l.id.get()+"<"+self.l.password.get()
         self.sendMessage(msg)
         data,addre=self.recvMessage()
-        c=data.decode().split('&lt;')
+        c=data.decode().split('<')
         if c[0]=="password" and c[1]=="ok":
             self.id=self.l.id.get()
             self.t.start()
@@ -536,7 +553,7 @@ class UIControl:
         try:
             while True:
                 data,addre=self.recvMessage()
-                c=data.decode().split('&lt;')
+                c=data.decode().split('<')
                 self.c.text.insert('end',c[0]+"说："+c[1]+"\n")
         except Exception as e:
             print(e)
