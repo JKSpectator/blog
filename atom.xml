@@ -6,7 +6,7 @@
   <link href="https://jia_k3.gitee.io/blog/atom.xml" rel="self"/>
   
   <link href="https://jia_k3.gitee.io/blog/"/>
-  <updated>2024-09-15T13:01:07.379Z</updated>
+  <updated>2024-11-24T11:18:16.913Z</updated>
   <id>https://jia_k3.gitee.io/blog/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>《费曼学习法》读书笔记</title>
+    <link href="https://jia_k3.gitee.io/blog/2024/11/24/fei-man-xue-xi-fa-du-shu-bi-ji/"/>
+    <id>https://jia_k3.gitee.io/blog/2024/11/24/fei-man-xue-xi-fa-du-shu-bi-ji/</id>
+    <published>2024-11-24T11:17:11.000Z</published>
+    <updated>2024-11-24T11:18:16.913Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;书籍详细信息&quot;&gt;&lt;a href=&quot;#书籍详细信息&quot; class=&quot;headerlink&quot; title=&quot;书籍详细信息&quot;&gt;&lt;/a&gt;书籍详细信息&lt;/h2&gt;&lt;p&gt;书名：费曼学习法（用输出倒逼输入）&lt;br&gt;作者：尹红心、李伟&lt;br&gt;书号：ISBN</summary>
+        
+      
+    
+    
+    
+    <category term="笔记" scheme="https://jia_k3.gitee.io/blog/categories/%E7%AC%94%E8%AE%B0/"/>
+    
+    
+    <category term="心理学" scheme="https://jia_k3.gitee.io/blog/tags/%E5%BF%83%E7%90%86%E5%AD%A6/"/>
+    
+  </entry>
   
   <entry>
     <title>Ollama简单配置</title>
@@ -49,7 +74,7 @@
     <link href="https://jia_k3.gitee.io/blog/2024/08/01/zhe-ben-shu-neng-rang-ni-jie-yan-du-shu-bi-ji/"/>
     <id>https://jia_k3.gitee.io/blog/2024/08/01/zhe-ben-shu-neng-rang-ni-jie-yan-du-shu-bi-ji/</id>
     <published>2024-08-01T08:20:08.000Z</published>
-    <updated>2024-08-01T08:22:05.345Z</updated>
+    <updated>2024-11-24T06:43:43.304Z</updated>
     
     
       
@@ -515,34 +540,6 @@
     <category term="反编译" scheme="https://jia_k3.gitee.io/blog/tags/%E5%8F%8D%E7%BC%96%E8%AF%91/"/>
     
     <category term="starUML" scheme="https://jia_k3.gitee.io/blog/tags/starUML/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Unity应用单件模式</title>
-    <link href="https://jia_k3.gitee.io/blog/2022/03/16/unity-ying-yong-dan-jian-mo-shi/"/>
-    <id>https://jia_k3.gitee.io/blog/2022/03/16/unity-ying-yong-dan-jian-mo-shi/</id>
-    <published>2022-03-16T06:09:27.000Z</published>
-    <updated>2022-03-16T06:13:51.867Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;​&lt;/p&gt;
-&lt;h3 id=&quot;一、基础概念&quot;&gt;&lt;a href=&quot;#一、基础概念&quot; class=&quot;headerlink&quot; title=&quot;一、基础概念&quot;&gt;&lt;/a&gt;一、基础概念&lt;/h3&gt;&lt;p&gt;&lt;strong&gt;引用另一篇博客&lt;/strong&gt;：&lt;a</summary>
-        
-      
-    
-    
-    
-    <category term="应用软件-Unity" scheme="https://jia_k3.gitee.io/blog/categories/%E5%BA%94%E7%94%A8%E8%BD%AF%E4%BB%B6-Unity/"/>
-    
-    
-    <category term="Unity" scheme="https://jia_k3.gitee.io/blog/tags/Unity/"/>
-    
-    <category term="Csharp" scheme="https://jia_k3.gitee.io/blog/tags/Csharp/"/>
     
   </entry>
   
